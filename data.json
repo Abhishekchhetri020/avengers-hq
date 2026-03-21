@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-22T00:00:00Z",
+  "updated": "2026-03-21T20:30:16.806103Z",
   "stats": {
-    "missions_done": 7,
+    "missions_done": 0,
     "missions_active": 0,
     "missions_pending": 0,
-    "avg_score": 3.6
+    "avg_score": 0
   },
   "agents": [
     {
@@ -13,9 +13,9 @@
       "emoji": "\ud83e\uddb8",
       "color": "#ef4444",
       "status": "idle",
-      "current_task": "Monitoring Telegram",
+      "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T00:00:00Z"
+      "last_seen": "2026-03-21T20:30:16.797917Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T00:00:00Z"
+      "last_seen": "2026-03-21T20:30:16.798183Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T00:00:00Z"
+      "last_seen": "2026-03-21T20:30:16.798187Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T00:00:00Z"
+      "last_seen": "2026-03-21T20:30:16.798190Z"
     },
     {
       "name": "vision",
@@ -55,114 +55,12 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T00:00:00Z"
+      "last_seen": "2026-03-21T20:30:16.798193Z"
     }
   ],
-  "missions": [
-    {
-      "id": 9,
-      "title": "Build Avengers Command Dashboard",
-      "agent": "shuri",
-      "status": "failed",
-      "score": null,
-      "created_at": "2026-03-21T20:00:00Z",
-      "updated_at": "2026-03-22T00:00:00Z"
-    },
-    {
-      "id": 8,
-      "title": "Build Avengers Command Dashboard (attempt 1)",
-      "agent": "shuri",
-      "status": "done",
-      "score": 1.0,
-      "created_at": "2026-03-21T19:00:00Z",
-      "updated_at": "2026-03-21T19:30:00Z"
-    },
-    {
-      "id": 7,
-      "title": "Investigate captain bridge error spike (8 errors in 10min)",
-      "agent": "shuri",
-      "status": "done",
-      "score": 5.0,
-      "created_at": "2026-03-21T15:00:00Z",
-      "updated_at": "2026-03-21T15:30:00Z"
-    },
-    {
-      "id": 6,
-      "title": "Investigate captain bridge error spike (8 errors in 10min)",
-      "agent": "beast",
-      "status": "done",
-      "score": 1.0,
-      "created_at": "2026-03-21T15:00:00Z",
-      "updated_at": "2026-03-21T15:25:00Z"
-    },
-    {
-      "id": 5,
-      "title": "Investigate captain bridge error spike (7 errors in 10min)",
-      "agent": "shuri",
-      "status": "failed",
-      "score": null,
-      "created_at": "2026-03-21T14:00:00Z",
-      "updated_at": "2026-03-22T00:00:00Z"
-    },
-    {
-      "id": 4,
-      "title": "Investigate captain bridge error spike (7 errors in 10min)",
-      "agent": "beast",
-      "status": "done",
-      "score": 1.0,
-      "created_at": "2026-03-21T14:00:00Z",
-      "updated_at": "2026-03-21T14:25:00Z"
-    },
-    {
-      "id": 3,
-      "title": "Investigate captain bridge error spike (9 errors in 10min)",
-      "agent": "shuri",
-      "status": "done",
-      "score": 1.0,
-      "created_at": "2026-03-21T13:00:00Z",
-      "updated_at": "2026-03-21T13:30:00Z"
-    },
-    {
-      "id": 2,
-      "title": "Investigate captain bridge error spike (9 errors in 10min)",
-      "agent": "beast",
-      "status": "done",
-      "score": 1.0,
-      "created_at": "2026-03-21T13:00:00Z",
-      "updated_at": "2026-03-21T13:25:00Z"
-    },
-    {
-      "id": 1,
-      "title": "Test mission from Phase 2",
-      "agent": "shuri",
-      "status": "done",
-      "score": 8.5,
-      "created_at": "2026-03-20T10:00:00Z",
-      "updated_at": "2026-03-20T10:30:00Z"
-    }
-  ],
+  "missions": [],
   "okr": {
-    "objectives": [
-      {
-        "title": "Build Fully Autonomous Avengers Team",
-        "progress": 75,
-        "key_results": [
-          {"title": "All 5 agents operational 24/7", "progress": 80},
-          {"title": "Mission auto-execution working", "progress": 90},
-          {"title": "Self-evolution weekly cycle", "progress": 60},
-          {"title": "Live dashboard deployed", "progress": 50}
-        ]
-      },
-      {
-        "title": "Achieve High Mission Quality (avg score >= 8)",
-        "progress": 35,
-        "key_results": [
-          {"title": "Research tasks avg >= 8/10", "progress": 90},
-          {"title": "Code tasks avg >= 7/10", "progress": 10},
-          {"title": "Zero stuck missions", "progress": 50}
-        ]
-      }
-    ]
+    "objectives": []
   },
   "scoreboard": {
     "research": 9,
@@ -171,12 +69,55 @@
     "prompt_quality": 0
   },
   "activity": [
-    {"ts": "2026-03-22T00:00:00Z", "agent": "ironman", "event": "Dashboard deployed to GitHub Pages"},
-    {"ts": "2026-03-21T20:26:24Z", "agent": "shuri", "event": "Self-evolution cycle complete"},
-    {"ts": "2026-03-21T20:00:00Z", "agent": "ironman", "event": "Iron Man bridge launched — fully autonomous mode"},
-    {"ts": "2026-03-21T19:00:00Z", "agent": "ironman", "event": "Leader election protocol activated"},
-    {"ts": "2026-03-21T15:30:00Z", "agent": "shuri", "event": "Mission #7 complete — score 5/10"},
-    {"ts": "2026-03-21T13:00:00Z", "agent": "beast", "event": "Voice + image + document support enabled"},
-    {"ts": "2026-03-20T10:30:00Z", "agent": "shuri", "event": "Mission #1 complete — score 8.5/10"}
+    {
+      "ts": "2026-03-21T20:04:54.256086",
+      "agent": "abhishekchhetri07",
+      "event": "@perpendicuar_bot I have allowed more than 100 times and I am tired now, so u please make it allowed"
+    },
+    {
+      "ts": "2026-03-21T20:02:50.436786",
+      "agent": "abhishekchhetri07",
+      "event": "@perpendicuar_bot I have allowed more than 100 times and I am tired now, so u please make it allowed"
+    },
+    {
+      "ts": "2026-03-21T20:00:46.958532",
+      "agent": "abhishekchhetri07",
+      "event": "But my question is why is it coming again and again?"
+    },
+    {
+      "ts": "2026-03-21T19:58:44.295339",
+      "agent": "abhishekchhetri07",
+      "event": "@perpendicuar_bot why is this coming on my screen and asking me to give permission?\n\"node\u201d would lik"
+    },
+    {
+      "ts": "2026-03-21T19:56:28.522571",
+      "agent": "abhishekchhetri07",
+      "event": "@perpendicuar_bot Are u online?"
+    },
+    {
+      "ts": "2026-03-21T19:41:41.373472",
+      "agent": "abhishekchhetri07",
+      "event": "@perpendicuar_bot I have allowed more than 100 times and I am tired now, so u please make it allowed"
+    },
+    {
+      "ts": "2026-03-21T19:41:38.085932",
+      "agent": "abhishekchhetri07",
+      "event": "@perpendicuar_bot I have allowed more than 100 times and I am tired now, so u please make it allowed"
+    },
+    {
+      "ts": "2026-03-21T19:38:58.970549",
+      "agent": "abhishekchhetri07",
+      "event": "@perpendicuar_bot I have allowed more than 100 times and I am tired now, so u please make it allowed"
+    },
+    {
+      "ts": "2026-03-21T19:38:57.162720",
+      "agent": "abhishekchhetri07",
+      "event": "@perpendicuar_bot I have allowed more than 100 times and I am tired now, so u please make it allowed"
+    },
+    {
+      "ts": "2026-03-21T19:37:11.037643",
+      "agent": "abhishekchhetri07",
+      "event": "But my question is why is it coming again and again?"
+    }
   ]
 }
