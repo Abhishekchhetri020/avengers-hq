@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-21T22:50:26.236926Z",
+  "updated": "2026-03-21T22:51:27.987765Z",
   "stats": {
-    "missions_done": 17,
-    "missions_active": 2,
+    "missions_done": 18,
+    "missions_active": 1,
     "missions_pending": 0,
-    "avg_score": 2.1
+    "avg_score": 2.0
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:50:26.236034Z"
+      "last_seen": "2026-03-21T22:51:27.985462Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:50:26.236214Z"
+      "last_seen": "2026-03-21T22:51:27.985657Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:50:26.236217Z"
+      "last_seen": "2026-03-21T22:51:27.985660Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:50:26.236219Z"
+      "last_seen": "2026-03-21T22:51:27.985662Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:50:26.236221Z"
+      "last_seen": "2026-03-21T22:51:27.985664Z"
     }
   ],
   "missions": [
@@ -63,10 +63,10 @@
       "id": 23,
       "title": "Here is a website: https://www.gdgoenkadarbhanga.in/",
       "agent": "captain",
-      "status": "in_progress",
-      "score": null,
+      "status": "done",
+      "score": 1.0,
       "created_at": "2026-03-21T22:40:20.516271",
-      "updated_at": "2026-03-21T22:46:23.320786"
+      "updated_at": "2026-03-21T22:51:07.192019"
     },
     {
       "id": 22,
@@ -317,7 +317,7 @@
     ]
   },
   "scoreboard": {
-    "research": 3,
+    "research": 1,
     "code_optimization": 2,
     "data_analysis": 0,
     "prompt_quality": 0,
