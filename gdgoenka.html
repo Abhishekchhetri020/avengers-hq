@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GD Goenka Public School, Darbhanga | Excellence in Education</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #002147;
+            --gold: #f2c100;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --text: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--navy);
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--white);
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--navy);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--navy);
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .mobile-menu {
+            display: none;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 33, 71, 0.7), rgba(0, 33, 71, 0.7)), 
+                        url('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+            margin-top: 0;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: var(--white);
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin-bottom: 30px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: var(--gold);
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+            transition: transform 0.3s, background 0.3s;
+            animation: fadeInUp 1.4s ease-out;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            background: #e6b800;
+        }
+
+        /* General Section Styling */
+        section {
+            padding: 100px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--gold);
+        }
+
+        /* About Section */
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 20px 20px 0 var(--gold);
+        }
+
+        /* Academics Cards */
+        .academics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-bottom: 5px solid var(--navy);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--gold);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+        }
+
+        /* Admissions CTA */
+        .admissions {
+            background: var(--navy);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .admissions h2 {
+            color: var(--white);
+        }
+
+        /* Gallery Placeholder */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-item {
+            height: 200px;
+            background: #ddd;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            color: #666;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--light-bg);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-info h3 { margin-bottom: 20px; }
+        .contact-info p { margin-bottom: 10px; }
+
+        .contact-form form {
+            display: grid;
+            gap: 15px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--navy);
+            color: var(--white);
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: var(--white);
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about, .contact {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .mobile-menu {
+                display: block;
+                font-size: 1.5rem;
+                color: var(--navy);
+            }
+
+            section {
+                padding: 60px 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">GD GOENKA <span>DARBHANGA</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#admissions">Admissions</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" style="background: var(--gold); padding: 8px 15px; border-radius: 4px; color: var(--navy);">ERP Login</a></li>
+        </ul>
+        <div class="mobile-menu">☰</div>
+    </nav>
+
+    <header class="hero">
+        <h1>Higher, Stronger, Brighter</h1>
+        <p>A CBSE-affiliated premier residential school in Darbhanga dedicated to nurturing global citizens with traditional values.</p>
+        <a href="#admissions" class="btn">Apply for Admission 2026-27</a>
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80" alt="School Building">
+        </div>
+        <div class="about-text">
+            <h3>Visionary Learning Environment</h3>
+            <p>GD Goenka Public School, Darbhanga, is a flagship institution providing world-class infrastructure and a stimulating environment. We believe in providing an education that goes beyond textbooks, focusing on the holistic development of every child.</p>
+            <p style="margin-top: 15px;">Our campus is equipped with smart classrooms, advanced laboratories, and extensive sports facilities to ensure our students excel in every field.</p>
+        </div>
+    </section>
+
+    <section id="academics" style="background: var(--light-bg);">
+        <div class="section-title">
+            <h2>Our Academics</h2>
+            <p>Providing a robust curriculum designed for the 21st century.</p>
+        </div>
+        <div class="academics-grid">
+            <div class="card">
+                <h3>Primary Wing</h3>
+                <p>Activity-based learning focusing on curiosity, creativity, and foundational literacy.</p>
+            </div>
+            <div class="card">
+                <h3>Middle School</h3>
+                <p>An integrated approach to sciences, humanities, and languages with hands-on projects.</p>
+            </div>
+            <div class="card">
+                <h3>Senior Secondary</h3>
+                <p>Specialized streams (Science, Commerce, Humanities) with expert coaching for competitive exams.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="admissions" class="admissions">
+        <h2>Join the Goenkan Family</h2>
+        <p style="margin: 20px auto 40px; max-width: 600px;">Registration is now open for the upcoming academic session. Give your child the advantage of a global education system.</p>
+        <a href="#contact" class="btn" style="background: var(--white); color: var(--navy);">Inquire Now</a>
+    </section>
+
+    <section id="gallery">
+        <div class="section-title">
+            <h2>Campus Life</h2>
+            <p>Glimpses of our vibrant school community.</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=400&q=80')">Lab</div>
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=400&q=80')">Sports</div>
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1577891772247-36d10a18041d?auto=format&fit=crop&w=400&q=80')">Classroom</div>
+            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1511629091441-ee46146481b6?auto=format&fit=crop&w=400&q=80')">Library</div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p><strong>Address:</strong> NH-57, Darbhanga, Bihar - 846001</p>
+            <p><strong>Phone:</strong> +91 99999 88888</p>
+            <p><strong>Email:</strong> info@gdgoenkadarbhanga.com</p>
+            <div style="margin-top: 30px;">
+                <h4>Office Hours</h4>
+                <p>Monday - Saturday: 8:00 AM - 4:00 PM</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h3>Admission Inquiry</h3>
+            <form>
+                <input type="text" placeholder="Student Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <textarea rows="4" placeholder="Your Message / Query"></textarea>
+                <button type="submit" class="btn" style="border:none; cursor:pointer; width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 GD Goenka Public School, Darbhanga. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple Mobile Menu Toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            if(navLinks.style.display === 'flex') {
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '80px';
+                navLinks.style.left = '0';
+                navLinks.style.width = '100%';
+                navLinks.style.background = '#fff';
+                navLinks.style.padding = '20px';
+                navLinks.style.boxShadow = '0 10px 10px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
