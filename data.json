@@ -1,8 +1,8 @@
 {
-  "updated": "2026-03-21T22:58:39.709687Z",
+  "updated": "2026-03-21T22:59:41.466239Z",
   "stats": {
     "missions_done": 18,
-    "missions_active": 1,
+    "missions_active": 0,
     "missions_pending": 0,
     "avg_score": 2.0
   },
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:58:39.707854Z"
+      "last_seen": "2026-03-21T22:59:41.464562Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:58:39.708048Z"
+      "last_seen": "2026-03-21T22:59:41.464724Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:58:39.708051Z"
+      "last_seen": "2026-03-21T22:59:41.464727Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:58:39.708053Z"
+      "last_seen": "2026-03-21T22:59:41.464729Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:58:39.708055Z"
+      "last_seen": "2026-03-21T22:59:41.464731Z"
     }
   ],
   "missions": [
@@ -81,7 +81,7 @@
       "id": 21,
       "title": "Search the web for latest news about SpaceX in 2026 and summarize the top 3 headlines",
       "agent": "captain",
-      "status": "in_progress",
+      "status": "failed",
       "score": null,
       "created_at": "2026-03-21T22:26:56.236092",
       "updated_at": "2026-03-21T22:28:49.555578"
