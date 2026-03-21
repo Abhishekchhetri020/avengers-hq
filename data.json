@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-21T22:19:32.424866Z",
+  "updated": "2026-03-21T22:20:34.316645Z",
   "stats": {
-    "missions_done": 16,
+    "missions_done": 17,
     "missions_active": 1,
-    "missions_pending": 1,
+    "missions_pending": 0,
     "avg_score": 2.0
   },
   "agents": [
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:19:32.422459Z"
+      "last_seen": "2026-03-21T22:20:34.314341Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:19:32.422805Z"
+      "last_seen": "2026-03-21T22:20:34.314519Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:19:32.422808Z"
+      "last_seen": "2026-03-21T22:20:34.314522Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:19:32.422810Z"
+      "last_seen": "2026-03-21T22:20:34.314524Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:19:32.422812Z"
+      "last_seen": "2026-03-21T22:20:34.314526Z"
     }
   ],
   "missions": [
@@ -63,19 +63,19 @@
       "id": 19,
       "title": "[REVIEW] Nano-Tech evolution proposal \u2014 3 patches",
       "agent": "shuri",
-      "status": "in_progress",
-      "score": null,
+      "status": "done",
+      "score": 1.0,
       "created_at": "2026-03-21T22:15:30.104340",
-      "updated_at": "2026-03-21T22:15:30.107315"
+      "updated_at": "2026-03-21T22:20:08.859651"
     },
     {
       "id": 18,
       "title": "[REVIEW] Nano-Tech evolution proposal \u2014 3 patches",
       "agent": "ironman",
-      "status": "pending",
+      "status": "in_progress",
       "score": null,
       "created_at": "2026-03-21T22:15:05.449268",
-      "updated_at": "2026-03-21T22:15:05.449268"
+      "updated_at": "2026-03-21T22:20:09.850130"
     },
     {
       "id": 17,
