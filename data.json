@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-21T22:26:46.296492Z",
+  "updated": "2026-03-21T22:27:48.016302Z",
   "stats": {
-    "missions_done": 18,
-    "missions_active": 0,
+    "missions_done": 17,
+    "missions_active": 1,
     "missions_pending": 1,
-    "avg_score": 1.9
+    "avg_score": 1.5
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:26:46.294863Z"
+      "last_seen": "2026-03-21T22:27:48.014359Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:26:46.295050Z"
+      "last_seen": "2026-03-21T22:27:48.014537Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:26:46.295054Z"
+      "last_seen": "2026-03-21T22:27:48.014540Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:26:46.295056Z"
+      "last_seen": "2026-03-21T22:27:48.014543Z"
     },
     {
       "name": "vision",
@@ -55,18 +55,27 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:26:46.295058Z"
+      "last_seen": "2026-03-21T22:27:48.014544Z"
     }
   ],
   "missions": [
     {
+      "id": 21,
+      "title": "Search the web for latest news about SpaceX in 2026 and summarize the top 3 headlines",
+      "agent": "auto",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-21T22:26:56.236092",
+      "updated_at": "2026-03-21T22:26:56.236092"
+    },
+    {
       "id": 20,
       "title": "Search the web for latest news about SpaceX in 2026 and summarize the top 3 headlines",
       "agent": "captain",
-      "status": "pending",
+      "status": "in_progress",
       "score": null,
       "created_at": "2026-03-21T22:26:01.900624",
-      "updated_at": "2026-03-21T22:26:01.900624"
+      "updated_at": "2026-03-21T22:26:56.239242"
     },
     {
       "id": 19,
@@ -229,15 +238,6 @@
       "score": 1.0,
       "created_at": "2026-03-21T18:52:25.411785",
       "updated_at": "2026-03-21T18:58:16.757076"
-    },
-    {
-      "id": 1,
-      "title": "Test mission from Phase 2",
-      "agent": "shuri",
-      "status": "done",
-      "score": 8.5,
-      "created_at": "2026-03-21T18:45:05.350866",
-      "updated_at": "2026-03-21T18:45:05.352924"
     }
   ],
   "okr": {
@@ -317,7 +317,7 @@
     ]
   },
   "scoreboard": {
-    "research": 1,
+    "research": 3,
     "code_optimization": 2,
     "data_analysis": 0,
     "prompt_quality": 0,
