@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-21T22:08:12.296929Z",
+  "updated": "2026-03-21T22:09:14.065710Z",
   "stats": {
-    "missions_done": 14,
+    "missions_done": 15,
     "missions_active": 1,
     "missions_pending": 0,
-    "avg_score": 2.2
+    "avg_score": 2.1
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:08:12.294236Z"
+      "last_seen": "2026-03-21T22:09:14.063858Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:08:12.294435Z"
+      "last_seen": "2026-03-21T22:09:14.064217Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:08:12.294438Z"
+      "last_seen": "2026-03-21T22:09:14.064220Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:08:12.294441Z"
+      "last_seen": "2026-03-21T22:09:14.064222Z"
     },
     {
       "name": "vision",
@@ -55,27 +55,27 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:08:12.294443Z"
+      "last_seen": "2026-03-21T22:09:14.064224Z"
     }
   ],
   "missions": [
     {
       "id": 17,
       "title": "Investigate captain bridge error spike (6 errors in 10min)",
-      "agent": "auto",
-      "status": "failed",
+      "agent": "shuri",
+      "status": "in_progress",
       "score": null,
       "created_at": "2026-03-21T22:03:55.758516",
-      "updated_at": "2026-03-21T22:03:55.758516"
+      "updated_at": "2026-03-21T22:08:35.637858"
     },
     {
       "id": 16,
       "title": "Investigate captain bridge error spike (6 errors in 10min)",
       "agent": "beast",
-      "status": "in_progress",
-      "score": null,
+      "status": "done",
+      "score": 1.0,
       "created_at": "2026-03-21T22:02:43.769740",
-      "updated_at": "2026-03-21T22:03:55.767245"
+      "updated_at": "2026-03-21T22:08:34.546647"
     },
     {
       "id": 15,
