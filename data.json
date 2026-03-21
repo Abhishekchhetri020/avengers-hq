@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-21T22:39:06.880685Z",
+  "updated": "2026-03-21T22:40:08.653686Z",
   "stats": {
-    "missions_done": 18,
+    "missions_done": 17,
     "missions_active": 1,
-    "missions_pending": 0,
+    "missions_pending": 1,
     "avg_score": 1.6
   },
   "agents": [
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:39:06.878610Z"
+      "last_seen": "2026-03-21T22:40:08.651733Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:39:06.878779Z"
+      "last_seen": "2026-03-21T22:40:08.651940Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:39:06.878783Z"
+      "last_seen": "2026-03-21T22:40:08.651944Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:39:06.878785Z"
+      "last_seen": "2026-03-21T22:40:08.651946Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,19 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:39:06.878787Z"
+      "last_seen": "2026-03-21T22:40:08.651948Z"
     }
   ],
   "missions": [
+    {
+      "id": 22,
+      "title": "Here is a website: https://www.gdgoenkadarbhanga.in/\n Build a better looking version of it with\n  improved design, layout, and content structure.\nThis should be hosted for free for 6 months",
+      "agent": "auto",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-21T22:39:58.121173",
+      "updated_at": "2026-03-21T22:39:58.121173"
+    },
     {
       "id": 21,
       "title": "Search the web for latest news about SpaceX in 2026 and summarize the top 3 headlines",
@@ -229,15 +238,6 @@
       "score": 1.0,
       "created_at": "2026-03-21T18:53:25.036436",
       "updated_at": "2026-03-21T19:03:01.893266"
-    },
-    {
-      "id": 2,
-      "title": "Investigate captain bridge error spike (9 errors in 10min)",
-      "agent": "beast",
-      "status": "done",
-      "score": 1.0,
-      "created_at": "2026-03-21T18:52:25.411785",
-      "updated_at": "2026-03-21T18:58:16.757076"
     }
   ],
   "okr": {
