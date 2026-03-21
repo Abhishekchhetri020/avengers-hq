@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-21T20:39:35.543735Z",
+  "updated": "2026-03-21T20:40:37.598993Z",
   "stats": {
-    "missions_done": 8,
+    "missions_done": 9,
     "missions_active": 1,
-    "missions_pending": 1,
-    "avg_score": 2.4
+    "missions_pending": 0,
+    "avg_score": 2.7
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T20:39:35.540440Z"
+      "last_seen": "2026-03-21T20:40:37.593462Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T20:39:35.540721Z"
+      "last_seen": "2026-03-21T20:40:37.594140Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T20:39:35.540726Z"
+      "last_seen": "2026-03-21T20:40:37.594192Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T20:39:35.540729Z"
+      "last_seen": "2026-03-21T20:40:37.594201Z"
     },
     {
       "name": "vision",
@@ -55,27 +55,27 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T20:39:35.540732Z"
+      "last_seen": "2026-03-21T20:40:37.594205Z"
     }
   ],
   "missions": [
     {
       "id": 11,
       "title": "can u make the dashboard better by adding more features?",
-      "agent": "auto",
-      "status": "pending",
+      "agent": "captain",
+      "status": "in_progress",
       "score": null,
       "created_at": "2026-03-21T20:34:25.796401",
-      "updated_at": "2026-03-21T20:34:25.796401"
+      "updated_at": "2026-03-21T20:39:42.261475"
     },
     {
       "id": 10,
       "title": "can u make the dashboard better by adding more features?",
       "agent": "captain",
-      "status": "in_progress",
-      "score": null,
+      "status": "done",
+      "score": 5.0,
       "created_at": "2026-03-21T20:33:45.276091",
-      "updated_at": "2026-03-21T20:34:25.804828"
+      "updated_at": "2026-03-21T20:39:41.025054"
     },
     {
       "id": 9,
