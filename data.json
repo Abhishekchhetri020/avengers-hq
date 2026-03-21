@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-21T21:57:53.052192Z",
+  "updated": "2026-03-21T21:58:55.083707Z",
   "stats": {
-    "missions_done": 12,
+    "missions_done": 13,
     "missions_active": 1,
-    "missions_pending": 1,
-    "avg_score": 2.4
+    "missions_pending": 0,
+    "avg_score": 2.3
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T21:57:53.049689Z"
+      "last_seen": "2026-03-21T21:58:55.081370Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T21:57:53.050103Z"
+      "last_seen": "2026-03-21T21:58:55.081582Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T21:57:53.050107Z"
+      "last_seen": "2026-03-21T21:58:55.081585Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T21:57:53.050110Z"
+      "last_seen": "2026-03-21T21:58:55.081588Z"
     },
     {
       "name": "vision",
@@ -55,27 +55,27 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T21:57:53.050113Z"
+      "last_seen": "2026-03-21T21:58:55.081590Z"
     }
   ],
   "missions": [
     {
       "id": 15,
       "title": "Investigate captain bridge error spike (7 errors in 10min)",
-      "agent": "auto",
-      "status": "pending",
+      "agent": "shuri",
+      "status": "in_progress",
       "score": null,
       "created_at": "2026-03-21T21:53:25.178699",
-      "updated_at": "2026-03-21T21:53:25.178699"
+      "updated_at": "2026-03-21T21:58:14.336123"
     },
     {
       "id": 14,
       "title": "Investigate captain bridge error spike (7 errors in 10min)",
       "agent": "beast",
-      "status": "in_progress",
-      "score": null,
+      "status": "done",
+      "score": 1.0,
       "created_at": "2026-03-21T21:52:42.259049",
-      "updated_at": "2026-03-21T21:53:25.183639"
+      "updated_at": "2026-03-21T21:58:13.359111"
     },
     {
       "id": 13,
