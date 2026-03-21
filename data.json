@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-21T22:27:48.016302Z",
+  "updated": "2026-03-21T22:28:49.803693Z",
   "stats": {
-    "missions_done": 17,
+    "missions_done": 18,
     "missions_active": 1,
-    "missions_pending": 1,
-    "avg_score": 1.5
+    "missions_pending": 0,
+    "avg_score": 1.6
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:27:48.014359Z"
+      "last_seen": "2026-03-21T22:28:49.801973Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:27:48.014537Z"
+      "last_seen": "2026-03-21T22:28:49.802172Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:27:48.014540Z"
+      "last_seen": "2026-03-21T22:28:49.802175Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:27:48.014543Z"
+      "last_seen": "2026-03-21T22:28:49.802177Z"
     },
     {
       "name": "vision",
@@ -55,27 +55,27 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:27:48.014544Z"
+      "last_seen": "2026-03-21T22:28:49.802179Z"
     }
   ],
   "missions": [
     {
       "id": 21,
       "title": "Search the web for latest news about SpaceX in 2026 and summarize the top 3 headlines",
-      "agent": "auto",
-      "status": "pending",
+      "agent": "captain",
+      "status": "in_progress",
       "score": null,
       "created_at": "2026-03-21T22:26:56.236092",
-      "updated_at": "2026-03-21T22:26:56.236092"
+      "updated_at": "2026-03-21T22:28:49.555578"
     },
     {
       "id": 20,
       "title": "Search the web for latest news about SpaceX in 2026 and summarize the top 3 headlines",
       "agent": "captain",
-      "status": "in_progress",
-      "score": null,
+      "status": "done",
+      "score": 3.0,
       "created_at": "2026-03-21T22:26:01.900624",
-      "updated_at": "2026-03-21T22:26:56.239242"
+      "updated_at": "2026-03-21T22:28:48.581921"
     },
     {
       "id": 19,
