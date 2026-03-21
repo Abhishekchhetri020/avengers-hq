@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-21T22:02:00.549632Z",
+  "updated": "2026-03-21T22:03:02.345458Z",
   "stats": {
-    "missions_done": 13,
-    "missions_active": 1,
-    "missions_pending": 0,
-    "avg_score": 2.3
+    "missions_done": 14,
+    "missions_active": 0,
+    "missions_pending": 1,
+    "avg_score": 2.2
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:02:00.547989Z"
+      "last_seen": "2026-03-21T22:03:02.343071Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:02:00.548182Z"
+      "last_seen": "2026-03-21T22:03:02.343288Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:02:00.548185Z"
+      "last_seen": "2026-03-21T22:03:02.343291Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:02:00.548188Z"
+      "last_seen": "2026-03-21T22:03:02.343294Z"
     },
     {
       "name": "vision",
@@ -55,18 +55,27 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:02:00.548189Z"
+      "last_seen": "2026-03-21T22:03:02.343295Z"
     }
   ],
   "missions": [
     {
+      "id": 16,
+      "title": "Investigate captain bridge error spike (6 errors in 10min)",
+      "agent": "beast",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-21T22:02:43.769740",
+      "updated_at": "2026-03-21T22:02:43.769740"
+    },
+    {
       "id": 15,
       "title": "Investigate captain bridge error spike (7 errors in 10min)",
       "agent": "shuri",
-      "status": "in_progress",
-      "score": null,
+      "status": "done",
+      "score": 1.0,
       "created_at": "2026-03-21T21:53:25.178699",
-      "updated_at": "2026-03-21T21:58:14.336123"
+      "updated_at": "2026-03-21T22:02:54.661576"
     },
     {
       "id": 14,
