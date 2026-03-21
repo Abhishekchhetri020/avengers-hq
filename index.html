@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avengers HQ — Command Dashboard</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { font-family: 'Inter', sans-serif; }
+  body { background: #070b14; color: #e2e8f0; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .glass {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+  }
+  .glass-gold {
+    background: rgba(251,191,36,0.06);
+    border: 1px solid rgba(251,191,36,0.2);
+  }
+  .glass-blue {
+    background: rgba(59,130,246,0.06);
+    border: 1px solid rgba(59,130,246,0.2);
+  }
+  .glow-gold { box-shadow: 0 0 20px rgba(251,191,36,0.15); }
+  .glow-blue { box-shadow: 0 0 20px rgba(59,130,246,0.15); }
+  .glow-green { box-shadow: 0 0 20px rgba(16,185,129,0.15); }
+  .pulse-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.2); }
+  }
+  .card-hover { transition: all 0.2s ease; }
+  .card-hover:hover { transform: translateY(-2px); border-color: rgba(251,191,36,0.4); }
+  .status-online { color: #10b981; }
+  .status-working { color: #f59e0b; }
+  .status-offline { color: #6b7280; }
+  .mission-pending { border-left: 3px solid #6b7280; }
+  .mission-progress { border-left: 3px solid #f59e0b; }
+  .mission-done { border-left: 3px solid #10b981; }
+  .progress-bar {
+    height: 6px; border-radius: 3px;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%; border-radius: 3px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    transition: width 1s ease;
+  }
+  .header-gradient {
+    background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 50%, #1a1a2e 100%);
+    border-bottom: 1px solid rgba(251,191,36,0.2);
+  }
+  .arc-reactor {
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #60a5fa 0%, #3b82f6 40%, #1e40af 100%);
+    box-shadow: 0 0 30px rgba(59,130,246,0.8), 0 0 60px rgba(59,130,246,0.4);
+    animation: reactor 3s ease-in-out infinite;
+  }
+  @keyframes reactor {
+    0%, 100% { box-shadow: 0 0 30px rgba(59,130,246,0.8), 0 0 60px rgba(59,130,246,0.4); }
+    50% { box-shadow: 0 0 40px rgba(59,130,246,1), 0 0 80px rgba(59,130,246,0.6); }
+  }
+  .agent-ring {
+    width: 56px; height: 56px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px;
+    border: 2px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.05);
+  }
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: #0f172a; }
+  ::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
+  .ticker {
+    animation: ticker 0.5s ease;
+  }
+  @keyframes ticker {
+    from { opacity: 0; transform: translateY(-4px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body class="min-h-screen">
+
+<!-- HEADER -->
+<header class="header-gradient px-6 py-4 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <div class="arc-reactor"></div>
+      <div>
+        <h1 class="text-xl font-black tracking-tight text-white">AVENGERS <span class="text-yellow-400">HQ</span></h1>
+        <p class="text-xs text-slate-400 mono">COMMAND DASHBOARD v4.0</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-6">
+      <div class="text-right hidden sm:block">
+        <div class="text-xs text-slate-400">Last sync</div>
+        <div class="text-sm font-semibold text-blue-400 mono" id="last-sync">—</div>
+      </div>
+      <div class="flex items-center gap-2 glass px-3 py-1.5 rounded-full">
+        <div class="pulse-dot bg-green-400"></div>
+        <span class="text-xs font-medium text-green-400">LIVE</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 py-6 space-y-6">
+
+  <!-- STATS ROW -->
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-4" id="stats-row">
+    <div class="glass rounded-xl p-4 glow-blue">
+      <div class="text-xs text-slate-400 mb-1">MISSIONS DONE</div>
+      <div class="text-3xl font-black text-white" id="stat-done">—</div>
+    </div>
+    <div class="glass rounded-xl p-4">
+      <div class="text-xs text-slate-400 mb-1">IN PROGRESS</div>
+      <div class="text-3xl font-black text-yellow-400" id="stat-progress">—</div>
+    </div>
+    <div class="glass rounded-xl p-4">
+      <div class="text-xs text-slate-400 mb-1">PENDING</div>
+      <div class="text-3xl font-black text-slate-300" id="stat-pending">—</div>
+    </div>
+    <div class="glass rounded-xl p-4 glow-gold glass-gold">
+      <div class="text-xs text-slate-400 mb-1">AVG SCORE</div>
+      <div class="text-3xl font-black text-yellow-400" id="stat-score">—</div>
+    </div>
+  </div>
+
+  <!-- AGENTS -->
+  <section>
+    <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">⚡ Agent Status</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-5 gap-3" id="agents-grid">
+      <!-- filled by JS -->
+    </div>
+  </section>
+
+  <!-- MISSIONS + OKR -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+    <!-- MISSION BOARD -->
+    <div class="lg:col-span-2 glass rounded-2xl p-5">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest">🎯 Mission Board</h2>
+        <div class="flex gap-2 text-xs">
+          <button onclick="filterMissions('all')" class="filter-btn px-2 py-1 rounded bg-blue-500/20 text-blue-400 border border-blue-500/30" data-filter="all">All</button>
+          <button onclick="filterMissions('pending')" class="filter-btn px-2 py-1 rounded glass text-slate-400" data-filter="pending">Pending</button>
+          <button onclick="filterMissions('in_progress')" class="filter-btn px-2 py-1 rounded glass text-slate-400" data-filter="in_progress">Active</button>
+          <button onclick="filterMissions('done')" class="filter-btn px-2 py-1 rounded glass text-slate-400" data-filter="done">Done</button>
+        </div>
+      </div>
+      <div class="space-y-2 max-h-72 overflow-y-auto pr-1" id="mission-list">
+        <div class="text-slate-500 text-sm text-center py-8">Loading missions...</div>
+      </div>
+    </div>
+
+    <!-- OKR -->
+    <div class="glass rounded-2xl p-5">
+      <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">📊 OKR Progress</h2>
+      <div class="space-y-4" id="okr-list">
+        <div class="text-slate-500 text-sm">Loading OKRs...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCOREBOARD + ACTIVITY -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+    <!-- SCOREBOARD CHART -->
+    <div class="glass rounded-2xl p-5">
+      <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">🏆 Scoreboard</h2>
+      <canvas id="score-chart" height="180"></canvas>
+    </div>
+
+    <!-- ACTIVITY FEED -->
+    <div class="glass rounded-2xl p-5">
+      <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">📡 Team Activity</h2>
+      <div class="space-y-2 max-h-56 overflow-y-auto" id="activity-feed">
+        <div class="text-slate-500 text-sm">Loading activity...</div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 text-slate-600 text-xs mono">
+  STARK INDUSTRIES © 2026 · AVENGERS AUTONOMOUS OPS · <span id="footer-ts">—</span>
+</footer>
+
+<script>
+const AGENT_META = {
+  ironman: { emoji: '🦾', name: 'Iron Man', color: '#f59e0b' },
+  captain: { emoji: '🫡', name: 'Captain', color: '#3b82f6' },
+  shuri:   { emoji: '🔬', name: 'Shuri',   color: '#8b5cf6' },
+  beast:   { emoji: '🐉', name: 'Beast',   color: '#10b981' },
+  vision:  { emoji: '🔮', name: 'Vision',  color: '#ec4899' },
+};
+
+let allMissions = [];
+let scoreChart = null;
+let currentFilter = 'all';
+
+async function fetchData() {
+  try {
+    const r = await fetch('data.json?t=' + Date.now());
+    if (!r.ok) throw new Error('fetch failed');
+    return await r.json();
+  } catch(e) {
+    return null;
+  }
+}
+
+function timeAgo(iso) {
+  if (!iso) return 'never';
+  const diff = (Date.now() - new Date(iso + (iso.endsWith('Z') ? '' : 'Z')).getTime()) / 1000;
+  if (diff < 60) return Math.round(diff) + 's ago';
+  if (diff < 3600) return Math.round(diff/60) + 'm ago';
+  if (diff < 86400) return Math.round(diff/3600) + 'h ago';
+  return Math.round(diff/86400) + 'd ago';
+}
+
+function statusIcon(s) {
+  if (s === 'online')  return '<span class="status-online">●</span>';
+  if (s === 'working') return '<span class="status-working">◐</span>';
+  return '<span class="status-offline">○</span>';
+}
+
+function renderAgents(data) {
+  const agents = data.agents || {};
+  const grid = document.getElementById('agents-grid');
+  grid.innerHTML = Object.entries(AGENT_META).map(([key, meta]) => {
+    const info = agents[key] || {};
+    const status = info.status || 'offline';
+    const task = info.current_task || 'Idle';
+    const lastSeen = info.last_seen ? timeAgo(info.last_seen) : '—';
+    const borderColor = status === 'online' ? '#10b981' : status === 'working' ? '#f59e0b' : '#374151';
+    return `
+    <div class="glass rounded-xl p-4 card-hover" style="border-color:${borderColor}33">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="agent-ring" style="border-color:${borderColor}66">${meta.emoji}</div>
+        <div>
+          <div class="font-bold text-sm text-white">${meta.name}</div>
+          <div class="text-xs text-slate-400">${statusIcon(status)} ${status}</div>
+        </div>
+      </div>
+      <div class="text-xs text-slate-400 truncate" title="${task}">${task.substring(0,60)}${task.length>60?'…':''}</div>
+      <div class="text-xs text-slate-600 mt-1 mono">${lastSeen}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderStats(data) {
+  const s = data.stats || {};
+  document.getElementById('stat-done').textContent = s.done ?? '0';
+  document.getElementById('stat-progress').textContent = s.in_progress ?? '0';
+  document.getElementById('stat-pending').textContent = s.pending ?? '0';
+  document.getElementById('stat-score').textContent = s.avg_score ? s.avg_score.toFixed(1) : '—';
+}
+
+function filterMissions(filter) {
+  currentFilter = filter;
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    const active = b.dataset.filter === filter;
+    b.className = active
+      ? 'filter-btn px-2 py-1 rounded bg-blue-500/20 text-blue-400 border border-blue-500/30'
+      : 'filter-btn px-2 py-1 rounded glass text-slate-400';
+  });
+  renderMissionList();
+}
+
+function renderMissionList() {
+  const list = document.getElementById('mission-list');
+  const missions = currentFilter === 'all'
+    ? allMissions
+    : allMissions.filter(m => m.status === currentFilter);
+  if (!missions.length) {
+    list.innerHTML = '<div class="text-slate-500 text-sm text-center py-6">No missions</div>';
+    return;
+  }
+  list.innerHTML = missions.map(m => {
+    const cls = m.status === 'done' ? 'mission-done' : m.status === 'in_progress' ? 'mission-progress' : 'mission-pending';
+    const badge = m.status === 'done' ? 'text-green-400 bg-green-400/10' : m.status === 'in_progress' ? 'text-yellow-400 bg-yellow-400/10' : 'text-slate-400 bg-slate-400/10';
+    const agentMeta = AGENT_META[m.agent] || { emoji: '🤖', name: m.agent };
+    const score = m.score ? `<span class="text-yellow-400 font-bold">${m.score}/10</span>` : '';
+    return `
+    <div class="glass rounded-lg p-3 ${cls} ticker">
+      <div class="flex items-start justify-between gap-2">
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="mono text-xs text-slate-500">#${m.id}</span>
+            <span class="text-xs px-1.5 py-0.5 rounded ${badge}">${m.status.replace('_',' ')}</span>
+            ${score}
+          </div>
+          <div class="text-sm text-slate-200 leading-snug line-clamp-2">${m.title.substring(0,120)}${m.title.length>120?'…':''}</div>
+        </div>
+        <div class="text-lg shrink-0">${agentMeta.emoji}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderOKR(data) {
+  const okrs = data.okrs || [];
+  const el = document.getElementById('okr-list');
+  if (!okrs.length) { el.innerHTML = '<div class="text-slate-500 text-sm">No OKR data</div>'; return; }
+  el.innerHTML = okrs.map(obj => `
+    <div>
+      <div class="text-xs font-semibold text-slate-300 mb-2">${obj.id}: ${obj.title}</div>
+      ${obj.key_results.map(kr => {
+        const pct = Math.min(100, kr.target ? Math.round(kr.progress / kr.target * 100) : 0);
+        return `
+        <div class="mb-2">
+          <div class="flex justify-between text-xs text-slate-400 mb-1">
+            <span class="truncate pr-2">${kr.title}</span>
+            <span class="shrink-0">${pct}%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width:${pct}%"></div>
+          </div>
+        </div>`;
+      }).join('')}
+    </div>
+  `).join('<div class="border-t border-white/5 my-3"></div>');
+}
+
+function renderScoreboard(data) {
+  const scores = data.scoreboard || {};
+  const labels = Object.keys(scores);
+  const values = labels.map(k => scores[k].best || 0);
+  const colors = ['#f59e0b','#3b82f6','#8b5cf6','#10b981','#ec4899','#06b6d4'];
+  const ctx = document.getElementById('score-chart').getContext('2d');
+  if (scoreChart) scoreChart.destroy();
+  scoreChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        data: values,
+        backgroundColor: labels.map((_, i) => colors[i % colors.length] + '33'),
+        borderColor: labels.map((_, i) => colors[i % colors.length]),
+        borderWidth: 2,
+        borderRadius: 6,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: true,
+      plugins: { legend: { display: false } },
+      scales: {
+        y: { min: 0, max: 10, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8', font: { size: 11 } } },
+        x: { grid: { display: false }, ticks: { color: '#94a3b8', font: { size: 11 } } }
+      }
+    }
+  });
+}
+
+function renderActivity(data) {
+  const feed = data.activity || [];
+  const el = document.getElementById('activity-feed');
+  if (!feed.length) { el.innerHTML = '<div class="text-slate-500 text-sm">No activity yet</div>'; return; }
+  el.innerHTML = feed.map(entry => {
+    const fromMeta = AGENT_META[entry.from?.toLowerCase()] || { emoji: '💬' };
+    const ago = timeAgo(entry.ts);
+    return `
+    <div class="flex gap-2 items-start">
+      <span class="text-lg shrink-0">${fromMeta.emoji}</span>
+      <div class="flex-1 min-w-0">
+        <div class="text-xs font-semibold text-slate-300">${entry.from} <span class="text-slate-600 font-normal mono">${ago}</span></div>
+        <div class="text-xs text-slate-400 truncate">${(entry.text||'').substring(0,80)}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+async function refresh() {
+  const data = await fetchData();
+  if (!data) {
+    document.getElementById('last-sync').textContent = 'No data yet';
+    return;
+  }
+  allMissions = data.missions || [];
+  renderStats(data);
+  renderAgents(data);
+  renderMissionList();
+  renderOKR(data);
+  renderScoreboard(data);
+  renderActivity(data);
+  const ts = new Date(data.updated_at || Date.now());
+  document.getElementById('last-sync').textContent = timeAgo(data.updated_at) || 'just now';
+  document.getElementById('footer-ts').textContent = ts.toUTCString();
+}
+
+refresh();
+setInterval(refresh, 30000);
+</script>
+</body>
+</html>

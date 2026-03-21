@@ -1,0 +1,182 @@
+{
+  "updated": "2026-03-22T00:00:00Z",
+  "stats": {
+    "missions_done": 7,
+    "missions_active": 0,
+    "missions_pending": 0,
+    "avg_score": 3.6
+  },
+  "agents": [
+    {
+      "name": "ironman",
+      "label": "Iron Man",
+      "emoji": "\ud83e\uddb8",
+      "color": "#ef4444",
+      "status": "idle",
+      "current_task": "Monitoring Telegram",
+      "confidence": "ready",
+      "last_seen": "2026-03-22T00:00:00Z"
+    },
+    {
+      "name": "captain",
+      "label": "Captain",
+      "emoji": "\u26a1",
+      "color": "#3b82f6",
+      "status": "idle",
+      "current_task": "Awaiting orders",
+      "confidence": "ready",
+      "last_seen": "2026-03-22T00:00:00Z"
+    },
+    {
+      "name": "shuri",
+      "label": "Shuri",
+      "emoji": "\ud83d\udd2c",
+      "color": "#a855f7",
+      "status": "idle",
+      "current_task": "Awaiting orders",
+      "confidence": "ready",
+      "last_seen": "2026-03-22T00:00:00Z"
+    },
+    {
+      "name": "beast",
+      "label": "Beast",
+      "emoji": "\ud83d\udc3e",
+      "color": "#22c55e",
+      "status": "idle",
+      "current_task": "Awaiting orders",
+      "confidence": "ready",
+      "last_seen": "2026-03-22T00:00:00Z"
+    },
+    {
+      "name": "vision",
+      "label": "Vision",
+      "emoji": "\ud83d\udc41\ufe0f",
+      "color": "#f59e0b",
+      "status": "idle",
+      "current_task": "Awaiting orders",
+      "confidence": "ready",
+      "last_seen": "2026-03-22T00:00:00Z"
+    }
+  ],
+  "missions": [
+    {
+      "id": 9,
+      "title": "Build Avengers Command Dashboard",
+      "agent": "shuri",
+      "status": "failed",
+      "score": null,
+      "created_at": "2026-03-21T20:00:00Z",
+      "updated_at": "2026-03-22T00:00:00Z"
+    },
+    {
+      "id": 8,
+      "title": "Build Avengers Command Dashboard (attempt 1)",
+      "agent": "shuri",
+      "status": "done",
+      "score": 1.0,
+      "created_at": "2026-03-21T19:00:00Z",
+      "updated_at": "2026-03-21T19:30:00Z"
+    },
+    {
+      "id": 7,
+      "title": "Investigate captain bridge error spike (8 errors in 10min)",
+      "agent": "shuri",
+      "status": "done",
+      "score": 5.0,
+      "created_at": "2026-03-21T15:00:00Z",
+      "updated_at": "2026-03-21T15:30:00Z"
+    },
+    {
+      "id": 6,
+      "title": "Investigate captain bridge error spike (8 errors in 10min)",
+      "agent": "beast",
+      "status": "done",
+      "score": 1.0,
+      "created_at": "2026-03-21T15:00:00Z",
+      "updated_at": "2026-03-21T15:25:00Z"
+    },
+    {
+      "id": 5,
+      "title": "Investigate captain bridge error spike (7 errors in 10min)",
+      "agent": "shuri",
+      "status": "failed",
+      "score": null,
+      "created_at": "2026-03-21T14:00:00Z",
+      "updated_at": "2026-03-22T00:00:00Z"
+    },
+    {
+      "id": 4,
+      "title": "Investigate captain bridge error spike (7 errors in 10min)",
+      "agent": "beast",
+      "status": "done",
+      "score": 1.0,
+      "created_at": "2026-03-21T14:00:00Z",
+      "updated_at": "2026-03-21T14:25:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Investigate captain bridge error spike (9 errors in 10min)",
+      "agent": "shuri",
+      "status": "done",
+      "score": 1.0,
+      "created_at": "2026-03-21T13:00:00Z",
+      "updated_at": "2026-03-21T13:30:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Investigate captain bridge error spike (9 errors in 10min)",
+      "agent": "beast",
+      "status": "done",
+      "score": 1.0,
+      "created_at": "2026-03-21T13:00:00Z",
+      "updated_at": "2026-03-21T13:25:00Z"
+    },
+    {
+      "id": 1,
+      "title": "Test mission from Phase 2",
+      "agent": "shuri",
+      "status": "done",
+      "score": 8.5,
+      "created_at": "2026-03-20T10:00:00Z",
+      "updated_at": "2026-03-20T10:30:00Z"
+    }
+  ],
+  "okr": {
+    "objectives": [
+      {
+        "title": "Build Fully Autonomous Avengers Team",
+        "progress": 75,
+        "key_results": [
+          {"title": "All 5 agents operational 24/7", "progress": 80},
+          {"title": "Mission auto-execution working", "progress": 90},
+          {"title": "Self-evolution weekly cycle", "progress": 60},
+          {"title": "Live dashboard deployed", "progress": 50}
+        ]
+      },
+      {
+        "title": "Achieve High Mission Quality (avg score >= 8)",
+        "progress": 35,
+        "key_results": [
+          {"title": "Research tasks avg >= 8/10", "progress": 90},
+          {"title": "Code tasks avg >= 7/10", "progress": 10},
+          {"title": "Zero stuck missions", "progress": 50}
+        ]
+      }
+    ]
+  },
+  "scoreboard": {
+    "research": 9,
+    "code_optimization": 1,
+    "data_analysis": 0,
+    "prompt_quality": 0
+  },
+  "activity": [
+    {"ts": "2026-03-22T00:00:00Z", "agent": "ironman", "event": "Dashboard deployed to GitHub Pages"},
+    {"ts": "2026-03-21T20:26:24Z", "agent": "shuri", "event": "Self-evolution cycle complete"},
+    {"ts": "2026-03-21T20:00:00Z", "agent": "ironman", "event": "Iron Man bridge launched — fully autonomous mode"},
+    {"ts": "2026-03-21T19:00:00Z", "agent": "ironman", "event": "Leader election protocol activated"},
+    {"ts": "2026-03-21T15:30:00Z", "agent": "shuri", "event": "Mission #7 complete — score 5/10"},
+    {"ts": "2026-03-21T13:00:00Z", "agent": "beast", "event": "Voice + image + document support enabled"},
+    {"ts": "2026-03-20T10:30:00Z", "agent": "shuri", "event": "Mission #1 complete — score 8.5/10"}
+  ]
+}
