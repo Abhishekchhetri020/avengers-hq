@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-21T20:30:16.806103Z",
+  "updated": "2026-03-21T20:30:46.777832Z",
   "stats": {
-    "missions_done": 0,
+    "missions_done": 7,
     "missions_active": 0,
     "missions_pending": 0,
-    "avg_score": 0
+    "avg_score": 2.6
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T20:30:16.797917Z"
+      "last_seen": "2026-03-21T20:30:46.775437Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T20:30:16.798183Z"
+      "last_seen": "2026-03-21T20:30:46.775718Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T20:30:16.798187Z"
+      "last_seen": "2026-03-21T20:30:46.775723Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T20:30:16.798190Z"
+      "last_seen": "2026-03-21T20:30:46.775726Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,92 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T20:30:16.798193Z"
+      "last_seen": "2026-03-21T20:30:46.775728Z"
     }
   ],
-  "missions": [],
+  "missions": [
+    {
+      "id": 9,
+      "title": "Build Avengers Command Dashboard: Next.js + Tailwind + Shadcn/UI, hosted on Vercel (free), Supabase for real-time data. Features: agent status cards, mission board with task IDs, OKR progress bars, scoreboard, team activity feed. Local sync daemon (avengers_sync.py) pushes data every 60s. Final deliverable: public Vercel URL.",
+      "agent": "shuri",
+      "status": "failed",
+      "score": null,
+      "created_at": "2026-03-21T20:21:24.863843",
+      "updated_at": "2026-03-21T20:26:24.099130"
+    },
+    {
+      "id": 8,
+      "title": "Build Avengers Command Dashboard: Next.js + Tailwind + Shadcn/UI, hosted on Vercel (free), Supabase for real-time data. Features: agent status cards, mission board with task IDs, OKR progress bars, scoreboard, team activity feed. Local sync daemon (avengers_sync.py) pushes data every 60s. Final deliverable: public Vercel URL.",
+      "agent": "shuri",
+      "status": "done",
+      "score": 1.0,
+      "created_at": "2026-03-21T20:20:32.610578",
+      "updated_at": "2026-03-21T20:26:22.876758"
+    },
+    {
+      "id": 7,
+      "title": "Investigate captain bridge error spike (8 errors in 10min)",
+      "agent": "shuri",
+      "status": "done",
+      "score": 5.0,
+      "created_at": "2026-03-21T19:53:05.512622",
+      "updated_at": "2026-03-21T20:03:18.098170"
+    },
+    {
+      "id": 6,
+      "title": "Investigate captain bridge error spike (8 errors in 10min)",
+      "agent": "beast",
+      "status": "done",
+      "score": 1.0,
+      "created_at": "2026-03-21T19:52:30.220641",
+      "updated_at": "2026-03-21T19:57:55.363797"
+    },
+    {
+      "id": 5,
+      "title": "Investigate captain bridge error spike (7 errors in 10min)",
+      "agent": "shuri",
+      "status": "failed",
+      "score": null,
+      "created_at": "2026-03-21T19:43:05.180359",
+      "updated_at": "2026-03-21T19:47:54.721318"
+    },
+    {
+      "id": 4,
+      "title": "Investigate captain bridge error spike (7 errors in 10min)",
+      "agent": "beast",
+      "status": "done",
+      "score": 1.0,
+      "created_at": "2026-03-21T19:42:28.698789",
+      "updated_at": "2026-03-21T19:47:53.737960"
+    },
+    {
+      "id": 3,
+      "title": "Investigate captain bridge error spike (9 errors in 10min)",
+      "agent": "shuri",
+      "status": "done",
+      "score": 1.0,
+      "created_at": "2026-03-21T18:53:25.036436",
+      "updated_at": "2026-03-21T19:03:01.893266"
+    },
+    {
+      "id": 2,
+      "title": "Investigate captain bridge error spike (9 errors in 10min)",
+      "agent": "beast",
+      "status": "done",
+      "score": 1.0,
+      "created_at": "2026-03-21T18:52:25.411785",
+      "updated_at": "2026-03-21T18:58:16.757076"
+    },
+    {
+      "id": 1,
+      "title": "Test mission from Phase 2",
+      "agent": "shuri",
+      "status": "done",
+      "score": 8.5,
+      "created_at": "2026-03-21T18:45:05.350866",
+      "updated_at": "2026-03-21T18:45:05.352924"
+    }
+  ],
   "okr": {
     "objectives": []
   },
