@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-21T22:13:21.783300Z",
+  "updated": "2026-03-21T22:14:23.841132Z",
   "stats": {
-    "missions_done": 15,
-    "missions_active": 1,
+    "missions_done": 16,
+    "missions_active": 0,
     "missions_pending": 0,
-    "avg_score": 2.1
+    "avg_score": 2.0
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:13:21.780890Z"
+      "last_seen": "2026-03-21T22:14:23.839491Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:13:21.781067Z"
+      "last_seen": "2026-03-21T22:14:23.839664Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:13:21.781070Z"
+      "last_seen": "2026-03-21T22:14:23.839667Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:13:21.781072Z"
+      "last_seen": "2026-03-21T22:14:23.839669Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T22:13:21.781074Z"
+      "last_seen": "2026-03-21T22:14:23.839671Z"
     }
   ],
   "missions": [
@@ -63,10 +63,10 @@
       "id": 17,
       "title": "Investigate captain bridge error spike (6 errors in 10min)",
       "agent": "shuri",
-      "status": "in_progress",
-      "score": null,
+      "status": "done",
+      "score": 1.0,
       "created_at": "2026-03-21T22:03:55.758516",
-      "updated_at": "2026-03-21T22:08:35.637858"
+      "updated_at": "2026-03-21T22:13:28.898476"
     },
     {
       "id": 16,
@@ -291,7 +291,7 @@
   },
   "scoreboard": {
     "research": 1,
-    "code_optimization": 1,
+    "code_optimization": 2,
     "data_analysis": 0,
     "prompt_quality": 0,
     "code": 10
