@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-21T20:33:23.035401Z",
+  "updated": "2026-03-21T20:34:24.869675Z",
   "stats": {
     "missions_done": 8,
     "missions_active": 0,
-    "missions_pending": 0,
+    "missions_pending": 1,
     "avg_score": 2.4
   },
   "agents": [
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T20:33:23.033624Z"
+      "last_seen": "2026-03-21T20:34:24.865807Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T20:33:23.033815Z"
+      "last_seen": "2026-03-21T20:34:24.866159Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T20:33:23.033818Z"
+      "last_seen": "2026-03-21T20:34:24.866164Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T20:33:23.033820Z"
+      "last_seen": "2026-03-21T20:34:24.866167Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,19 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-21T20:33:23.033822Z"
+      "last_seen": "2026-03-21T20:34:24.866170Z"
     }
   ],
   "missions": [
+    {
+      "id": 10,
+      "title": "can u make the dashboard better by adding more features?",
+      "agent": "auto",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-21T20:33:45.276091",
+      "updated_at": "2026-03-21T20:33:45.276091"
+    },
     {
       "id": 9,
       "title": "Build Avengers Command Dashboard: Next.js + Tailwind + Shadcn/UI, hosted on Vercel (free), Supabase for real-time data. Features: agent status cards, mission board with task IDs, OKR progress bars, scoreboard, team activity feed. Local sync daemon (avengers_sync.py) pushes data every 60s. Final deliverable: public Vercel URL.",
