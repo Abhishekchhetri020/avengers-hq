@@ -1,123 +1,952 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GD Goenka Public School, Siliguri | Redesign</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avengers HQ — Command Dashboard</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { font-family: 'Inter', sans-serif; box-sizing: border-box; }
+  body { background: #070b14; color: #e2e8f0; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+
+  /* Glass panels */
+  .glass { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(12px); }
+  .glass-gold { background: rgba(251,191,36,0.06); border: 1px solid rgba(251,191,36,0.2); }
+  .glass-blue { background: rgba(59,130,246,0.06); border: 1px solid rgba(59,130,246,0.2); }
+  .glass-red  { background: rgba(239,68,68,0.06); border: 1px solid rgba(239,68,68,0.2); }
+  .glass-green { background: rgba(16,185,129,0.06); border: 1px solid rgba(16,185,129,0.2); }
+
+  /* Glows */
+  .glow-gold  { box-shadow: 0 0 20px rgba(251,191,36,0.15); }
+  .glow-blue  { box-shadow: 0 0 20px rgba(59,130,246,0.15); }
+  .glow-green { box-shadow: 0 0 20px rgba(16,185,129,0.15); }
+  .glow-red   { box-shadow: 0 0 20px rgba(239,68,68,0.15); }
+
+  /* Pulse dot */
+  .pulse-dot { width: 8px; height: 8px; border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse {
+    0%,100% { opacity:1; transform:scale(1); }
+    50%      { opacity:.5; transform:scale(1.3); }
+  }
+
+  /* Card hover */
+  .card-hover { transition: all 0.2s ease; cursor: pointer; }
+  .card-hover:hover { transform: translateY(-2px); border-color: rgba(251,191,36,0.35) !important; }
+
+  /* Status colors */
+  .status-online  { color: #10b981; }
+  .status-working { color: #f59e0b; }
+  .status-offline { color: #4b5563; }
+
+  /* Mission left border */
+  .mission-pending  { border-left: 3px solid #4b5563; }
+  .mission-progress { border-left: 3px solid #f59e0b; }
+  .mission-done     { border-left: 3px solid #10b981; }
+  .mission-failed   { border-left: 3px solid #ef4444; }
+
+  /* Progress bar */
+  .progress-bar  { height: 6px; border-radius: 3px; background: rgba(255,255,255,0.08); overflow: hidden; }
+  .progress-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, #3b82f6, #8b5cf6); transition: width 1s ease; }
+  .progress-fill-green { background: linear-gradient(90deg, #10b981, #06b6d4); }
+  .progress-fill-gold  { background: linear-gradient(90deg, #f59e0b, #ef4444); }
+
+  /* Header */
+  .header-gradient { background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 50%, #1a1a2e 100%); border-bottom: 1px solid rgba(251,191,36,0.2); }
+
+  /* Arc reactor */
+  .arc-reactor {
+    width: 48px; height: 48px; border-radius: 50%;
+    background: radial-gradient(circle, #60a5fa 0%, #3b82f6 40%, #1e40af 100%);
+    box-shadow: 0 0 30px rgba(59,130,246,0.8), 0 0 60px rgba(59,130,246,0.4);
+    animation: reactor 3s ease-in-out infinite;
+    flex-shrink: 0;
+  }
+  @keyframes reactor {
+    0%,100% { box-shadow: 0 0 30px rgba(59,130,246,0.8), 0 0 60px rgba(59,130,246,0.4); }
+    50%      { box-shadow: 0 0 40px rgba(59,130,246,1), 0 0 80px rgba(59,130,246,0.6); }
+  }
+
+  /* Agent ring */
+  .agent-ring { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; border: 2px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.05); }
+
+  /* Scrollbars */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: #0f172a; }
+  ::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
+
+  /* Ticker animation */
+  .ticker { animation: ticker 0.4s ease; }
+  @keyframes ticker {
+    from { opacity:0; transform:translateY(-6px); }
+    to   { opacity:1; transform:translateY(0); }
+  }
+
+  /* Modal backdrop */
+  .modal-backdrop {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 100;
+    display: flex; align-items: center; justify-content: center; padding: 16px;
+    animation: fadeIn 0.15s ease;
+  }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+  .modal-box {
+    background: #0f1a2e; border: 1px solid rgba(59,130,246,0.3); border-radius: 16px;
+    max-width: 640px; width: 100%; max-height: 80vh; overflow-y: auto;
+    box-shadow: 0 0 60px rgba(59,130,246,0.2); animation: slideUp 0.2s ease;
+  }
+  @keyframes slideUp { from { transform:translateY(12px); opacity:0; } to { transform:translateY(0); opacity:1; } }
+
+  /* Toast */
+  .toast {
+    position: fixed; bottom: 24px; right: 24px; z-index: 200;
+    background: #1e293b; border: 1px solid rgba(59,130,246,0.4);
+    border-radius: 10px; padding: 12px 18px; max-width: 320px;
+    display: flex; align-items: center; gap: 10px;
+    animation: toastIn 0.3s ease;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  }
+  @keyframes toastIn { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+  .toast.toast-out { animation: toastOut 0.3s ease forwards; }
+  @keyframes toastOut { to { opacity:0; transform:translateY(8px); } }
+
+  /* Search input */
+  .search-input {
+    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px; color: #e2e8f0; outline: none; padding: 6px 10px;
+    font-size: 12px; width: 100%; transition: border-color 0.2s;
+  }
+  .search-input:focus { border-color: rgba(59,130,246,0.5); }
+  .search-input::placeholder { color: #4b5563; }
+
+  /* Tab active */
+  .tab-active { background: rgba(59,130,246,0.2); color: #60a5fa; border: 1px solid rgba(59,130,246,0.35); }
+  .tab-inactive { background: transparent; color: #6b7280; border: 1px solid transparent; }
+  .tab-btn { padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; transition: all 0.15s; cursor: pointer; }
+
+  /* Sync progress */
+  .sync-bar { height: 2px; background: linear-gradient(90deg, #3b82f6, #8b5cf6); border-radius: 1px; transition: width 1s linear; }
+
+  /* Score badge */
+  .score-high   { color: #10b981; background: rgba(16,185,129,0.15); border: 1px solid rgba(16,185,129,0.3); }
+  .score-mid    { color: #f59e0b; background: rgba(245,158,11,0.15); border: 1px solid rgba(245,158,11,0.3); }
+  .score-low    { color: #ef4444; background: rgba(239,68,68,0.15); border: 1px solid rgba(239,68,68,0.3); }
+
+  /* Leaderboard row */
+  .lb-rank-1 { background: linear-gradient(90deg, rgba(251,191,36,0.1), transparent); border-color: rgba(251,191,36,0.2); }
+  .lb-rank-2 { background: linear-gradient(90deg, rgba(148,163,184,0.08), transparent); border-color: rgba(148,163,184,0.15); }
+  .lb-rank-3 { background: linear-gradient(90deg, rgba(180,83,9,0.08), transparent); border-color: rgba(180,83,9,0.15); }
+
+  .line-clamp-2 { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .line-clamp-3 { display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+
+  /* Kbd shortcut badge */
+  kbd { display: inline-block; padding: 1px 5px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 3px; font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #94a3b8; }
+</style>
 </head>
-<body>
+<body class="min-h-screen">
 
-    <header>
-        <div class="logo-section">
-            <h1>GD GOENKA</h1>
-            <p>"Higher, Stronger, Brighter"</p>
+<!-- TOAST CONTAINER -->
+<div id="toast-container"></div>
+
+<!-- MISSION DETAIL MODAL -->
+<div id="modal" class="modal-backdrop hidden" onclick="closeModal(event)">
+  <div class="modal-box p-6">
+    <div class="flex items-start justify-between mb-4">
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <span id="modal-id" class="mono text-xs text-slate-500"></span>
+          <span id="modal-badge" class="text-xs px-2 py-0.5 rounded font-bold uppercase"></span>
+          <span id="modal-score-badge" class="text-xs px-2 py-0.5 rounded mono font-bold"></span>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#academics">Academics</a></li>
-                <li><a href="#dashboard">Portal</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-            </ul>
-        </nav>
-        <a href="#apply" class="cta-btn">Apply Now</a>
-    </header>
+        <h3 id="modal-title" class="text-base font-bold text-white leading-snug"></h3>
+      </div>
+      <button onclick="closeModal()" class="text-slate-500 hover:text-white text-xl ml-4 shrink-0 transition-colors">✕</button>
+    </div>
+    <div class="grid grid-cols-3 gap-3 mb-4">
+      <div class="glass rounded-lg p-3">
+        <div class="text-[10px] text-slate-500 uppercase mb-1">Agent</div>
+        <div id="modal-agent" class="text-sm font-bold text-white"></div>
+      </div>
+      <div class="glass rounded-lg p-3">
+        <div class="text-[10px] text-slate-500 uppercase mb-1">Priority</div>
+        <div id="modal-priority" class="text-sm font-bold text-white">—</div>
+      </div>
+      <div class="glass rounded-lg p-3">
+        <div class="text-[10px] text-slate-500 uppercase mb-1">Iterations</div>
+        <div id="modal-iters" class="text-sm font-bold text-white">—</div>
+      </div>
+    </div>
+    <div id="modal-result-wrap" class="hidden mb-4">
+      <div class="text-[10px] text-slate-500 uppercase mb-2 tracking-wider">Result</div>
+      <div id="modal-result" class="text-sm text-slate-300 leading-relaxed glass rounded-lg p-4 max-h-56 overflow-y-auto whitespace-pre-wrap mono"></div>
+    </div>
+    <div id="modal-notes-wrap" class="hidden">
+      <div class="text-[10px] text-slate-500 uppercase mb-2 tracking-wider">Notes</div>
+      <div id="modal-notes" class="text-xs text-slate-400 mono glass rounded-lg p-3"></div>
+    </div>
+    <div class="flex justify-between items-center mt-4 pt-4 border-t border-white/5">
+      <div class="text-[10px] text-slate-600 mono" id="modal-ts"></div>
+      <div class="text-[10px] text-slate-500">Press <kbd>Esc</kbd> to close</div>
+    </div>
+  </div>
+</div>
 
-    <main>
-        <section id="home" class="hero">
-            <h2>Excellence in Education</h2>
-            <p>Empowering the next generation of leaders at GD Goenka Siliguri.</p>
-            <br>
-            <a href="#academics" class="cta-btn" style="background-color: var(--white); color: var(--maroon);">Learn More</a>
-        </section>
+<!-- KEYBOARD SHORTCUT HELP (toggled by ?) -->
+<div id="shortcuts-modal" class="modal-backdrop hidden" onclick="document.getElementById('shortcuts-modal').classList.add('hidden')">
+  <div class="modal-box p-6 max-w-sm">
+    <h3 class="text-sm font-bold text-white mb-4 flex items-center gap-2">⌨️ Keyboard Shortcuts</h3>
+    <div class="space-y-2 text-xs text-slate-400">
+      <div class="flex justify-between"><span>Filter: All</span><kbd>1</kbd></div>
+      <div class="flex justify-between"><span>Filter: Pending</span><kbd>2</kbd></div>
+      <div class="flex justify-between"><span>Filter: Active</span><kbd>3</kbd></div>
+      <div class="flex justify-between"><span>Filter: Done</span><kbd>4</kbd></div>
+      <div class="flex justify-between"><span>Filter: Failed</span><kbd>5</kbd></div>
+      <div class="flex justify-between"><span>Focus Search</span><kbd>S</kbd></div>
+      <div class="flex justify-between"><span>Refresh Data</span><kbd>R</kbd></div>
+      <div class="flex justify-between"><span>Close Modal</span><kbd>Esc</kbd></div>
+      <div class="flex justify-between"><span>Show Shortcuts</span><kbd>?</kbd></div>
+    </div>
+  </div>
+</div>
 
-        <h2 class="dashboard-title" id="dashboard">Administrative Intelligence</h2>
-        <section class="bento-grid">
-            <div class="bento-item large">
-                <i class="fas fa-calendar-alt"></i>
-                <h3>SmartTime AI Scheduler</h3>
-                <p>Dynamic conflict-free timetables powered by intelligence.</p>
-                <div class="status-badge">8 Active Periods Today</div>
-            </div>
-            
-            <div class="bento-item">
-                <i class="fas fa-user-check"></i>
-                <h3>Attendance</h3>
-                <p>98% Average Attendance</p>
-            </div>
-            
-            <div class="bento-item">
-                <i class="fas fa-bullhorn"></i>
-                <h3>Announcements</h3>
-                <p>3 New Notices</p>
-            </div>
+<!-- HEADER -->
+<header class="header-gradient px-4 py-3 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto">
+    <!-- Sync progress bar -->
+    <div class="absolute bottom-0 left-0 right-0 h-0.5 bg-white/5">
+      <div class="sync-bar" id="sync-progress" style="width:0%"></div>
+    </div>
 
-            <div class="bento-item medium">
-                <i class="fas fa-chart-line"></i>
-                <h3>School Stats</h3>
-                <p>Setup Progress: 85%</p>
-                <div class="status-badge" style="background:#fff3e0; color:#e65100;">Action Required</div>
-            </div>
-
-            <div class="bento-item">
-                <i class="fas fa-file-export"></i>
-                <h3>Bulk Export</h3>
-                <p>Ready for CBSE upload</p>
-            </div>
-
-            <div class="bento-item">
-                <i class="fas fa-users-cog"></i>
-                <h3>Faculty Hub</h3>
-                <p>124 Active Members</p>
-            </div>
-        </section>
-
-        <h2 class="dashboard-title" id="academics">Academic Core</h2>
-        <section class="academic-section">
-            <div class="academic-card">
-                <h3><i class="fas fa-book-reader" style="color:var(--maroon); margin-right:10px;"></i>CBSE Curriculum</h3>
-                <p>Providing a robust educational framework that balances academic rigor with creative exploration.</p>
-            </div>
-            <div class="academic-card">
-                <h3><i class="fas fa-chalkboard-teacher" style="color:var(--maroon); margin-right:10px;"></i>Expert Faculty</h3>
-                <p>Dedicated educators committed to personalized learning and student success.</p>
-            </div>
-            <div class="academic-card">
-                <h3><i class="fas fa-microscope" style="color:var(--maroon); margin-right:10px;"></i>Modern Labs</h3>
-                <p>State-of-the-art facilities for Science, Computer Science, and Language learning.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div>
-                <h4>Contact Us</h4>
-                <p>Siliguri, West Bengal</p>
-                <p>Email: info@gdgoenkasiliguri.com</p>
-                <p>Phone: +91 12345 67890</p>
-            </div>
-            <div>
-                <h4>Quick Links</h4>
-                <p><a href="#" style="color:white; text-decoration:none;">Parent Portal</a></p>
-                <p><a href="#" style="color:white; text-decoration:none;">Alumni Network</a></p>
-                <p><a href="#" style="color:white; text-decoration:none;">Careers</a></p>
-            </div>
-            <div>
-                <h4>Follow Us</h4>
-                <p>
-                    <i class="fab fa-facebook" style="margin-right:10px;"></i>
-                    <i class="fab fa-instagram" style="margin-right:10px;"></i>
-                    <i class="fab fa-twitter"></i>
-                </p>
-            </div>
+    <div class="flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="arc-reactor"></div>
+        <div>
+          <h1 class="text-lg font-black tracking-tight text-white leading-none">AVENGERS <span class="text-yellow-400">HQ</span></h1>
+          <div class="flex items-center gap-2 mt-0.5">
+            <p class="text-[10px] text-slate-400 mono">CMD DASHBOARD v6.0</p>
+            <span class="text-[9px] px-1.5 bg-blue-500/20 text-blue-400 rounded border border-blue-500/30 mono">HEIMDALL</span>
+            <span class="text-[9px] px-1.5 bg-green-500/20 text-green-400 rounded border border-green-500/30 mono">AUTONOMOUS</span>
+          </div>
         </div>
-        <hr style="border:0; border-top:1px solid rgba(255,255,255,0.1); margin-bottom:1rem;">
-        <p>&copy; 2026 GD Goenka Public School, Siliguri. All Rights Reserved.</p>
-    </footer>
+      </div>
 
+      <!-- Search bar -->
+      <div class="hidden md:flex items-center gap-2 flex-1 max-w-xs">
+        <div class="relative w-full">
+          <span class="absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-500 text-xs">🔍</span>
+          <input type="text" id="search-input" placeholder="Search missions… (S)" class="search-input pl-7" oninput="onSearch(this.value)">
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <div class="hidden lg:block text-right">
+          <div class="text-[10px] text-slate-500">Uptime</div>
+          <div class="text-xs font-semibold text-blue-400 mono" id="uptime-clock">00:00:00</div>
+        </div>
+        <div class="hidden sm:block text-right">
+          <div class="text-[10px] text-slate-500">Next sync</div>
+          <div class="text-xs font-semibold text-slate-300 mono" id="sync-countdown">30s</div>
+        </div>
+        <div class="text-right">
+          <div class="text-[10px] text-slate-500">Last sync</div>
+          <div class="text-xs font-semibold text-blue-400 mono" id="last-sync">—</div>
+        </div>
+        <div class="flex items-center gap-1.5 glass px-2.5 py-1.5 rounded-full">
+          <div class="pulse-dot bg-green-400"></div>
+          <span class="text-[11px] font-bold text-green-400">LIVE</span>
+        </div>
+        <button onclick="document.getElementById('shortcuts-modal').classList.toggle('hidden')" class="text-slate-500 hover:text-slate-300 text-xs mono transition-colors hidden md:block" title="Keyboard shortcuts">?</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 py-5 space-y-5">
+
+  <!-- STATS ROW -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+    <div class="glass rounded-xl p-4 glow-blue glass-blue">
+      <div class="text-[10px] text-slate-400 mb-1 uppercase tracking-wider">Done</div>
+      <div class="text-3xl font-black text-white" id="stat-done">—</div>
+      <div class="text-[10px] text-green-400 mt-1" id="stat-done-delta"></div>
+    </div>
+    <div class="glass rounded-xl p-4">
+      <div class="text-[10px] text-slate-400 mb-1 uppercase tracking-wider">Active</div>
+      <div class="text-3xl font-black text-yellow-400" id="stat-progress">—</div>
+      <div class="text-[10px] text-slate-500 mt-1">in progress</div>
+    </div>
+    <div class="glass rounded-xl p-4">
+      <div class="text-[10px] text-slate-400 mb-1 uppercase tracking-wider">Pending</div>
+      <div class="text-3xl font-black text-slate-300" id="stat-pending">—</div>
+      <div class="text-[10px] text-slate-500 mt-1">queued</div>
+    </div>
+    <div class="glass rounded-xl p-4">
+      <div class="text-[10px] text-slate-400 mb-1 uppercase tracking-wider">Failed</div>
+      <div class="text-3xl font-black text-red-400" id="stat-failed">—</div>
+      <div class="text-[10px] text-slate-500 mt-1" id="stat-fail-rate"></div>
+    </div>
+    <div class="glass rounded-xl p-4">
+      <div class="text-[10px] text-slate-400 mb-1 uppercase tracking-wider">Avg Score</div>
+      <div class="text-3xl font-black text-blue-400" id="stat-score">—</div>
+      <div class="text-[10px] text-slate-500 mt-1">/ 10</div>
+    </div>
+    <div class="glass rounded-xl p-4 glow-gold glass-gold">
+      <div class="text-[10px] text-slate-400 mb-1 uppercase tracking-wider">Agents Online</div>
+      <div class="text-3xl font-black text-yellow-400" id="stat-agents">—</div>
+      <div class="text-[10px] text-slate-500 mt-1" id="stat-agents-label">of 5</div>
+    </div>
+  </div>
+
+  <!-- AGENTS -->
+  <section>
+    <div class="flex items-center justify-between mb-3">
+      <h2 class="text-[11px] font-bold text-slate-400 uppercase tracking-widest">⚡ Agent Status</h2>
+      <div class="text-[10px] text-slate-600 mono" id="agent-count">5 AGENTS</div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-5 gap-3" id="agents-grid"></div>
+  </section>
+
+  <!-- MAIN CONTENT: Missions + Leaderboard + Distribution -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+
+    <!-- MISSION BOARD -->
+    <div class="lg:col-span-2 glass rounded-2xl p-5">
+      <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+        <h2 class="text-[11px] font-bold text-slate-400 uppercase tracking-widest">🎯 Mission Board</h2>
+        <div class="flex items-center gap-2 flex-wrap">
+          <button onclick="filterMissions('all')"       class="tab-btn tab-active" data-filter="all">All</button>
+          <button onclick="filterMissions('pending')"   class="tab-btn tab-inactive" data-filter="pending">Pending</button>
+          <button onclick="filterMissions('in_progress')" class="tab-btn tab-inactive" data-filter="in_progress">Active</button>
+          <button onclick="filterMissions('done')"      class="tab-btn tab-inactive" data-filter="done">Done</button>
+          <button onclick="filterMissions('failed')"    class="tab-btn tab-inactive" data-filter="failed">Failed</button>
+          <span class="text-[10px] text-slate-600 hidden md:inline">Click mission for details</span>
+        </div>
+      </div>
+      <!-- Mobile search -->
+      <div class="md:hidden mb-3">
+        <input type="text" placeholder="Search missions…" class="search-input" oninput="onSearch(this.value)">
+      </div>
+      <div id="mission-count" class="text-[10px] text-slate-600 mono mb-2"></div>
+      <div class="space-y-2 max-h-[420px] overflow-y-auto pr-1" id="mission-list">
+        <div class="text-slate-500 text-sm text-center py-8">Loading missions…</div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN: Leaderboard + Distribution -->
+    <div class="space-y-5">
+
+      <!-- AGENT LEADERBOARD -->
+      <div class="glass rounded-2xl p-5">
+        <h2 class="text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-3">🏅 Agent Leaderboard</h2>
+        <div class="space-y-2" id="leaderboard-list">
+          <div class="text-slate-500 text-xs">Loading…</div>
+        </div>
+      </div>
+
+      <!-- MISSION DISTRIBUTION -->
+      <div class="glass rounded-2xl p-5">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="text-[11px] font-bold text-slate-400 uppercase tracking-widest">📈 Distribution</h2>
+          <span class="text-[10px] text-slate-600 mono">BY STATUS</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="w-28 h-28 shrink-0">
+            <canvas id="donut-chart"></canvas>
+          </div>
+          <div class="space-y-1.5 flex-1" id="donut-legend"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OKR + SCORE TREND + ACTIVITY -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+
+    <!-- OKR -->
+    <div class="glass rounded-2xl p-5">
+      <h2 class="text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-4">📊 OKR Progress</h2>
+      <div class="space-y-5" id="okr-list">
+        <div class="text-slate-500 text-xs">Loading OKRs…</div>
+      </div>
+    </div>
+
+    <!-- SCORE TREND -->
+    <div class="glass rounded-2xl p-5">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-[11px] font-bold text-slate-400 uppercase tracking-widest">📉 Score Trend</h2>
+        <span class="text-[10px] text-slate-600 mono">LAST 10 MISSIONS</span>
+      </div>
+      <div class="h-[200px]">
+        <canvas id="trend-chart"></canvas>
+      </div>
+    </div>
+
+    <!-- ACTIVITY FEED -->
+    <div class="glass rounded-2xl p-5">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-[11px] font-bold text-slate-400 uppercase tracking-widest">💬 Team Activity</h2>
+        <span class="text-[10px] text-slate-600 mono" id="activity-count"></span>
+      </div>
+      <div class="space-y-2.5 max-h-[220px] overflow-y-auto pr-1" id="activity-feed">
+        <div class="text-slate-500 text-xs">Loading…</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RADAR + ALERTS -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+
+    <!-- RADAR CHART -->
+    <div class="glass rounded-2xl p-5">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-[11px] font-bold text-slate-400 uppercase tracking-widest">🕸️ Team Capabilities</h2>
+        <span class="text-[10px] text-slate-600 mono">RADAR ANALYTICS</span>
+      </div>
+      <div class="h-[220px] flex items-center justify-center">
+        <canvas id="radar-chart"></canvas>
+      </div>
+    </div>
+
+    <!-- SYSTEM STATUS / ALERTS -->
+    <div class="glass rounded-2xl p-5">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-[11px] font-bold text-slate-400 uppercase tracking-widest">🛡️ System Status</h2>
+        <div class="flex items-center gap-1.5">
+          <div class="pulse-dot bg-green-400"></div>
+          <span class="text-[10px] text-green-400 font-bold mono">ALL SYSTEMS NOMINAL</span>
+        </div>
+      </div>
+      <div class="space-y-2 mb-5" id="alerts-list">
+        <div class="text-slate-600 text-[10px] mono">Loading…</div>
+      </div>
+      <div class="border-t border-white/5 pt-4">
+        <h3 class="text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-3">📡 Infrastructure</h3>
+        <div class="grid grid-cols-2 gap-2" id="infra-grid">
+          <!-- filled by JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 text-slate-700 text-[10px] mono border-t border-white/5 mt-8">
+  <div class="flex justify-center gap-4 mb-1 flex-wrap text-slate-600">
+    <span>STARK INDUSTRIES © 2026</span>
+    <span>AVENGERS AUTONOMOUS OPS</span>
+    <span class="text-blue-600/50">PROTOCOL: ULTRON-ZERO</span>
+  </div>
+  <div id="footer-ts">SYSTEM TIME: —</div>
+  <div class="mt-1 text-slate-800">Press <kbd>?</kbd> for keyboard shortcuts</div>
+</footer>
+
+<script>
+// ─── Constants ────────────────────────────────────────────────────────────────
+const AGENT_META = {
+  ironman: { emoji: '🦾', name: 'Iron Man', color: '#ef4444' },
+  captain: { emoji: '⚡', name: 'Captain',  color: '#3b82f6' },
+  shuri:   { emoji: '🔬', name: 'Shuri',    color: '#a855f7' },
+  beast:   { emoji: '🐾', name: 'Beast',    color: '#22c55e' },
+  vision:  { emoji: '👁️', name: 'Vision',   color: '#f59e0b' },
+};
+const REFRESH_INTERVAL = 30; // seconds
+
+// ─── State ───────────────────────────────────────────────────────────────────
+let allMissions     = [];
+let currentFilter   = 'all';
+let searchQuery     = '';
+let radarChart      = null;
+let donutChart      = null;
+let trendChart      = null;
+let startTime       = Date.now();
+let syncCountdown   = REFRESH_INTERVAL;
+let lastKnownDone   = null;
+let prevDoneCount   = 0;
+
+// ─── Uptime & sync countdown ─────────────────────────────────────────────────
+function updateUptime() {
+  const diff = Math.floor((Date.now() - startTime) / 1000);
+  const h = String(Math.floor(diff / 3600)).padStart(2, '0');
+  const m = String(Math.floor((diff % 3600) / 60)).padStart(2, '0');
+  const s = String(diff % 60).padStart(2, '0');
+  document.getElementById('uptime-clock').textContent = `${h}:${m}:${s}`;
+}
+function updateSyncCountdown() {
+  syncCountdown--;
+  if (syncCountdown < 0) syncCountdown = REFRESH_INTERVAL;
+  document.getElementById('sync-countdown').textContent = syncCountdown + 's';
+  const pct = ((REFRESH_INTERVAL - syncCountdown) / REFRESH_INTERVAL) * 100;
+  document.getElementById('sync-progress').style.width = pct + '%';
+}
+setInterval(updateUptime, 1000);
+setInterval(updateSyncCountdown, 1000);
+
+// ─── Fetch ────────────────────────────────────────────────────────────────────
+async function fetchData() {
+  try {
+    const r = await fetch('data.json?t=' + Date.now());
+    if (!r.ok) throw new Error('fetch failed');
+    return await r.json();
+  } catch { return null; }
+}
+
+// ─── Helpers ──────────────────────────────────────────────────────────────────
+function timeAgo(iso) {
+  if (!iso) return 'never';
+  const d = (Date.now() - new Date(iso.endsWith('Z') ? iso : iso + 'Z').getTime()) / 1000;
+  if (d < 60)    return Math.round(d) + 's ago';
+  if (d < 3600)  return Math.round(d/60) + 'm ago';
+  if (d < 86400) return Math.round(d/3600) + 'h ago';
+  return Math.round(d/86400) + 'd ago';
+}
+function statusDot(s) {
+  if (s==='online'||s==='idle')  return '<span class="status-online">●</span>';
+  if (s==='working') return '<span class="status-working">◐</span>';
+  return '<span class="status-offline">○</span>';
+}
+function scoreBadge(score) {
+  if (score == null) return '';
+  const cls = score >= 7 ? 'score-high' : score >= 4 ? 'score-mid' : 'score-low';
+  return `<span class="text-[10px] px-1.5 py-0.5 rounded mono font-bold ${cls}">${Number(score).toFixed(1)}</span>`;
+}
+function statusBadge(status) {
+  const map = {
+    done:        'text-green-400 bg-green-400/10 border border-green-400/20',
+    in_progress: 'text-yellow-400 bg-yellow-400/10 border border-yellow-400/20',
+    pending:     'text-slate-400 bg-slate-400/10 border border-slate-400/20',
+    failed:      'text-red-400 bg-red-400/10 border border-red-400/20',
+  };
+  const cls = map[status] || 'text-slate-400';
+  const label = status === 'in_progress' ? 'active' : status;
+  return `<span class="text-[9px] px-1.5 py-0.5 rounded uppercase font-bold tracking-tight ${cls}">${label}</span>`;
+}
+
+// ─── Toast ────────────────────────────────────────────────────────────────────
+function showToast(msg, type='info', duration=4000) {
+  const el = document.createElement('div');
+  const icon = type==='success' ? '✅' : type==='warn' ? '⚠️' : type==='error' ? '❌' : '📡';
+  const color = type==='success' ? '#10b981' : type==='warn' ? '#f59e0b' : type==='error' ? '#ef4444' : '#3b82f6';
+  el.className = 'toast';
+  el.style.borderColor = color + '55';
+  el.innerHTML = `<span style="font-size:16px">${icon}</span><div class="text-xs text-slate-300">${msg}</div>`;
+  document.getElementById('toast-container').appendChild(el);
+  setTimeout(() => {
+    el.classList.add('toast-out');
+    setTimeout(() => el.remove(), 350);
+  }, duration);
+}
+
+// ─── Modal ────────────────────────────────────────────────────────────────────
+function openModal(m) {
+  const agentMeta = AGENT_META[m.agent] || { emoji: '🤖', name: m.agent };
+  document.getElementById('modal-id').textContent   = '#' + m.id;
+  document.getElementById('modal-title').textContent = m.title;
+  document.getElementById('modal-badge').className   = 'text-xs px-2 py-0.5 rounded font-bold uppercase ' +
+    (m.status==='done' ? 'text-green-400 bg-green-400/15' : m.status==='failed' ? 'text-red-400 bg-red-400/15' : 'text-yellow-400 bg-yellow-400/15');
+  document.getElementById('modal-badge').textContent = m.status === 'in_progress' ? 'active' : m.status;
+
+  const scoreBadgeEl = document.getElementById('modal-score-badge');
+  if (m.score != null) {
+    const cls = m.score >= 7 ? 'score-high' : m.score >= 4 ? 'score-mid' : 'score-low';
+    scoreBadgeEl.className = `text-xs px-1.5 py-0.5 rounded mono font-bold ${cls}`;
+    scoreBadgeEl.textContent = m.score + '/10';
+  } else { scoreBadgeEl.textContent = ''; }
+
+  document.getElementById('modal-agent').textContent    = `${agentMeta.emoji} ${agentMeta.name}`;
+  document.getElementById('modal-priority').textContent = m.priority || 'normal';
+  document.getElementById('modal-iters').textContent    = m.iterations != null ? m.iterations : '—';
+
+  const resultWrap = document.getElementById('modal-result-wrap');
+  const notesWrap  = document.getElementById('modal-notes-wrap');
+  if (m.result) {
+    resultWrap.classList.remove('hidden');
+    document.getElementById('modal-result').textContent = m.result;
+  } else { resultWrap.classList.add('hidden'); }
+  if (m.notes) {
+    notesWrap.classList.remove('hidden');
+    document.getElementById('modal-notes').textContent = m.notes;
+  } else { notesWrap.classList.add('hidden'); }
+
+  document.getElementById('modal-ts').textContent = m.created_at ? 'Created: ' + timeAgo(m.created_at) : '';
+  document.getElementById('modal').classList.remove('hidden');
+}
+function closeModal(e) {
+  if (!e || e.target === document.getElementById('modal') || e.type !== 'click' || !e.target.closest('.modal-box') || e.target.textContent === '✕')
+    document.getElementById('modal').classList.add('hidden');
+}
+
+// ─── Render: Agents ───────────────────────────────────────────────────────────
+function renderAgents(data) {
+  const agentsMap = (data.agents || []).reduce((acc, a) => ({ ...acc, [a.name]: a }), {});
+  document.getElementById('agents-grid').innerHTML = Object.entries(AGENT_META).map(([key, meta]) => {
+    const info = agentsMap[key] || {};
+    const status = info.status || 'offline';
+    const task   = info.current_task || 'Awaiting orders';
+    const bc = status === 'online' || status === 'idle' ? '#10b981' : status === 'working' ? '#f59e0b' : '#374151';
+    return `
+    <div class="glass rounded-xl p-4 card-hover" style="border-color:${bc}33" title="${task}">
+      <div class="flex items-center gap-3 mb-3">
+        <div class="agent-ring" style="border-color:${bc}66">${info.emoji || meta.emoji}</div>
+        <div class="min-w-0">
+          <div class="font-bold text-sm text-white">${info.label || meta.name}</div>
+          <div class="text-[10px] text-slate-400 uppercase tracking-tight">${statusDot(status)} ${status}</div>
+        </div>
+      </div>
+      <div class="text-[11px] text-slate-400 truncate mb-2" title="${task}">${task}</div>
+      <div class="flex justify-between items-center">
+        <span class="text-[9px] text-slate-600 mono">${timeAgo(info.last_seen)}</span>
+        <span class="text-[9px] px-1 bg-white/5 rounded text-slate-500 mono">${info.confidence || 'ready'}</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ─── Render: Stats ────────────────────────────────────────────────────────────
+function renderStats(data) {
+  const missions = data.missions || [];
+  const done     = missions.filter(m => m.status === 'done').length;
+  const active   = missions.filter(m => m.status === 'in_progress').length;
+  const pending  = missions.filter(m => m.status === 'pending').length;
+  const failed   = missions.filter(m => m.status === 'failed').length;
+  const scores   = missions.filter(m => m.status==='done' && m.score!=null).map(m => m.score);
+  const avgScore = scores.length ? (scores.reduce((a,b) => a+b, 0) / scores.length).toFixed(1) : '—';
+  const failRate = (done+failed) > 0 ? Math.round(failed/(done+failed)*100) : 0;
+  const agentsOnline = (data.agents || []).filter(a => a.status !== 'offline').length;
+
+  document.getElementById('stat-done').textContent    = done;
+  document.getElementById('stat-progress').textContent = active;
+  document.getElementById('stat-pending').textContent  = pending;
+  document.getElementById('stat-failed').textContent   = failed;
+  document.getElementById('stat-score').textContent    = avgScore;
+  document.getElementById('stat-agents').textContent   = agentsOnline;
+  document.getElementById('stat-fail-rate').textContent = failRate + '% fail rate';
+
+  // Delta notification
+  if (lastKnownDone !== null && done > lastKnownDone) {
+    const delta = done - lastKnownDone;
+    document.getElementById('stat-done-delta').textContent = `+${delta} new`;
+    showToast(`🎯 ${delta} new mission${delta > 1 ? 's' : ''} completed!`, 'success');
+  }
+  lastKnownDone = done;
+}
+
+// ─── Render: Missions ─────────────────────────────────────────────────────────
+function filterMissions(filter) {
+  currentFilter = filter;
+  document.querySelectorAll('[data-filter]').forEach(b => {
+    b.className = 'tab-btn ' + (b.dataset.filter === filter ? 'tab-active' : 'tab-inactive');
+  });
+  renderMissionList();
+}
+function onSearch(q) {
+  searchQuery = q.toLowerCase().trim();
+  renderMissionList();
+}
+function renderMissionList() {
+  const list = document.getElementById('mission-list');
+  let missions = currentFilter === 'all' ? allMissions : allMissions.filter(m => m.status === currentFilter);
+  if (searchQuery) missions = missions.filter(m => (m.title || '').toLowerCase().includes(searchQuery) || String(m.id).includes(searchQuery));
+
+  document.getElementById('mission-count').textContent = `${missions.length} mission${missions.length !== 1 ? 's' : ''}`;
+
+  if (!missions.length) {
+    list.innerHTML = '<div class="text-slate-500 text-sm text-center py-6">No missions found</div>';
+    return;
+  }
+  list.innerHTML = missions.map(m => {
+    const cls = { done:'mission-done', in_progress:'mission-progress', pending:'mission-pending', failed:'mission-failed' }[m.status] || 'mission-pending';
+    const agent = AGENT_META[m.agent] || { emoji: '🤖' };
+    return `
+    <div class="glass rounded-lg p-3 ${cls} ticker card-hover" onclick="openModal(${JSON.stringify(m).replace(/"/g,'&quot;')})">
+      <div class="flex items-start justify-between gap-2">
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center gap-1.5 mb-1 flex-wrap">
+            <span class="mono text-[9px] text-slate-600">#${m.id}</span>
+            ${statusBadge(m.status)}
+            ${scoreBadge(m.score)}
+          </div>
+          <div class="text-xs text-slate-200 leading-snug line-clamp-2">${m.title}</div>
+        </div>
+        <span class="text-base shrink-0 opacity-60 hover:opacity-100 transition-opacity" title="${agent.name}">${agent.emoji}</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ─── Render: Leaderboard ─────────────────────────────────────────────────────
+function renderLeaderboard(data) {
+  const missions = data.missions || [];
+  const stats = {};
+  Object.keys(AGENT_META).forEach(k => { stats[k] = { done: 0, failed: 0, scores: [] }; });
+  missions.forEach(m => {
+    if (!stats[m.agent]) stats[m.agent] = { done: 0, failed: 0, scores: [] };
+    if (m.status === 'done')   { stats[m.agent].done++; if (m.score != null) stats[m.agent].scores.push(m.score); }
+    if (m.status === 'failed') stats[m.agent].failed++;
+  });
+  const ranked = Object.entries(stats).map(([key, s]) => ({
+    key, ...s,
+    avg: s.scores.length ? (s.scores.reduce((a,b)=>a+b,0)/s.scores.length) : 0,
+    total: s.done + s.failed,
+  })).sort((a,b) => b.done - a.done || b.avg - a.avg);
+
+  const rankEmoji = ['🥇','🥈','🥉'];
+  document.getElementById('leaderboard-list').innerHTML = ranked.map((r, i) => {
+    const meta = AGENT_META[r.key] || {};
+    const rowCls = i < 3 ? `lb-rank-${i+1}` : '';
+    const successRate = r.total > 0 ? Math.round(r.done/r.total*100) : 100;
+    return `
+    <div class="flex items-center gap-3 p-2.5 rounded-lg glass border ${rowCls} border-white/5 card-hover" onclick="filterMissions('all'); searchQuery=''; document.getElementById('search-input') && (document.getElementById('search-input').value=''); onSearch(''); filterMissions('done')">
+      <div class="text-lg w-6 text-center shrink-0">${rankEmoji[i] || (i+1)}</div>
+      <div class="text-lg shrink-0">${meta.emoji}</div>
+      <div class="flex-1 min-w-0">
+        <div class="text-xs font-bold text-white">${meta.name}</div>
+        <div class="text-[9px] text-slate-500">${r.done} done · ${successRate}% success</div>
+      </div>
+      <div class="text-right shrink-0">
+        <div class="text-xs font-bold ${r.avg >= 7 ? 'text-green-400' : r.avg >= 4 ? 'text-yellow-400' : 'text-slate-400'}">${r.avg > 0 ? r.avg.toFixed(1) : '—'}</div>
+        <div class="text-[9px] text-slate-600">avg</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ─── Render: Donut chart ──────────────────────────────────────────────────────
+function renderDonut(data) {
+  const missions = data.missions || [];
+  const counts = {
+    Done:    missions.filter(m => m.status==='done').length,
+    Active:  missions.filter(m => m.status==='in_progress').length,
+    Pending: missions.filter(m => m.status==='pending').length,
+    Failed:  missions.filter(m => m.status==='failed').length,
+  };
+  const colors = ['#10b981','#f59e0b','#6b7280','#ef4444'];
+  const ctx = document.getElementById('donut-chart').getContext('2d');
+  if (donutChart) donutChart.destroy();
+  donutChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: Object.keys(counts),
+      datasets: [{ data: Object.values(counts), backgroundColor: colors, borderWidth: 0, hoverOffset: 4 }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: true, cutout: '72%',
+      plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ` ${ctx.label}: ${ctx.raw}` } } }
+    }
+  });
+  const total = Object.values(counts).reduce((a,b)=>a+b,0);
+  document.getElementById('donut-legend').innerHTML = Object.entries(counts).map(([label, count], i) => `
+    <div class="flex items-center justify-between gap-2">
+      <div class="flex items-center gap-1.5">
+        <div class="w-2 h-2 rounded-full shrink-0" style="background:${colors[i]}"></div>
+        <span class="text-[10px] text-slate-400">${label}</span>
+      </div>
+      <span class="text-[10px] font-bold text-slate-300 mono">${count} <span class="text-slate-600">${total ? Math.round(count/total*100) : 0}%</span></span>
+    </div>`).join('');
+}
+
+// ─── Render: Score trend ──────────────────────────────────────────────────────
+function renderTrend(data) {
+  const scored = (data.missions || []).filter(m => m.status==='done' && m.score != null).slice(-10);
+  const labels = scored.map(m => '#' + m.id);
+  const values = scored.map(m => m.score);
+  const ctx = document.getElementById('trend-chart').getContext('2d');
+  if (trendChart) trendChart.destroy();
+  const gradient = ctx.createLinearGradient(0, 0, 0, 200);
+  gradient.addColorStop(0, 'rgba(59,130,246,0.3)');
+  gradient.addColorStop(1, 'rgba(59,130,246,0)');
+  trendChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [{
+        label: 'Score', data: values,
+        borderColor: '#3b82f6', backgroundColor: gradient,
+        borderWidth: 2, tension: 0.4, fill: true,
+        pointBackgroundColor: values.map(v => v >= 7 ? '#10b981' : v >= 4 ? '#f59e0b' : '#ef4444'),
+        pointRadius: 5, pointHoverRadius: 7,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      scales: {
+        x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#64748b', font: { size: 9, family: 'JetBrains Mono' } } },
+        y: { min: 0, max: 10, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#64748b', font: { size: 9 }, stepSize: 2 } }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ` Score: ${ctx.raw}/10` } }
+      }
+    }
+  });
+}
+
+// ─── Render: OKR ─────────────────────────────────────────────────────────────
+function renderOKR(data) {
+  const objs = data.okr?.objectives || [];
+  const el = document.getElementById('okr-list');
+  if (!objs.length) { el.innerHTML = '<div class="text-slate-500 text-xs">No OKR data</div>'; return; }
+  el.innerHTML = objs.map(obj => `
+    <div>
+      <div class="flex justify-between items-start mb-2">
+        <div class="text-[11px] font-bold text-slate-300 uppercase tracking-tight leading-snug pr-2">${obj.title}</div>
+        <span class="text-[11px] font-bold text-blue-400 mono shrink-0">${obj.progress}%</span>
+      </div>
+      <div class="progress-bar mb-3"><div class="progress-fill" style="width:${obj.progress}%"></div></div>
+      ${(obj.key_results || []).map(kr => `
+        <div class="mb-2 ml-2 pl-2 border-l border-white/5">
+          <div class="flex justify-between text-[10px] text-slate-500 mb-1">
+            <span class="truncate pr-2">${kr.title}</span>
+            <span class="mono shrink-0">${kr.progress}%</span>
+          </div>
+          <div class="progress-bar h-1"><div class="progress-fill progress-fill-green" style="width:${kr.progress}%"></div></div>
+        </div>`).join('')}
+    </div>`).join('<div class="border-t border-white/5 my-4"></div>');
+}
+
+// ─── Render: Radar ────────────────────────────────────────────────────────────
+function renderRadar(data) {
+  const s = data.scoreboard || {};
+  const ctx = document.getElementById('radar-chart').getContext('2d');
+  if (radarChart) radarChart.destroy();
+  radarChart = new Chart(ctx, {
+    type: 'radar',
+    data: {
+      labels: ['Research','Coding','Optimization','Analysis','Quality','Speed'],
+      datasets: [{
+        label: 'Team', fill: true,
+        data: [s.research||7, s.coding||8, s.code_optimization||6, s.data_analysis||5, s.prompt_quality||9, s.speed||7],
+        backgroundColor: 'rgba(59,130,246,0.15)', borderColor: 'rgba(59,130,246,0.7)', borderWidth: 2,
+        pointBackgroundColor: '#3b82f6', pointBorderColor: '#fff', pointRadius: 4,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      scales: { r: {
+        angleLines: { color: 'rgba(255,255,255,0.08)' },
+        grid:       { color: 'rgba(255,255,255,0.08)' },
+        pointLabels:{ color: '#94a3b8', font: { size: 10 } },
+        ticks:      { display: false, stepSize: 2 },
+        suggestedMin: 0, suggestedMax: 10,
+      }},
+      plugins: { legend: { display: false } }
+    }
+  });
+}
+
+// ─── Render: Activity ─────────────────────────────────────────────────────────
+function renderActivity(data) {
+  const feed = data.activity || [];
+  document.getElementById('activity-count').textContent = feed.length + ' events';
+  const el = document.getElementById('activity-feed');
+  if (!feed.length) { el.innerHTML = '<div class="text-slate-500 text-xs">No activity</div>'; return; }
+  el.innerHTML = feed.map(entry => {
+    const from = (entry.agent || entry.from || 'system').toLowerCase();
+    const meta  = AGENT_META[from] || { emoji: '📡' };
+    return `
+    <div class="flex gap-2 items-start hover:bg-white/3 rounded-lg p-1.5 -mx-1.5 transition-colors">
+      <span class="text-base shrink-0">${meta.emoji}</span>
+      <div class="flex-1 min-w-0">
+        <div class="flex justify-between items-baseline">
+          <span class="text-[10px] font-bold text-slate-400 uppercase">${from}</span>
+          <span class="text-[9px] text-slate-600 mono shrink-0 ml-2">${timeAgo(entry.ts)}</span>
+        </div>
+        <div class="text-[11px] text-slate-400 leading-snug">${entry.event || entry.text || ''}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ─── Render: Alerts + Infra ───────────────────────────────────────────────────
+function renderAlerts(data) {
+  const alerts = data.alerts || [
+    { type:'info',    text:'Heimdall Bridge Monitoring Active' },
+    { type:'info',    text:'Leader Election Protocol Running' },
+    { type:'info',    text:'Sync daemon pushing every 60s' },
+    { type:'info',    text:'Self-evolution weekly cycle armed' },
+  ];
+  document.getElementById('alerts-list').innerHTML = alerts.map(a => {
+    const c = a.type==='error' ? 'text-red-400 bg-red-400/8' : a.type==='warning' ? 'text-yellow-400 bg-yellow-400/8' : 'text-blue-400 bg-blue-400/8';
+    const dot = a.type==='error' ? 'bg-red-500' : a.type==='warning' ? 'bg-yellow-500' : 'bg-blue-500';
+    return `
+    <div class="flex items-center gap-2 p-2 rounded-lg ${c} border border-white/5">
+      <div class="pulse-dot ${dot} shrink-0"></div>
+      <div class="text-[10px] mono uppercase font-bold truncate">${a.text}</div>
+    </div>`;
+  }).join('');
+
+  const infra = [
+    { label:'Mission DB',    status:'online', icon:'🗄️' },
+    { label:'Telegram Bot',  status:'online', icon:'📱' },
+    { label:'Sync Daemon',   status:'online', icon:'🔄' },
+    { label:'GitHub Pages',  status:'online', icon:'🌐' },
+    { label:'Leader Elect.', status:'online', icon:'👑' },
+    { label:'Self-Evolve',   status:'armed',  icon:'🔬' },
+  ];
+  document.getElementById('infra-grid').innerHTML = infra.map(i => `
+    <div class="flex items-center gap-2 p-2 rounded-lg glass border border-white/5">
+      <span class="text-sm">${i.icon}</span>
+      <div>
+        <div class="text-[10px] font-bold text-slate-300">${i.label}</div>
+        <div class="text-[9px] ${i.status==='online'||i.status==='armed' ? 'text-green-400':'text-red-400'}">${i.status}</div>
+      </div>
+    </div>`).join('');
+}
+
+// ─── Main refresh ─────────────────────────────────────────────────────────────
+async function refresh() {
+  syncCountdown = REFRESH_INTERVAL;
+  const data = await fetchData();
+  if (!data) {
+    document.getElementById('last-sync').textContent = 'Error';
+    showToast('Could not fetch data.json', 'error');
+    return;
+  }
+  allMissions = data.missions || [];
+  renderStats(data);
+  renderAgents(data);
+  renderMissionList();
+  renderLeaderboard(data);
+  renderDonut(data);
+  renderTrend(data);
+  renderOKR(data);
+  renderRadar(data);
+  renderActivity(data);
+  renderAlerts(data);
+
+  document.getElementById('last-sync').textContent = timeAgo(data.updated) || 'just now';
+  document.getElementById('footer-ts').textContent = 'SYSTEM TIME: ' + new Date().toUTCString();
+  document.getElementById('agent-count').textContent = (data.agents || []).length + ' AGENTS';
+}
+
+// ─── Keyboard shortcuts ───────────────────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  const tag = document.activeElement?.tagName?.toUpperCase();
+  if (tag === 'INPUT') {
+    if (e.key === 'Escape') document.activeElement.blur();
+    return;
+  }
+  if (document.getElementById('modal').classList.contains('hidden') === false) {
+    if (e.key === 'Escape') document.getElementById('modal').classList.add('hidden');
+    return;
+  }
+  if (!document.getElementById('shortcuts-modal').classList.contains('hidden')) {
+    document.getElementById('shortcuts-modal').classList.add('hidden');
+    return;
+  }
+  const filters = ['all','pending','in_progress','done','failed'];
+  if (['1','2','3','4','5'].includes(e.key)) filterMissions(filters[+e.key - 1]);
+  if (e.key === 'r' || e.key === 'R') refresh();
+  if (e.key === 's' || e.key === 'S') { document.getElementById('search-input')?.focus(); e.preventDefault(); }
+  if (e.key === '?') document.getElementById('shortcuts-modal').classList.toggle('hidden');
+});
+
+// ─── Boot ─────────────────────────────────────────────────────────────────────
+refresh();
+setInterval(refresh, REFRESH_INTERVAL * 1000);
+</script>
 </body>
 </html>
