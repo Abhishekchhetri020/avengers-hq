@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-22T08:49:16.806285Z",
+  "updated": "2026-03-22T08:50:18.561577Z",
   "stats": {
-    "missions_done": 11,
-    "missions_active": 0,
-    "missions_pending": 7,
-    "avg_score": 1.8
+    "missions_done": 5,
+    "missions_active": 1,
+    "missions_pending": 13,
+    "avg_score": 2.4
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:49:16.805398Z"
+      "last_seen": "2026-03-22T08:50:18.559141Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:49:16.805560Z"
+      "last_seen": "2026-03-22T08:50:18.559313Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:49:16.805563Z"
+      "last_seen": "2026-03-22T08:50:18.559316Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:49:16.805566Z"
+      "last_seen": "2026-03-22T08:50:18.559318Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,73 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:49:16.805567Z"
+      "last_seen": "2026-03-22T08:50:18.559320Z"
     }
   ],
   "missions": [
+    {
+      "id": 41,
+      "title": "Fix OAuth token failure for agents: 'vision'",
+      "agent": "auto",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T08:49:22.375787",
+      "updated_at": "2026-03-22T08:49:22.375787"
+    },
+    {
+      "id": 40,
+      "title": "Fix OAuth token failure for agents: 'captain'",
+      "agent": "auto",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T08:49:22.373085",
+      "updated_at": "2026-03-22T08:49:22.373085"
+    },
+    {
+      "id": 39,
+      "title": "Build smart log parser: Read the last 100 lines of each agent log file (/tmp/gemini-bridge.log, /tmp/gemini-agent2-bridge.log, /tmp/gemini-agent3-bridge.log, /tmp/gemini-agent4-bridge.log, /tmp/ironman-bridge.log) and extract: (1) current task name, (2) last score, (3) iterations count. Output clean JSON to /tmp/agent_activity.json. Run it now and print the output.",
+      "agent": "auto",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T08:49:22.370776",
+      "updated_at": "2026-03-22T08:49:22.370776"
+    },
+    {
+      "id": 38,
+      "title": "Research and build a Python script that queries ~/.avengers/missions.db and produces a JSON analytics report: missions per agent, avg score per agent, score trend over last 7 days (by day), top 3 best missions. Save to /tmp/avengers_analytics.json and print it.",
+      "agent": "auto",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T08:49:22.367988",
+      "updated_at": "2026-03-22T08:49:22.367988"
+    },
+    {
+      "id": 37,
+      "title": "You are a UX designer reviewing a real-time agent dashboard. The dashboard has: agent status cards, live activity log feed, direct chat to agents, mission board. Research best practices for real-time operations dashboards. Write a detailed improvement spec covering: (1) what visual indicators would best show agent cognitive load, (2) how to show task progress %, (3) what keyboard shortcuts to add, (4) how to visualize score trends inline. Save to /tmp/dashboard_ux_spec.md",
+      "agent": "auto",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T08:49:22.364593",
+      "updated_at": "2026-03-22T08:49:22.364593"
+    },
+    {
+      "id": 36,
+      "title": "Fix OAuth token failure for agents: 'vision'",
+      "agent": "auto",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T08:49:22.362088",
+      "updated_at": "2026-03-22T08:49:22.362088"
+    },
+    {
+      "id": 35,
+      "title": "Fix OAuth token failure for agents: 'shuri', 'beast'",
+      "agent": "auto",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T08:49:22.357154",
+      "updated_at": "2026-03-22T08:49:22.357154"
+    },
     {
       "id": 34,
       "title": "Fix OAuth token failure for agents: 'shuri', 'beast'",
@@ -117,10 +180,10 @@
       "id": 28,
       "title": "Fix OAuth token failure for agents: 'vision'",
       "agent": "captain",
-      "status": "pending",
+      "status": "in_progress",
       "score": null,
       "created_at": "2026-03-22T05:55:45.324977",
-      "updated_at": "2026-03-22T05:55:45.324977"
+      "updated_at": "2026-03-22T08:49:22.378752"
     },
     {
       "id": 27,
@@ -175,69 +238,6 @@
       "score": 8.0,
       "created_at": "2026-03-21T22:39:58.121173",
       "updated_at": "2026-03-21T22:46:22.287133"
-    },
-    {
-      "id": 21,
-      "title": "Search the web for latest news about SpaceX in 2026 and summarize the top 3 headlines",
-      "agent": "captain",
-      "status": "failed",
-      "score": null,
-      "created_at": "2026-03-21T22:26:56.236092",
-      "updated_at": "2026-03-21T22:28:49.555578"
-    },
-    {
-      "id": 20,
-      "title": "Search the web for latest news about SpaceX in 2026 and summarize the top 3 headlines",
-      "agent": "captain",
-      "status": "done",
-      "score": 3.0,
-      "created_at": "2026-03-21T22:26:01.900624",
-      "updated_at": "2026-03-21T22:28:48.581921"
-    },
-    {
-      "id": 19,
-      "title": "[REVIEW] Nano-Tech evolution proposal \u2014 3 patches",
-      "agent": "shuri",
-      "status": "done",
-      "score": 1.0,
-      "created_at": "2026-03-21T22:15:30.104340",
-      "updated_at": "2026-03-21T22:20:08.859651"
-    },
-    {
-      "id": 18,
-      "title": "[REVIEW] Nano-Tech evolution proposal \u2014 3 patches",
-      "agent": "ironman",
-      "status": "done",
-      "score": 1.0,
-      "created_at": "2026-03-21T22:15:05.449268",
-      "updated_at": "2026-03-21T22:24:55.126490"
-    },
-    {
-      "id": 17,
-      "title": "Investigate captain bridge error spike (6 errors in 10min)",
-      "agent": "shuri",
-      "status": "done",
-      "score": 1.0,
-      "created_at": "2026-03-21T22:03:55.758516",
-      "updated_at": "2026-03-21T22:13:28.898476"
-    },
-    {
-      "id": 16,
-      "title": "Investigate captain bridge error spike (6 errors in 10min)",
-      "agent": "beast",
-      "status": "done",
-      "score": 1.0,
-      "created_at": "2026-03-21T22:02:43.769740",
-      "updated_at": "2026-03-21T22:08:34.546647"
-    },
-    {
-      "id": 15,
-      "title": "Investigate captain bridge error spike (7 errors in 10min)",
-      "agent": "shuri",
-      "status": "done",
-      "score": 1.0,
-      "created_at": "2026-03-21T21:53:25.178699",
-      "updated_at": "2026-03-21T22:02:54.661576"
     }
   ],
   "okr": {
