@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-22T15:11:35.705037Z",
+  "updated": "2026-03-22T15:12:37.641660Z",
   "stats": {
     "missions_done": 15,
     "missions_active": 0,
@@ -13,9 +13,9 @@
       "emoji": "\ud83e\uddb8",
       "color": "#ef4444",
       "status": "idle",
-      "current_task": "Awaiting orders",
-      "confidence": "ready",
-      "last_seen": "2026-03-22T15:11:35.704217Z"
+      "current_task": "I want to make an android app which can generate seating plan in schools for examination, I want the",
+      "confidence": "working",
+      "last_seen": "2026-03-22T15:12:37.640274Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T15:11:35.704367Z"
+      "last_seen": "2026-03-22T15:12:37.640458Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T15:11:35.704371Z"
+      "last_seen": "2026-03-22T15:12:37.640462Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T15:11:35.704373Z"
+      "last_seen": "2026-03-22T15:12:37.640465Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T15:11:35.704375Z"
+      "last_seen": "2026-03-22T15:12:37.640467Z"
     }
   ],
   "missions": [
@@ -317,7 +317,7 @@
     ]
   },
   "scoreboard": {
-    "research": 1,
+    "research": 10,
     "code_optimization": 2,
     "data_analysis": 0,
     "prompt_quality": 0,
