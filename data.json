@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-22T11:12:24.121802Z",
+  "updated": "2026-03-22T11:13:25.957040Z",
   "stats": {
     "missions_done": 4,
     "missions_active": 1,
-    "missions_pending": 4,
+    "missions_pending": 5,
     "avg_score": 7.2
   },
   "agents": [
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:12:24.118235Z"
+      "last_seen": "2026-03-22T11:13:25.955516Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:12:24.118841Z"
+      "last_seen": "2026-03-22T11:13:25.955657Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:12:24.118844Z"
+      "last_seen": "2026-03-22T11:13:25.955660Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:12:24.118882Z"
+      "last_seen": "2026-03-22T11:13:25.955662Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,19 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:12:24.118888Z"
+      "last_seen": "2026-03-22T11:13:25.955664Z"
     }
   ],
   "missions": [
+    {
+      "id": 50,
+      "title": "Investigate vision bridge error spike: read log at /tmp/gemini-agent4-bridge.log, find root cause, fix it. (6 errors in 10min, samples: 2026-03-22 15:19:47,156 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:24:09,421 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
+      "agent": "beast",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T11:12:32.383661",
+      "updated_at": "2026-03-22T11:12:32.383661"
+    },
     {
       "id": 49,
       "title": "Investigate beast bridge error spike: read log at /tmp/gemini-agent3-bridge.log, find root cause, fix it. (11 errors in 10min, samples: 2026-03-22 15:19:44,291 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:19:47,436 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
@@ -229,15 +238,6 @@
       "score": null,
       "created_at": "2026-03-22T07:12:40.121710",
       "updated_at": "2026-03-22T07:12:40.121710"
-    },
-    {
-      "id": 30,
-      "title": "Build smart log parser: Read the last 100 lines of each agent log file (/tmp/gemini-bridge.log, /tmp/gemini-agent2-bridge.log, /tmp/gemini-agent3-bridge.log, /tmp/gemini-agent4-bridge.log, /tmp/ironman-bridge.log) and extract: (1) current task name, (2) last score, (3) iterations count. Output clean JSON to /tmp/agent_activity.json. Run it now and print the output.",
-      "agent": "beast",
-      "status": "failed",
-      "score": null,
-      "created_at": "2026-03-22T07:12:40.118283",
-      "updated_at": "2026-03-22T07:12:40.118283"
     }
   ],
   "okr": {
