@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-22T15:17:48.591710Z",
+  "updated": "2026-03-22T15:18:50.385694Z",
   "stats": {
-    "missions_done": 16,
-    "missions_active": 1,
-    "missions_pending": 2,
-    "avg_score": 8.8
+    "missions_done": 19,
+    "missions_active": 0,
+    "missions_pending": 0,
+    "avg_score": 9.0
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "I want to make an android app which can generate seating plan in schools for examination, I want the",
       "confidence": "working",
-      "last_seen": "2026-03-22T15:17:48.589733Z"
+      "last_seen": "2026-03-22T15:18:50.384347Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T15:17:48.590126Z"
+      "last_seen": "2026-03-22T15:18:50.384504Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T15:17:48.590132Z"
+      "last_seen": "2026-03-22T15:18:50.384509Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T15:17:48.590135Z"
+      "last_seen": "2026-03-22T15:18:50.384511Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T15:17:48.590138Z"
+      "last_seen": "2026-03-22T15:18:50.384513Z"
     }
   ],
   "missions": [
@@ -63,28 +63,28 @@
       "id": 60,
       "title": "Investigate vision bridge error spike: read log at /tmp/gemini-agent4-bridge.log, find root cause, fix it. (6 errors in 10min, samples: 2026-03-22 15:19:47,156 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:24:09,421 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
       "agent": "beast",
-      "status": "pending",
-      "score": null,
+      "status": "done",
+      "score": 10.0,
       "created_at": "2026-03-22T15:16:34.370082",
-      "updated_at": "2026-03-22T15:16:34.370082"
+      "updated_at": "2026-03-22T15:18:26.724456"
     },
     {
       "id": 59,
       "title": "Investigate beast bridge error spike: read log at /tmp/gemini-agent3-bridge.log, find root cause, fix it. (11 errors in 10min, samples: 2026-03-22 15:19:44,291 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:19:47,436 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
       "agent": "beast",
-      "status": "pending",
-      "score": null,
+      "status": "done",
+      "score": 10.0,
       "created_at": "2026-03-22T15:16:33.084109",
-      "updated_at": "2026-03-22T15:16:33.084109"
+      "updated_at": "2026-03-22T15:18:08.721468"
     },
     {
       "id": 58,
       "title": "Investigate shuri bridge error spike: read log at /tmp/gemini-agent2-bridge.log, find root cause, fix it. (10 errors in 10min, samples: 2026-03-22 15:19:42,908 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:19:46,899 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
       "agent": "beast",
-      "status": "in_progress",
-      "score": null,
+      "status": "done",
+      "score": 10.0,
       "created_at": "2026-03-22T15:16:30.331489",
-      "updated_at": "2026-03-22T15:17:30.089443"
+      "updated_at": "2026-03-22T15:17:48.730666"
     },
     {
       "id": 57,
