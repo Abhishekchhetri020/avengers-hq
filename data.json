@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-22T13:29:54.265873Z",
+  "updated": "2026-03-22T14:08:15.446121Z",
   "stats": {
     "missions_done": 13,
-    "missions_active": 0,
-    "missions_pending": 2,
+    "missions_active": 1,
+    "missions_pending": 1,
     "avg_score": 8.4
   },
   "agents": [
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T13:29:54.264054Z"
+      "last_seen": "2026-03-22T14:08:15.442311Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T13:29:54.264284Z"
+      "last_seen": "2026-03-22T14:08:15.442893Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T13:29:54.264292Z"
+      "last_seen": "2026-03-22T14:08:15.442899Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T13:29:54.264296Z"
+      "last_seen": "2026-03-22T14:08:15.442904Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T13:29:54.264299Z"
+      "last_seen": "2026-03-22T14:08:15.442908Z"
     }
   ],
   "missions": [
@@ -72,10 +72,10 @@
       "id": 54,
       "title": "Investigate shuri bridge error spike: read log at /tmp/gemini-agent2-bridge.log, find root cause, fix it. (10 errors in 10min, samples: 2026-03-22 15:19:42,908 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:19:46,899 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
       "agent": "beast",
-      "status": "pending",
+      "status": "in_progress",
       "score": null,
       "created_at": "2026-03-22T12:06:06.680423",
-      "updated_at": "2026-03-22T12:06:06.680423"
+      "updated_at": "2026-03-22T14:08:13.571449"
     },
     {
       "id": 53,
