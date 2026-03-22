@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-22T17:16:16.366170Z",
+  "updated": "2026-03-22T17:17:18.268103Z",
   "stats": {
-    "missions_done": 20,
-    "missions_active": 0,
+    "missions_done": 19,
+    "missions_active": 1,
     "missions_pending": 0,
-    "avg_score": 8.8
+    "avg_score": 8.7
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T17:16:16.364596Z"
+      "last_seen": "2026-03-22T17:17:18.266411Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T17:16:16.364758Z"
+      "last_seen": "2026-03-22T17:17:18.266560Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T17:16:16.364763Z"
+      "last_seen": "2026-03-22T17:17:18.266565Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T17:16:16.364766Z"
+      "last_seen": "2026-03-22T17:17:18.266567Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,19 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T17:16:16.364768Z"
+      "last_seen": "2026-03-22T17:17:18.266569Z"
     }
   ],
   "missions": [
+    {
+      "id": 63,
+      "title": "Fix OAuth token failure for agents: 'shuri', 'beast', 'vision', 'captain'",
+      "agent": "captain",
+      "status": "in_progress",
+      "score": null,
+      "created_at": "2026-03-22T17:16:39.265647",
+      "updated_at": "2026-03-22T17:16:58.611995"
+    },
     {
       "id": 62,
       "title": "Research this exact question and give a definitive answer: Does Gemini API OAuth (personal Google account login via 'gemini auth login') give more quota/rate limits than using API keys (GEMINI_API_KEY)? Specifically for gemini-2.5-flash model. Find: (1) exact RPM and TPM limits for OAuth vs API key on free tier, (2) any official Google/Gemini docs or community posts confirming the difference, (3) whether switching back to OAuth would fix our 429 rate limit errors. Save findings to /tmp/oauth_vs_apikey_research.md and report back.",
@@ -229,15 +238,6 @@
       "score": 10.0,
       "created_at": "2026-03-22T09:56:06.215641",
       "updated_at": "2026-03-22T11:10:30.205845"
-    },
-    {
-      "id": 43,
-      "title": "Investigate shuri bridge error spike: read log at /tmp/gemini-agent2-bridge.log, find root cause, fix it. (6 errors in 10min, samples: 2026-03-22 15:19:42,908 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:19:46,899 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
-      "agent": "beast",
-      "status": "done",
-      "score": 10.0,
-      "created_at": "2026-03-22T09:55:55.018453",
-      "updated_at": "2026-03-22T11:01:37.321503"
     }
   ],
   "okr": {
