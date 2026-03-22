@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-22T10:00:54.360606Z",
+  "updated": "2026-03-22T10:45:30.284603Z",
   "stats": {
     "missions_done": 5,
     "missions_active": 1,
-    "missions_pending": 3,
+    "missions_pending": 2,
     "avg_score": 2.8
   },
   "agents": [
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T10:00:54.359711Z"
+      "last_seen": "2026-03-22T10:45:30.282446Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T10:00:54.359869Z"
+      "last_seen": "2026-03-22T10:45:30.282622Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T10:00:54.359872Z"
+      "last_seen": "2026-03-22T10:45:30.282625Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T10:00:54.359875Z"
+      "last_seen": "2026-03-22T10:45:30.282628Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T10:00:54.359876Z"
+      "last_seen": "2026-03-22T10:45:30.282630Z"
     }
   ],
   "missions": [
@@ -81,10 +81,10 @@
       "id": 43,
       "title": "Investigate shuri bridge error spike: read log at /tmp/gemini-agent2-bridge.log, find root cause, fix it. (6 errors in 10min, samples: 2026-03-22 15:19:42,908 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:19:46,899 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
       "agent": "beast",
-      "status": "pending",
+      "status": "in_progress",
       "score": null,
       "created_at": "2026-03-22T09:55:55.018453",
-      "updated_at": "2026-03-22T09:55:55.018453"
+      "updated_at": "2026-03-22T10:17:16.249612"
     },
     {
       "id": 42,
@@ -126,7 +126,7 @@
       "id": 38,
       "title": "Research and build a Python script that queries ~/.avengers/missions.db and produces a JSON analytics report: missions per agent, avg score per agent, score trend over last 7 days (by day), top 3 best missions. Save to /tmp/avengers_analytics.json and print it.",
       "agent": "beast",
-      "status": "in_progress",
+      "status": "failed",
       "score": null,
       "created_at": "2026-03-22T08:49:22.367988",
       "updated_at": "2026-03-22T09:23:31.119365"
