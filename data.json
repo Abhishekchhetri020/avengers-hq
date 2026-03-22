@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-22T22:29:47.402438Z",
+  "updated": "2026-03-22T22:30:51.134386Z",
   "stats": {
     "missions_done": 20,
     "missions_active": 0,
     "missions_pending": 0,
-    "avg_score": 7.5
+    "avg_score": 7.2
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T22:29:47.401652Z"
+      "last_seen": "2026-03-22T22:30:51.133015Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T22:29:47.401794Z"
+      "last_seen": "2026-03-22T22:30:51.133183Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T22:29:47.401798Z"
+      "last_seen": "2026-03-22T22:30:51.133188Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T22:29:47.401801Z"
+      "last_seen": "2026-03-22T22:30:51.133190Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,19 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T22:29:47.401803Z"
+      "last_seen": "2026-03-22T22:30:51.133192Z"
     }
   ],
   "missions": [
+    {
+      "id": 68,
+      "title": "Fix OAuth token failure for agents: 'beast', 'shuri', 'vision', 'captain'",
+      "agent": "captain",
+      "status": "done",
+      "score": 3.0,
+      "created_at": "2026-03-22T22:29:49.001023",
+      "updated_at": "2026-03-22T22:30:39.279833"
+    },
     {
       "id": 67,
       "title": "Fix OAuth token failure for agents: 'beast', 'vision', 'shuri', 'captain'",
@@ -229,15 +238,6 @@
       "score": 10.0,
       "created_at": "2026-03-22T11:02:30.790641",
       "updated_at": "2026-03-22T11:23:06.051607"
-    },
-    {
-      "id": 48,
-      "title": "Investigate shuri bridge error spike: read log at /tmp/gemini-agent2-bridge.log, find root cause, fix it. (10 errors in 10min, samples: 2026-03-22 15:19:42,908 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:19:46,899 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
-      "agent": "beast",
-      "status": "done",
-      "score": 10.0,
-      "created_at": "2026-03-22T11:02:29.503447",
-      "updated_at": "2026-03-22T11:22:31.831023"
     }
   ],
   "okr": {
