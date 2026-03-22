@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-22T02:06:20.201350Z",
+  "updated": "2026-03-22T02:07:22.130184Z",
   "stats": {
-    "missions_done": 16,
+    "missions_done": 17,
     "missions_active": 1,
-    "missions_pending": 1,
-    "avg_score": 1.9
+    "missions_pending": 0,
+    "avg_score": 1.8
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T02:06:20.198865Z"
+      "last_seen": "2026-03-22T02:07:22.127410Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T02:06:20.199117Z"
+      "last_seen": "2026-03-22T02:07:22.127774Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T02:06:20.199120Z"
+      "last_seen": "2026-03-22T02:07:22.127778Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T02:06:20.199123Z"
+      "last_seen": "2026-03-22T02:07:22.127781Z"
     },
     {
       "name": "vision",
@@ -55,27 +55,27 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T02:06:20.199125Z"
+      "last_seen": "2026-03-22T02:07:22.127784Z"
     }
   ],
   "missions": [
     {
       "id": 27,
       "title": "Fix OAuth token failure for agents: 'vision'",
-      "agent": "auto",
-      "status": "pending",
+      "agent": "beast",
+      "status": "in_progress",
       "score": null,
       "created_at": "2026-03-22T02:02:44.864195",
-      "updated_at": "2026-03-22T02:02:44.864195"
+      "updated_at": "2026-03-22T02:07:19.289255"
     },
     {
       "id": 26,
       "title": "Fix OAuth token failure for agents: 'vision'",
       "agent": "captain",
-      "status": "in_progress",
-      "score": null,
+      "status": "done",
+      "score": 1.0,
       "created_at": "2026-03-22T02:02:12.367266",
-      "updated_at": "2026-03-22T02:02:44.871638"
+      "updated_at": "2026-03-22T02:07:18.221814"
     },
     {
       "id": 25,
