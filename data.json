@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-22T09:46:05.175740Z",
+  "updated": "2026-03-22T09:50:09.908216Z",
   "stats": {
-    "missions_done": 6,
-    "missions_active": 2,
+    "missions_done": 7,
+    "missions_active": 1,
     "missions_pending": 0,
-    "avg_score": 1.3
+    "avg_score": 2.6
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:46:05.174097Z"
+      "last_seen": "2026-03-22T09:50:09.906568Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:46:05.174262Z"
+      "last_seen": "2026-03-22T09:50:09.906738Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:46:05.174265Z"
+      "last_seen": "2026-03-22T09:50:09.906740Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:46:05.174267Z"
+      "last_seen": "2026-03-22T09:50:09.906743Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:46:05.174269Z"
+      "last_seen": "2026-03-22T09:50:09.906744Z"
     }
   ],
   "missions": [
@@ -90,10 +90,10 @@
       "id": 39,
       "title": "Build smart log parser: Read the last 100 lines of each agent log file (/tmp/gemini-bridge.log, /tmp/gemini-agent2-bridge.log, /tmp/gemini-agent3-bridge.log, /tmp/gemini-agent4-bridge.log, /tmp/ironman-bridge.log) and extract: (1) current task name, (2) last score, (3) iterations count. Output clean JSON to /tmp/agent_activity.json. Run it now and print the output.",
       "agent": "beast",
-      "status": "in_progress",
-      "score": null,
+      "status": "done",
+      "score": 10.0,
       "created_at": "2026-03-22T08:49:22.370776",
-      "updated_at": "2026-03-22T09:45:19.436186"
+      "updated_at": "2026-03-22T09:46:16.536301"
     },
     {
       "id": 38,
