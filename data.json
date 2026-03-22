@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-22T17:17:18.268103Z",
+  "updated": "2026-03-22T17:18:22.988059Z",
   "stats": {
-    "missions_done": 19,
-    "missions_active": 1,
+    "missions_done": 20,
+    "missions_active": 0,
     "missions_pending": 0,
-    "avg_score": 8.7
+    "avg_score": 8.4
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T17:17:18.266411Z"
+      "last_seen": "2026-03-22T17:18:22.987194Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T17:17:18.266560Z"
+      "last_seen": "2026-03-22T17:18:22.987354Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T17:17:18.266565Z"
+      "last_seen": "2026-03-22T17:18:22.987358Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T17:17:18.266567Z"
+      "last_seen": "2026-03-22T17:18:22.987361Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T17:17:18.266569Z"
+      "last_seen": "2026-03-22T17:18:22.987363Z"
     }
   ],
   "missions": [
@@ -63,10 +63,10 @@
       "id": 63,
       "title": "Fix OAuth token failure for agents: 'shuri', 'beast', 'vision', 'captain'",
       "agent": "captain",
-      "status": "in_progress",
-      "score": null,
+      "status": "done",
+      "score": 3.0,
       "created_at": "2026-03-22T17:16:39.265647",
-      "updated_at": "2026-03-22T17:16:58.611995"
+      "updated_at": "2026-03-22T17:17:33.878602"
     },
     {
       "id": 62,
