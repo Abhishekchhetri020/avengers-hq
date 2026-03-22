@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-22T09:22:51.262861Z",
+  "updated": "2026-03-22T09:23:53.747342Z",
   "stats": {
     "missions_done": 6,
-    "missions_active": 2,
-    "missions_pending": 2,
+    "missions_active": 1,
+    "missions_pending": 1,
     "avg_score": 2.5
   },
   "agents": [
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:22:51.257110Z"
+      "last_seen": "2026-03-22T09:23:53.745362Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:22:51.257752Z"
+      "last_seen": "2026-03-22T09:23:53.745578Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:22:51.257757Z"
+      "last_seen": "2026-03-22T09:23:53.745582Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:22:51.257761Z"
+      "last_seen": "2026-03-22T09:23:53.745585Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:22:51.257764Z"
+      "last_seen": "2026-03-22T09:23:53.745587Z"
     }
   ],
   "missions": [
@@ -89,17 +89,17 @@
     {
       "id": 38,
       "title": "Research and build a Python script that queries ~/.avengers/missions.db and produces a JSON analytics report: missions per agent, avg score per agent, score trend over last 7 days (by day), top 3 best missions. Save to /tmp/avengers_analytics.json and print it.",
-      "agent": "auto",
-      "status": "pending",
+      "agent": "beast",
+      "status": "in_progress",
       "score": null,
       "created_at": "2026-03-22T08:49:22.367988",
-      "updated_at": "2026-03-22T08:49:22.367988"
+      "updated_at": "2026-03-22T09:23:31.119365"
     },
     {
       "id": 37,
       "title": "You are a UX designer reviewing a real-time agent dashboard. The dashboard has: agent status cards, live activity log feed, direct chat to agents, mission board. Research best practices for real-time operations dashboards. Write a detailed improvement spec covering: (1) what visual indicators would best show agent cognitive load, (2) how to show task progress %, (3) what keyboard shortcuts to add, (4) how to visualize score trends inline. Save to /tmp/dashboard_ux_spec.md",
       "agent": "shuri",
-      "status": "in_progress",
+      "status": "failed",
       "score": null,
       "created_at": "2026-03-22T08:49:22.364593",
       "updated_at": "2026-03-22T08:52:49.154129"
@@ -171,7 +171,7 @@
       "id": 29,
       "title": "Fix OAuth token failure for agents: 'captain'",
       "agent": "captain",
-      "status": "in_progress",
+      "status": "failed",
       "score": null,
       "created_at": "2026-03-22T06:35:47.963704",
       "updated_at": "2026-03-22T08:50:41.264896"
