@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-22T09:55:36.321561Z",
+  "updated": "2026-03-22T09:56:37.892774Z",
   "stats": {
-    "missions_done": 7,
+    "missions_done": 5,
     "missions_active": 1,
-    "missions_pending": 0,
-    "avg_score": 2.6
+    "missions_pending": 3,
+    "avg_score": 3.2
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:55:36.319707Z"
+      "last_seen": "2026-03-22T09:56:37.891097Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:55:36.319865Z"
+      "last_seen": "2026-03-22T09:56:37.891259Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:55:36.319869Z"
+      "last_seen": "2026-03-22T09:56:37.891262Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:55:36.319871Z"
+      "last_seen": "2026-03-22T09:56:37.891264Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,37 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:55:36.319873Z"
+      "last_seen": "2026-03-22T09:56:37.891266Z"
     }
   ],
   "missions": [
+    {
+      "id": 45,
+      "title": "Investigate vision bridge error spike: read log at /tmp/gemini-agent4-bridge.log, find root cause, fix it. (5 errors in 10min, samples: 2026-03-22 15:19:47,156 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:24:09,421 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
+      "agent": "beast",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T09:56:17.229321",
+      "updated_at": "2026-03-22T09:56:17.229321"
+    },
+    {
+      "id": 44,
+      "title": "Investigate beast bridge error spike: read log at /tmp/gemini-agent3-bridge.log, find root cause, fix it. (6 errors in 10min, samples: 2026-03-22 15:19:44,291 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:19:47,436 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
+      "agent": "beast",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T09:56:06.215641",
+      "updated_at": "2026-03-22T09:56:06.215641"
+    },
+    {
+      "id": 43,
+      "title": "Investigate shuri bridge error spike: read log at /tmp/gemini-agent2-bridge.log, find root cause, fix it. (6 errors in 10min, samples: 2026-03-22 15:19:42,908 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:19:46,899 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
+      "agent": "beast",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T09:55:55.018453",
+      "updated_at": "2026-03-22T09:55:55.018453"
+    },
     {
       "id": 42,
       "title": "Fix OAuth token failure for agents: 'captain', 'shuri', 'beast', 'vision'",
@@ -211,33 +238,6 @@
       "score": 1.0,
       "created_at": "2026-03-22T02:02:12.367266",
       "updated_at": "2026-03-22T02:07:18.221814"
-    },
-    {
-      "id": 25,
-      "title": "Fix OAuth token failure for agents: 'captain'",
-      "agent": "beast",
-      "status": "done",
-      "score": 1.0,
-      "created_at": "2026-03-22T01:12:32.271256",
-      "updated_at": "2026-03-22T01:21:39.700468"
-    },
-    {
-      "id": 24,
-      "title": "Fix OAuth token failure for agents: 'captain'",
-      "agent": "captain",
-      "status": "done",
-      "score": 1.0,
-      "created_at": "2026-03-22T01:12:09.570607",
-      "updated_at": "2026-03-22T01:17:02.782316"
-    },
-    {
-      "id": 23,
-      "title": "Here is a website: https://www.gdgoenkadarbhanga.in/",
-      "agent": "captain",
-      "status": "failed",
-      "score": 1.0,
-      "created_at": "2026-03-21T22:40:20.516271",
-      "updated_at": "2026-03-21T22:51:07.192019"
     }
   ],
   "okr": {
