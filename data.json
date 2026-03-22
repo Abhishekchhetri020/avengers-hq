@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-22T08:04:53.431346Z",
+  "updated": "2026-03-22T08:05:55.624765Z",
   "stats": {
-    "missions_done": 12,
+    "missions_done": 11,
     "missions_active": 0,
-    "missions_pending": 6,
+    "missions_pending": 7,
     "avg_score": 1.8
   },
   "agents": [
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:04:53.429519Z"
+      "last_seen": "2026-03-22T08:05:55.622996Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:04:53.429699Z"
+      "last_seen": "2026-03-22T08:05:55.623149Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:04:53.429702Z"
+      "last_seen": "2026-03-22T08:05:55.623152Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:04:53.429704Z"
+      "last_seen": "2026-03-22T08:05:55.623154Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,19 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:04:53.429705Z"
+      "last_seen": "2026-03-22T08:05:55.623156Z"
     }
   ],
   "missions": [
+    {
+      "id": 34,
+      "title": "Fix OAuth token failure for agents: 'shuri', 'beast'",
+      "agent": "captain",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T08:05:52.931144",
+      "updated_at": "2026-03-22T08:05:52.931144"
+    },
     {
       "id": 33,
       "title": "Fix OAuth token failure for agents: 'vision'",
@@ -229,15 +238,6 @@
       "score": 1.0,
       "created_at": "2026-03-21T21:53:25.178699",
       "updated_at": "2026-03-21T22:02:54.661576"
-    },
-    {
-      "id": 14,
-      "title": "Investigate captain bridge error spike (7 errors in 10min)",
-      "agent": "beast",
-      "status": "done",
-      "score": 1.0,
-      "created_at": "2026-03-21T21:52:42.259049",
-      "updated_at": "2026-03-21T21:58:13.359111"
     }
   ],
   "okr": {
