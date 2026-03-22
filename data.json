@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-22T11:23:17.573003Z",
+  "updated": "2026-03-22T11:24:20.597523Z",
   "stats": {
-    "missions_done": 9,
-    "missions_active": 2,
+    "missions_done": 10,
+    "missions_active": 1,
     "missions_pending": 0,
-    "avg_score": 8.8
+    "avg_score": 8.9
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:23:17.571447Z"
+      "last_seen": "2026-03-22T11:24:20.596148Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:23:17.571658Z"
+      "last_seen": "2026-03-22T11:24:20.596313Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:23:17.571663Z"
+      "last_seen": "2026-03-22T11:24:20.596317Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:23:17.571666Z"
+      "last_seen": "2026-03-22T11:24:20.596320Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:23:17.571669Z"
+      "last_seen": "2026-03-22T11:24:20.596322Z"
     }
   ],
   "missions": [
@@ -72,10 +72,10 @@
       "id": 50,
       "title": "Investigate vision bridge error spike: read log at /tmp/gemini-agent4-bridge.log, find root cause, fix it. (6 errors in 10min, samples: 2026-03-22 15:19:47,156 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:24:09,421 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
       "agent": "beast",
-      "status": "in_progress",
-      "score": null,
+      "status": "done",
+      "score": 10.0,
       "created_at": "2026-03-22T11:12:32.383661",
-      "updated_at": "2026-03-22T11:23:07.100187"
+      "updated_at": "2026-03-22T11:23:39.686512"
     },
     {
       "id": 49,
