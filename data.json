@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-22T11:15:29.438181Z",
+  "updated": "2026-03-22T11:16:01.579658Z",
   "stats": {
-    "missions_done": 4,
+    "missions_done": 5,
     "missions_active": 1,
     "missions_pending": 5,
-    "avg_score": 7.2
+    "avg_score": 7.8
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:15:29.436583Z"
+      "last_seen": "2026-03-22T11:16:01.561624Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:15:29.436748Z"
+      "last_seen": "2026-03-22T11:16:01.568338Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:15:29.436751Z"
+      "last_seen": "2026-03-22T11:16:01.568346Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:15:29.436753Z"
+      "last_seen": "2026-03-22T11:16:01.568350Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,19 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:15:29.436755Z"
+      "last_seen": "2026-03-22T11:16:01.568354Z"
     }
   ],
   "missions": [
+    {
+      "id": 51,
+      "title": "TEST SYSTEM AUDIT MISSION - DELETE ME",
+      "agent": "captain",
+      "status": "done",
+      "score": 10.0,
+      "created_at": "2026-03-22T11:15:45.994552",
+      "updated_at": "2026-03-22T11:15:45.996608"
+    },
     {
       "id": 50,
       "title": "Investigate vision bridge error spike: read log at /tmp/gemini-agent4-bridge.log, find root cause, fix it. (6 errors in 10min, samples: 2026-03-22 15:19:47,156 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:24:09,421 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
@@ -229,15 +238,6 @@
       "score": null,
       "created_at": "2026-03-22T07:12:40.125086",
       "updated_at": "2026-03-22T07:12:40.125086"
-    },
-    {
-      "id": 31,
-      "title": "Research and build a Python script that queries ~/.avengers/missions.db and produces a JSON analytics report: missions per agent, avg score per agent, score trend over last 7 days (by day), top 3 best missions. Save to /tmp/avengers_analytics.json and print it.",
-      "agent": "shuri",
-      "status": "failed",
-      "score": null,
-      "created_at": "2026-03-22T07:12:40.121710",
-      "updated_at": "2026-03-22T07:12:40.121710"
     }
   ],
   "okr": {
@@ -321,7 +321,7 @@
     "code_optimization": 2,
     "data_analysis": 0,
     "prompt_quality": 0,
-    "code": 10
+    "code": 1
   },
   "activity": [
     {
