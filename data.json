@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-22T15:46:45.336418Z",
+  "updated": "2026-03-22T15:47:47.551055Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "I want to make an android app which can generate seating plan in schools for examination, I want the",
       "confidence": "working",
-      "last_seen": "2026-03-22T15:46:45.334831Z"
+      "last_seen": "2026-03-22T15:47:47.549386Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Research existing school seating arrangement standards, common examination protocols (like alternati",
       "confidence": "working",
-      "last_seen": "2026-03-22T15:46:45.334992Z"
+      "last_seen": "2026-03-22T15:47:47.549594Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "idle",
       "confidence": "ready",
-      "last_seen": "2026-03-22T15:46:45.334997Z"
+      "last_seen": "2026-03-22T15:47:47.549599Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T15:46:45.334999Z"
+      "last_seen": "2026-03-22T15:47:47.549602Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T15:46:45.335002Z"
+      "last_seen": "2026-03-22T15:47:47.549605Z"
     }
   ],
   "missions": [
