@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-22T15:59:09.745752Z",
+  "updated": "2026-03-22T16:00:12.063093Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "I want to make an android app which can generate seating plan in schools for examination, I want the",
       "confidence": "working",
-      "last_seen": "2026-03-22T15:59:09.744898Z"
+      "last_seen": "2026-03-22T16:00:12.061138Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "idle",
       "confidence": "ready",
-      "last_seen": "2026-03-22T15:59:09.745052Z"
+      "last_seen": "2026-03-22T16:00:12.061350Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "idle",
       "confidence": "ready",
-      "last_seen": "2026-03-22T15:59:09.745057Z"
+      "last_seen": "2026-03-22T16:00:12.061357Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T15:59:09.745060Z"
+      "last_seen": "2026-03-22T16:00:12.061360Z"
     },
     {
       "name": "vision",
@@ -53,9 +53,9 @@
       "emoji": "\ud83d\udc41\ufe0f",
       "color": "#f59e0b",
       "status": "idle",
-      "current_task": "Synthesize the research and technical designs into a comprehensive development roadmap and write the",
-      "confidence": "working",
-      "last_seen": "2026-03-22T15:59:09.745062Z"
+      "current_task": "idle",
+      "confidence": "ready",
+      "last_seen": "2026-03-22T16:00:12.061364Z"
     }
   ],
   "missions": [
