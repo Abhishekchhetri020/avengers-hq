@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-22T15:18:50.385694Z",
+  "updated": "2026-03-22T15:19:52.244827Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "I want to make an android app which can generate seating plan in schools for examination, I want the",
       "confidence": "working",
-      "last_seen": "2026-03-22T15:18:50.384347Z"
+      "last_seen": "2026-03-22T15:19:52.243484Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T15:18:50.384504Z"
+      "last_seen": "2026-03-22T15:19:52.243642Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T15:18:50.384509Z"
+      "last_seen": "2026-03-22T15:19:52.243647Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T15:18:50.384511Z"
+      "last_seen": "2026-03-22T15:19:52.243649Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T15:18:50.384513Z"
+      "last_seen": "2026-03-22T15:19:52.243651Z"
     }
   ],
   "missions": [
