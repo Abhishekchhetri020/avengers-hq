@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-22T16:16:48.718463Z",
+  "updated": "2026-03-22T16:17:50.740159Z",
   "stats": {
-    "missions_done": 19,
-    "missions_active": 1,
+    "missions_done": 20,
+    "missions_active": 0,
     "missions_pending": 0,
-    "avg_score": 9.0
+    "avg_score": 8.7
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T16:16:48.715208Z"
+      "last_seen": "2026-03-22T16:17:50.739196Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T16:16:48.715656Z"
+      "last_seen": "2026-03-22T16:17:50.739351Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T16:16:48.715662Z"
+      "last_seen": "2026-03-22T16:17:50.739357Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T16:16:48.715666Z"
+      "last_seen": "2026-03-22T16:17:50.739359Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T16:16:48.715670Z"
+      "last_seen": "2026-03-22T16:17:50.739361Z"
     }
   ],
   "missions": [
@@ -63,10 +63,10 @@
       "id": 61,
       "title": "Fix OAuth token failure for agents: 'beast', 'vision', 'shuri', 'captain'",
       "agent": "captain",
-      "status": "in_progress",
-      "score": null,
+      "status": "done",
+      "score": 3.0,
       "created_at": "2026-03-22T16:16:36.928837",
-      "updated_at": "2026-03-22T16:16:40.228599"
+      "updated_at": "2026-03-22T16:17:05.989935"
     },
     {
       "id": 60,
@@ -321,7 +321,7 @@
     "code_optimization": 2,
     "data_analysis": 0,
     "prompt_quality": 0,
-    "code": 10
+    "code": 3
   },
   "activity": [
     {
