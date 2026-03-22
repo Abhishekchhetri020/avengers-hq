@@ -1,8 +1,8 @@
 {
-  "updated": "2026-03-22T16:15:46.640591Z",
+  "updated": "2026-03-22T16:16:48.718463Z",
   "stats": {
     "missions_done": 19,
-    "missions_active": 0,
+    "missions_active": 1,
     "missions_pending": 0,
     "avg_score": 9.0
   },
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T16:15:46.633381Z"
+      "last_seen": "2026-03-22T16:16:48.715208Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T16:15:46.633544Z"
+      "last_seen": "2026-03-22T16:16:48.715656Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T16:15:46.633549Z"
+      "last_seen": "2026-03-22T16:16:48.715662Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T16:15:46.633552Z"
+      "last_seen": "2026-03-22T16:16:48.715666Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,19 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T16:15:46.633554Z"
+      "last_seen": "2026-03-22T16:16:48.715670Z"
     }
   ],
   "missions": [
+    {
+      "id": 61,
+      "title": "Fix OAuth token failure for agents: 'beast', 'vision', 'shuri', 'captain'",
+      "agent": "captain",
+      "status": "in_progress",
+      "score": null,
+      "created_at": "2026-03-22T16:16:36.928837",
+      "updated_at": "2026-03-22T16:16:40.228599"
+    },
     {
       "id": 60,
       "title": "Investigate vision bridge error spike: read log at /tmp/gemini-agent4-bridge.log, find root cause, fix it. (6 errors in 10min, samples: 2026-03-22 15:19:47,156 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:24:09,421 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
@@ -229,15 +238,6 @@
       "score": 1.0,
       "created_at": "2026-03-22T09:32:50.160807",
       "updated_at": "2026-03-22T09:45:18.317422"
-    },
-    {
-      "id": 41,
-      "title": "Fix OAuth token failure for agents: 'vision'",
-      "agent": "auto",
-      "status": "failed",
-      "score": null,
-      "created_at": "2026-03-22T08:49:22.375787",
-      "updated_at": "2026-03-22T08:49:22.375787"
     }
   ],
   "okr": {
