@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-22T11:02:02.870636Z",
+  "updated": "2026-03-22T11:03:04.775227Z",
   "stats": {
-    "missions_done": 6,
+    "missions_done": 3,
     "missions_active": 1,
-    "missions_pending": 1,
-    "avg_score": 4.0
+    "missions_pending": 5,
+    "avg_score": 6.3
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:02:02.868955Z"
+      "last_seen": "2026-03-22T11:03:04.773080Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:02:02.869122Z"
+      "last_seen": "2026-03-22T11:03:04.773264Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:02:02.869125Z"
+      "last_seen": "2026-03-22T11:03:04.773267Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:02:02.869127Z"
+      "last_seen": "2026-03-22T11:03:04.773270Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,46 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T11:02:02.869129Z"
+      "last_seen": "2026-03-22T11:03:04.773281Z"
     }
   ],
   "missions": [
+    {
+      "id": 49,
+      "title": "Investigate beast bridge error spike: read log at /tmp/gemini-agent3-bridge.log, find root cause, fix it. (11 errors in 10min, samples: 2026-03-22 15:19:44,291 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:19:47,436 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
+      "agent": "beast",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T11:02:30.790641",
+      "updated_at": "2026-03-22T11:02:30.790641"
+    },
+    {
+      "id": 48,
+      "title": "Investigate shuri bridge error spike: read log at /tmp/gemini-agent2-bridge.log, find root cause, fix it. (10 errors in 10min, samples: 2026-03-22 15:19:42,908 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:19:46,899 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
+      "agent": "beast",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T11:02:29.503447",
+      "updated_at": "2026-03-22T11:02:29.503447"
+    },
+    {
+      "id": 47,
+      "title": "Investigate captain bridge error spike: read log at /tmp/gemini-bridge.log, find root cause, fix it. (9 errors in 10min, samples: 2026-03-22 15:24:16,944 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:24:22,094 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
+      "agent": "beast",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T11:02:28.232587",
+      "updated_at": "2026-03-22T11:02:28.232587"
+    },
+    {
+      "id": 46,
+      "title": "Fix OAuth token failure for agents: 'captain', 'shuri', 'beast'",
+      "agent": "captain",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T11:02:27.028736",
+      "updated_at": "2026-03-22T11:02:27.028736"
+    },
     {
       "id": 45,
       "title": "Investigate vision bridge error spike: read log at /tmp/gemini-agent4-bridge.log, find root cause, fix it. (5 errors in 10min, samples: 2026-03-22 15:19:47,156 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:24:09,421 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
@@ -202,42 +238,6 @@
       "score": null,
       "created_at": "2026-03-22T07:12:40.118283",
       "updated_at": "2026-03-22T07:12:40.118283"
-    },
-    {
-      "id": 29,
-      "title": "Fix OAuth token failure for agents: 'captain'",
-      "agent": "captain",
-      "status": "failed",
-      "score": null,
-      "created_at": "2026-03-22T06:35:47.963704",
-      "updated_at": "2026-03-22T08:50:41.264896"
-    },
-    {
-      "id": 28,
-      "title": "Fix OAuth token failure for agents: 'vision'",
-      "agent": "captain",
-      "status": "done",
-      "score": 3.0,
-      "created_at": "2026-03-22T05:55:45.324977",
-      "updated_at": "2026-03-22T08:50:39.997359"
-    },
-    {
-      "id": 27,
-      "title": "Fix OAuth token failure for agents: 'vision'",
-      "agent": "beast",
-      "status": "done",
-      "score": 1.0,
-      "created_at": "2026-03-22T02:02:44.864195",
-      "updated_at": "2026-03-22T02:28:30.643826"
-    },
-    {
-      "id": 26,
-      "title": "Fix OAuth token failure for agents: 'vision'",
-      "agent": "captain",
-      "status": "done",
-      "score": 1.0,
-      "created_at": "2026-03-22T02:02:12.367266",
-      "updated_at": "2026-03-22T02:07:18.221814"
     }
   ],
   "okr": {
