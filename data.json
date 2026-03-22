@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-22T12:06:03.786941Z",
+  "updated": "2026-03-22T13:29:54.265873Z",
   "stats": {
-    "missions_done": 11,
+    "missions_done": 13,
     "missions_active": 0,
-    "missions_pending": 0,
-    "avg_score": 8.1
+    "missions_pending": 2,
+    "avg_score": 8.4
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T12:06:03.786111Z"
+      "last_seen": "2026-03-22T13:29:54.264054Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T12:06:03.786287Z"
+      "last_seen": "2026-03-22T13:29:54.264284Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T12:06:03.786291Z"
+      "last_seen": "2026-03-22T13:29:54.264292Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T12:06:03.786294Z"
+      "last_seen": "2026-03-22T13:29:54.264296Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,46 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T12:06:03.786296Z"
+      "last_seen": "2026-03-22T13:29:54.264299Z"
     }
   ],
   "missions": [
+    {
+      "id": 55,
+      "title": "Investigate beast bridge error spike: read log at /tmp/gemini-agent3-bridge.log, find root cause, fix it. (11 errors in 10min, samples: 2026-03-22 15:19:44,291 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:19:47,436 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
+      "agent": "beast",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T12:06:07.680980",
+      "updated_at": "2026-03-22T12:06:07.680980"
+    },
+    {
+      "id": 54,
+      "title": "Investigate shuri bridge error spike: read log at /tmp/gemini-agent2-bridge.log, find root cause, fix it. (10 errors in 10min, samples: 2026-03-22 15:19:42,908 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:19:46,899 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
+      "agent": "beast",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T12:06:06.680423",
+      "updated_at": "2026-03-22T12:06:06.680423"
+    },
+    {
+      "id": 53,
+      "title": "Investigate captain bridge error spike: read log at /tmp/gemini-bridge.log, find root cause, fix it. (9 errors in 10min, samples: 2026-03-22 15:24:16,944 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr | 2026-03-22 15:24:22,094 [ERROR] getUpdates: HTTPSConnectionPool(host='api.telegr)",
+      "agent": "beast",
+      "status": "done",
+      "score": 10.0,
+      "created_at": "2026-03-22T12:06:04.930330",
+      "updated_at": "2026-03-22T13:29:53.535908"
+    },
+    {
+      "id": 52,
+      "title": "Fix OAuth token failure for agents: 'vision', 'beast', 'shuri', 'captain'",
+      "agent": "captain",
+      "status": "done",
+      "score": 10.0,
+      "created_at": "2026-03-22T12:06:03.788499",
+      "updated_at": "2026-03-22T12:06:32.675099"
+    },
     {
       "id": 51,
       "title": "TEST SYSTEM AUDIT MISSION - DELETE ME",
@@ -202,42 +238,6 @@
       "score": null,
       "created_at": "2026-03-22T08:49:22.362088",
       "updated_at": "2026-03-22T08:49:22.362088"
-    },
-    {
-      "id": 35,
-      "title": "Fix OAuth token failure for agents: 'shuri', 'beast'",
-      "agent": "auto",
-      "status": "failed",
-      "score": null,
-      "created_at": "2026-03-22T08:49:22.357154",
-      "updated_at": "2026-03-22T08:49:22.357154"
-    },
-    {
-      "id": 34,
-      "title": "Fix OAuth token failure for agents: 'shuri', 'beast'",
-      "agent": "captain",
-      "status": "failed",
-      "score": null,
-      "created_at": "2026-03-22T08:05:52.931144",
-      "updated_at": "2026-03-22T08:05:52.931144"
-    },
-    {
-      "id": 33,
-      "title": "Fix OAuth token failure for agents: 'vision'",
-      "agent": "captain",
-      "status": "failed",
-      "score": null,
-      "created_at": "2026-03-22T07:25:50.858382",
-      "updated_at": "2026-03-22T07:25:50.858382"
-    },
-    {
-      "id": 32,
-      "title": "You are a UX designer reviewing a real-time agent dashboard. The dashboard has: agent status cards, live activity log feed, direct chat to agents, mission board. Research best practices for real-time operations dashboards. Write a detailed improvement spec covering: (1) what visual indicators would best show agent cognitive load, (2) how to show task progress %, (3) what keyboard shortcuts to add, (4) how to visualize score trends inline. Save to /tmp/dashboard_ux_spec.md",
-      "agent": "vision",
-      "status": "failed",
-      "score": null,
-      "created_at": "2026-03-22T07:12:40.125086",
-      "updated_at": "2026-03-22T07:12:40.125086"
     }
   ],
   "okr": {
