@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-22T09:32:25.054845Z",
+  "updated": "2026-03-22T09:33:26.943264Z",
   "stats": {
-    "missions_done": 6,
+    "missions_done": 5,
     "missions_active": 1,
-    "missions_pending": 1,
-    "avg_score": 2.5
+    "missions_pending": 2,
+    "avg_score": 1.4
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:32:25.052045Z"
+      "last_seen": "2026-03-22T09:33:26.941681Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:32:25.052538Z"
+      "last_seen": "2026-03-22T09:33:26.941951Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:32:25.052543Z"
+      "last_seen": "2026-03-22T09:33:26.941956Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:32:25.052546Z"
+      "last_seen": "2026-03-22T09:33:26.941959Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,19 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T09:32:25.052549Z"
+      "last_seen": "2026-03-22T09:33:26.941962Z"
     }
   ],
   "missions": [
+    {
+      "id": 42,
+      "title": "Fix OAuth token failure for agents: 'captain', 'shuri', 'beast', 'vision'",
+      "agent": "captain",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T09:32:50.160807",
+      "updated_at": "2026-03-22T09:32:50.160807"
+    },
     {
       "id": 41,
       "title": "Fix OAuth token failure for agents: 'vision'",
@@ -229,15 +238,6 @@
       "score": 1.0,
       "created_at": "2026-03-21T22:40:20.516271",
       "updated_at": "2026-03-21T22:51:07.192019"
-    },
-    {
-      "id": 22,
-      "title": "Here is a website: https://www.gdgoenkadarbhanga.in/\n Build a better looking version of it with\n  improved design, layout, and content structure.\nThis should be hosted for free for 6 months",
-      "agent": "beast",
-      "status": "done",
-      "score": 8.0,
-      "created_at": "2026-03-21T22:39:58.121173",
-      "updated_at": "2026-03-21T22:46:22.287133"
     }
   ],
   "okr": {
