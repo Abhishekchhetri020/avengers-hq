@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-22T08:52:22.467665Z",
+  "updated": "2026-03-22T08:53:24.470117Z",
   "stats": {
     "missions_done": 6,
-    "missions_active": 1,
-    "missions_pending": 3,
+    "missions_active": 2,
+    "missions_pending": 2,
     "avg_score": 2.5
   },
   "agents": [
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:52:22.466753Z"
+      "last_seen": "2026-03-22T08:53:24.468011Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:52:22.466922Z"
+      "last_seen": "2026-03-22T08:53:24.468197Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:52:22.466925Z"
+      "last_seen": "2026-03-22T08:53:24.468200Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:52:22.466927Z"
+      "last_seen": "2026-03-22T08:53:24.468202Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:52:22.466929Z"
+      "last_seen": "2026-03-22T08:53:24.468204Z"
     }
   ],
   "missions": [
@@ -98,11 +98,11 @@
     {
       "id": 37,
       "title": "You are a UX designer reviewing a real-time agent dashboard. The dashboard has: agent status cards, live activity log feed, direct chat to agents, mission board. Research best practices for real-time operations dashboards. Write a detailed improvement spec covering: (1) what visual indicators would best show agent cognitive load, (2) how to show task progress %, (3) what keyboard shortcuts to add, (4) how to visualize score trends inline. Save to /tmp/dashboard_ux_spec.md",
-      "agent": "auto",
-      "status": "pending",
+      "agent": "shuri",
+      "status": "in_progress",
       "score": null,
       "created_at": "2026-03-22T08:49:22.364593",
-      "updated_at": "2026-03-22T08:49:22.364593"
+      "updated_at": "2026-03-22T08:52:49.154129"
     },
     {
       "id": 36,
