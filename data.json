@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-22T20:24:07.734821Z",
+  "updated": "2026-03-22T20:25:09.686355Z",
   "stats": {
-    "missions_done": 20,
+    "missions_done": 19,
     "missions_active": 0,
-    "missions_pending": 0,
+    "missions_pending": 1,
     "avg_score": 8.2
   },
   "agents": [
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T20:24:07.733958Z"
+      "last_seen": "2026-03-22T20:25:09.684736Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T20:24:07.734102Z"
+      "last_seen": "2026-03-22T20:25:09.684889Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T20:24:07.734106Z"
+      "last_seen": "2026-03-22T20:25:09.684893Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T20:24:07.734109Z"
+      "last_seen": "2026-03-22T20:25:09.684895Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,19 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T20:24:07.734111Z"
+      "last_seen": "2026-03-22T20:25:09.684898Z"
     }
   ],
   "missions": [
+    {
+      "id": 66,
+      "title": "Fix OAuth token failure for agents: 'vision', 'captain', 'shuri', 'beast'",
+      "agent": "captain",
+      "status": "pending",
+      "score": null,
+      "created_at": "2026-03-22T20:25:02.877675",
+      "updated_at": "2026-03-22T20:25:02.877675"
+    },
     {
       "id": 65,
       "title": "Fix OAuth token failure for agents: 'beast', 'vision', 'shuri', 'captain'",
@@ -229,15 +238,6 @@
       "score": 10.0,
       "created_at": "2026-03-22T11:02:28.232587",
       "updated_at": "2026-03-22T11:21:57.989473"
-    },
-    {
-      "id": 46,
-      "title": "Fix OAuth token failure for agents: 'captain', 'shuri', 'beast'",
-      "agent": "captain",
-      "status": "done",
-      "score": 10.0,
-      "created_at": "2026-03-22T11:02:27.028736",
-      "updated_at": "2026-03-22T11:21:24.371924"
     }
   ],
   "okr": {
