@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-22T01:16:50.384265Z",
+  "updated": "2026-03-22T01:17:52.097800Z",
   "stats": {
-    "missions_done": 16,
+    "missions_done": 17,
     "missions_active": 1,
-    "missions_pending": 1,
+    "missions_pending": 0,
     "avg_score": 2.1
   },
   "agents": [
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T01:16:50.382240Z"
+      "last_seen": "2026-03-22T01:17:52.095475Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T01:16:50.382738Z"
+      "last_seen": "2026-03-22T01:17:52.095761Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T01:16:50.382742Z"
+      "last_seen": "2026-03-22T01:17:52.095765Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T01:16:50.382745Z"
+      "last_seen": "2026-03-22T01:17:52.095768Z"
     },
     {
       "name": "vision",
@@ -55,27 +55,27 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T01:16:50.382747Z"
+      "last_seen": "2026-03-22T01:17:52.095770Z"
     }
   ],
   "missions": [
     {
       "id": 25,
       "title": "Fix OAuth token failure for agents: 'captain'",
-      "agent": "auto",
-      "status": "pending",
+      "agent": "beast",
+      "status": "in_progress",
       "score": null,
       "created_at": "2026-03-22T01:12:32.271256",
-      "updated_at": "2026-03-22T01:12:32.271256"
+      "updated_at": "2026-03-22T01:17:03.762477"
     },
     {
       "id": 24,
       "title": "Fix OAuth token failure for agents: 'captain'",
       "agent": "captain",
-      "status": "in_progress",
-      "score": null,
+      "status": "done",
+      "score": 1.0,
       "created_at": "2026-03-22T01:12:09.570607",
-      "updated_at": "2026-03-22T01:12:32.278034"
+      "updated_at": "2026-03-22T01:17:02.782316"
     },
     {
       "id": 23,
