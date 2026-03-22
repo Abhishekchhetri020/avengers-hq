@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-22T08:50:18.561577Z",
+  "updated": "2026-03-22T08:51:20.381790Z",
   "stats": {
-    "missions_done": 5,
+    "missions_done": 6,
     "missions_active": 1,
-    "missions_pending": 13,
-    "avg_score": 2.4
+    "missions_pending": 3,
+    "avg_score": 2.5
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:50:18.559141Z"
+      "last_seen": "2026-03-22T08:51:20.380311Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:50:18.559313Z"
+      "last_seen": "2026-03-22T08:51:20.380471Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:50:18.559316Z"
+      "last_seen": "2026-03-22T08:51:20.380474Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:50:18.559318Z"
+      "last_seen": "2026-03-22T08:51:20.380476Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-22T08:50:18.559320Z"
+      "last_seen": "2026-03-22T08:51:20.380478Z"
     }
   ],
   "missions": [
@@ -63,7 +63,7 @@
       "id": 41,
       "title": "Fix OAuth token failure for agents: 'vision'",
       "agent": "auto",
-      "status": "pending",
+      "status": "failed",
       "score": null,
       "created_at": "2026-03-22T08:49:22.375787",
       "updated_at": "2026-03-22T08:49:22.375787"
@@ -72,7 +72,7 @@
       "id": 40,
       "title": "Fix OAuth token failure for agents: 'captain'",
       "agent": "auto",
-      "status": "pending",
+      "status": "failed",
       "score": null,
       "created_at": "2026-03-22T08:49:22.373085",
       "updated_at": "2026-03-22T08:49:22.373085"
@@ -108,7 +108,7 @@
       "id": 36,
       "title": "Fix OAuth token failure for agents: 'vision'",
       "agent": "auto",
-      "status": "pending",
+      "status": "failed",
       "score": null,
       "created_at": "2026-03-22T08:49:22.362088",
       "updated_at": "2026-03-22T08:49:22.362088"
@@ -117,7 +117,7 @@
       "id": 35,
       "title": "Fix OAuth token failure for agents: 'shuri', 'beast'",
       "agent": "auto",
-      "status": "pending",
+      "status": "failed",
       "score": null,
       "created_at": "2026-03-22T08:49:22.357154",
       "updated_at": "2026-03-22T08:49:22.357154"
@@ -126,7 +126,7 @@
       "id": 34,
       "title": "Fix OAuth token failure for agents: 'shuri', 'beast'",
       "agent": "captain",
-      "status": "pending",
+      "status": "failed",
       "score": null,
       "created_at": "2026-03-22T08:05:52.931144",
       "updated_at": "2026-03-22T08:05:52.931144"
@@ -135,7 +135,7 @@
       "id": 33,
       "title": "Fix OAuth token failure for agents: 'vision'",
       "agent": "captain",
-      "status": "pending",
+      "status": "failed",
       "score": null,
       "created_at": "2026-03-22T07:25:50.858382",
       "updated_at": "2026-03-22T07:25:50.858382"
@@ -144,7 +144,7 @@
       "id": 32,
       "title": "You are a UX designer reviewing a real-time agent dashboard. The dashboard has: agent status cards, live activity log feed, direct chat to agents, mission board. Research best practices for real-time operations dashboards. Write a detailed improvement spec covering: (1) what visual indicators would best show agent cognitive load, (2) how to show task progress %, (3) what keyboard shortcuts to add, (4) how to visualize score trends inline. Save to /tmp/dashboard_ux_spec.md",
       "agent": "vision",
-      "status": "pending",
+      "status": "failed",
       "score": null,
       "created_at": "2026-03-22T07:12:40.125086",
       "updated_at": "2026-03-22T07:12:40.125086"
@@ -153,7 +153,7 @@
       "id": 31,
       "title": "Research and build a Python script that queries ~/.avengers/missions.db and produces a JSON analytics report: missions per agent, avg score per agent, score trend over last 7 days (by day), top 3 best missions. Save to /tmp/avengers_analytics.json and print it.",
       "agent": "shuri",
-      "status": "pending",
+      "status": "failed",
       "score": null,
       "created_at": "2026-03-22T07:12:40.121710",
       "updated_at": "2026-03-22T07:12:40.121710"
@@ -162,7 +162,7 @@
       "id": 30,
       "title": "Build smart log parser: Read the last 100 lines of each agent log file (/tmp/gemini-bridge.log, /tmp/gemini-agent2-bridge.log, /tmp/gemini-agent3-bridge.log, /tmp/gemini-agent4-bridge.log, /tmp/ironman-bridge.log) and extract: (1) current task name, (2) last score, (3) iterations count. Output clean JSON to /tmp/agent_activity.json. Run it now and print the output.",
       "agent": "beast",
-      "status": "pending",
+      "status": "failed",
       "score": null,
       "created_at": "2026-03-22T07:12:40.118283",
       "updated_at": "2026-03-22T07:12:40.118283"
@@ -171,19 +171,19 @@
       "id": 29,
       "title": "Fix OAuth token failure for agents: 'captain'",
       "agent": "captain",
-      "status": "pending",
+      "status": "in_progress",
       "score": null,
       "created_at": "2026-03-22T06:35:47.963704",
-      "updated_at": "2026-03-22T06:35:47.963704"
+      "updated_at": "2026-03-22T08:50:41.264896"
     },
     {
       "id": 28,
       "title": "Fix OAuth token failure for agents: 'vision'",
       "agent": "captain",
-      "status": "in_progress",
-      "score": null,
+      "status": "done",
+      "score": 3.0,
       "created_at": "2026-03-22T05:55:45.324977",
-      "updated_at": "2026-03-22T08:49:22.378752"
+      "updated_at": "2026-03-22T08:50:39.997359"
     },
     {
       "id": 27,
@@ -321,7 +321,7 @@
     "code_optimization": 2,
     "data_analysis": 0,
     "prompt_quality": 0,
-    "code": 1
+    "code": 3
   },
   "activity": [
     {
