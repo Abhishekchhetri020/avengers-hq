@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-23T20:43:05.621532Z",
+  "updated": "2026-03-23T20:44:07.883259Z",
   "stats": {
     "missions_done": 15,
     "missions_active": 1,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T20:43:05.620483Z"
+      "last_seen": "2026-03-23T20:44:07.882461Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Research existing methods, tools, and challenges in automated CBSE Question Paper (QP) generation. I",
       "confidence": "working",
-      "last_seen": "2026-03-23T20:43:05.620692Z"
+      "last_seen": "2026-03-23T20:44:07.882616Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T20:43:05.620697Z"
+      "last_seen": "2026-03-23T20:44:07.882620Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T20:43:05.620700Z"
+      "last_seen": "2026-03-23T20:44:07.882623Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T20:43:05.620703Z"
+      "last_seen": "2026-03-23T20:44:07.882625Z"
     }
   ],
   "missions": [
