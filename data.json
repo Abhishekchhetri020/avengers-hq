@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-23T01:42:17.172723Z",
+  "updated": "2026-03-23T01:43:19.233305Z",
   "stats": {
-    "missions_done": 20,
-    "missions_active": 0,
+    "missions_done": 19,
+    "missions_active": 1,
     "missions_pending": 0,
-    "avg_score": 6.5
+    "avg_score": 6.3
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T01:42:17.171779Z"
+      "last_seen": "2026-03-23T01:43:19.229028Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T01:42:17.171976Z"
+      "last_seen": "2026-03-23T01:43:19.229443Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T01:42:17.171981Z"
+      "last_seen": "2026-03-23T01:43:19.229448Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T01:42:17.171983Z"
+      "last_seen": "2026-03-23T01:43:19.229452Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,19 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T01:42:17.171986Z"
+      "last_seen": "2026-03-23T01:43:19.229456Z"
     }
   ],
   "missions": [
+    {
+      "id": 71,
+      "title": "Fix OAuth token failure for agents: 'beast', 'vision', 'captain', 'shuri'",
+      "agent": "captain",
+      "status": "in_progress",
+      "score": null,
+      "created_at": "2026-03-23T01:42:22.334723",
+      "updated_at": "2026-03-23T01:43:08.387519"
+    },
     {
       "id": 70,
       "title": "Fix OAuth token failure for agents: 'shuri', 'vision', 'beast', 'captain'",
@@ -229,15 +238,6 @@
       "score": 10.0,
       "created_at": "2026-03-22T12:06:03.788499",
       "updated_at": "2026-03-22T12:06:32.675099"
-    },
-    {
-      "id": 51,
-      "title": "TEST SYSTEM AUDIT MISSION - DELETE ME",
-      "agent": "captain",
-      "status": "done",
-      "score": 10.0,
-      "created_at": "2026-03-22T11:15:45.994552",
-      "updated_at": "2026-03-22T11:15:45.996608"
     }
   ],
   "okr": {
