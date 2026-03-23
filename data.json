@@ -1,9 +1,9 @@
 {
-  "updated": "2026-03-23T07:15:01.509509Z",
+  "updated": "2026-03-23T07:16:03.430780Z",
   "stats": {
     "missions_done": 18,
     "missions_active": 1,
-    "missions_pending": 1,
+    "missions_pending": 0,
     "avg_score": 4.2
   },
   "agents": [
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T07:15:01.507898Z"
+      "last_seen": "2026-03-23T07:16:03.429865Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T07:15:01.508063Z"
+      "last_seen": "2026-03-23T07:16:03.430022Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T07:15:01.508068Z"
+      "last_seen": "2026-03-23T07:16:03.430027Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T07:15:01.508070Z"
+      "last_seen": "2026-03-23T07:16:03.430029Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T07:15:01.508073Z"
+      "last_seen": "2026-03-23T07:16:03.430032Z"
     }
   ],
   "missions": [
@@ -63,7 +63,7 @@
       "id": 77,
       "title": "Investigate beast bridge error spike: read log at /tmp/gemini-agent3-bridge.log, find root cause, fix it. (6 errors in 10min, samples: 2026-03-23 08:02:16,893 [WARNING] Retrying (Retry(total=1, connect=None, read=No | 2026-03-23 08:02:21,028 [WARNING] Retrying (Retry(total=0, connect=None, read=No)",
       "agent": "beast",
-      "status": "pending",
+      "status": "cancelled",
       "score": null,
       "created_at": "2026-03-23T07:13:53.656128",
       "updated_at": "2026-03-23T07:13:53.656128"
