@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-23T02:47:19.333768Z",
+  "updated": "2026-03-23T02:48:22.229000Z",
   "stats": {
-    "missions_done": 18,
-    "missions_active": 1,
-    "missions_pending": 1,
-    "avg_score": 5.7
+    "missions_done": 20,
+    "missions_active": 0,
+    "missions_pending": 0,
+    "avg_score": 5.5
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T02:47:19.332288Z"
+      "last_seen": "2026-03-23T02:48:22.227714Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T02:47:19.332473Z"
+      "last_seen": "2026-03-23T02:48:22.227893Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T02:47:19.332477Z"
+      "last_seen": "2026-03-23T02:48:22.227897Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T02:47:19.332480Z"
+      "last_seen": "2026-03-23T02:48:22.227900Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-23T02:47:19.332482Z"
+      "last_seen": "2026-03-23T02:48:22.227902Z"
     }
   ],
   "missions": [
@@ -63,19 +63,19 @@
       "id": 73,
       "title": "Investigate beast bridge error spike: read log at /tmp/gemini-agent3-bridge.log, find root cause, fix it. (6 errors in 10min, samples: 2026-03-23 08:02:16,893 [WARNING] Retrying (Retry(total=1, connect=None, read=No | 2026-03-23 08:02:21,028 [WARNING] Retrying (Retry(total=0, connect=None, read=No)",
       "agent": "beast",
-      "status": "pending",
-      "score": null,
+      "status": "done",
+      "score": 3.0,
       "created_at": "2026-03-23T02:46:57.755456",
-      "updated_at": "2026-03-23T02:46:57.755456"
+      "updated_at": "2026-03-23T02:48:01.165122"
     },
     {
       "id": 72,
       "title": "Fix OAuth token failure for agents: 'beast', 'shuri', 'captain', 'vision'",
       "agent": "captain",
-      "status": "in_progress",
-      "score": null,
+      "status": "done",
+      "score": 3.0,
       "created_at": "2026-03-23T02:46:56.800736",
-      "updated_at": "2026-03-23T02:47:18.884455"
+      "updated_at": "2026-03-23T02:47:38.063165"
     },
     {
       "id": 71,
