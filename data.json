@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-24T01:51:37.478812Z",
+  "updated": "2026-03-24T01:52:39.375203Z",
   "stats": {
-    "missions_done": 16,
+    "missions_done": 17,
     "missions_active": 1,
-    "missions_pending": 2,
-    "avg_score": 3.3
+    "missions_pending": 1,
+    "avg_score": 3.6
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-24T01:51:37.477116Z"
+      "last_seen": "2026-03-24T01:52:39.373829Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-24T01:51:37.477298Z"
+      "last_seen": "2026-03-24T01:52:39.374016Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-24T01:51:37.477303Z"
+      "last_seen": "2026-03-24T01:52:39.374021Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-24T01:51:37.477306Z"
+      "last_seen": "2026-03-24T01:52:39.374023Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-24T01:51:37.477308Z"
+      "last_seen": "2026-03-24T01:52:39.374026Z"
     }
   ],
   "missions": [
@@ -72,19 +72,19 @@
       "id": 83,
       "title": "DOCX-QP M3: Build Biology + Math + CS diagram functions for avengers_docx_toolkit_v3.py \u2014 heart cross-section, leaf structure, digestive system, flower parts, neuron (improved), mitosis stages, coordinate geometry plotter, histogram/bar/pie chart generator, flowchart generator, binary tree. Plus build qp_benchmark.py scoring engine (0-10 on layout, diagrams, completeness, CBSE compliance).",
       "agent": "beast",
-      "status": "pending",
+      "status": "in_progress",
       "score": null,
       "created_at": "2026-03-23T20:40:11.735762",
-      "updated_at": "2026-03-23T20:40:11.735762"
+      "updated_at": "2026-03-24T01:52:22.918574"
     },
     {
       "id": 82,
       "title": "DOCX-QP M2: Build Physics + Chemistry diagram functions for avengers_docx_toolkit_v3.py \u2014 lens ray diagram, prism refraction, electric field lines, magnetic field lines, force body diagram, velocity-time graph, wave diagram, solenoid, Bohr atom, electrolysis, distillation apparatus. Each must be high-quality matplotlib, professional, exam-ready.",
       "agent": "shuri",
-      "status": "in_progress",
-      "score": null,
+      "status": "done",
+      "score": 8.0,
       "created_at": "2026-03-23T20:40:11.734338",
-      "updated_at": "2026-03-24T01:49:16.465244"
+      "updated_at": "2026-03-24T01:52:21.967741"
     },
     {
       "id": 81,
@@ -317,7 +317,7 @@
     ]
   },
   "scoreboard": {
-    "research": 3,
+    "research": 2,
     "code_optimization": 2,
     "data_analysis": 2,
     "prompt_quality": 0,
