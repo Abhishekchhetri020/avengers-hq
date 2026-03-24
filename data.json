@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-24T01:48:31.233292Z",
+  "updated": "2026-03-24T01:49:33.507912Z",
   "stats": {
-    "missions_done": 15,
+    "missions_done": 16,
     "missions_active": 1,
-    "missions_pending": 4,
-    "avg_score": 3.4
+    "missions_pending": 2,
+    "avg_score": 3.3
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-24T01:48:31.229015Z"
+      "last_seen": "2026-03-24T01:49:33.506503Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-24T01:48:31.229316Z"
+      "last_seen": "2026-03-24T01:49:33.506695Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-24T01:48:31.229319Z"
+      "last_seen": "2026-03-24T01:49:33.506700Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-24T01:48:31.229321Z"
+      "last_seen": "2026-03-24T01:49:33.506702Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-24T01:48:31.229323Z"
+      "last_seen": "2026-03-24T01:49:33.506705Z"
     }
   ],
   "missions": [
@@ -81,25 +81,25 @@
       "id": 82,
       "title": "DOCX-QP M2: Build Physics + Chemistry diagram functions for avengers_docx_toolkit_v3.py \u2014 lens ray diagram, prism refraction, electric field lines, magnetic field lines, force body diagram, velocity-time graph, wave diagram, solenoid, Bohr atom, electrolysis, distillation apparatus. Each must be high-quality matplotlib, professional, exam-ready.",
       "agent": "shuri",
-      "status": "pending",
+      "status": "in_progress",
       "score": null,
       "created_at": "2026-03-23T20:40:11.734338",
-      "updated_at": "2026-03-23T20:40:11.734338"
+      "updated_at": "2026-03-24T01:49:16.465244"
     },
     {
       "id": 81,
       "title": "DOCX-QP M1: Research CBSE 2025-26 sample board papers \u2014 extract exact diagram list, exam format, section structure, marks breakdown for Class 10 Science, Math, Social Science, English. Output: structured JSON spec.",
       "agent": "captain",
-      "status": "pending",
-      "score": null,
+      "status": "done",
+      "score": 2.0,
       "created_at": "2026-03-23T20:40:11.732802",
-      "updated_at": "2026-03-23T20:40:11.732802"
+      "updated_at": "2026-03-24T01:49:15.424509"
     },
     {
       "id": 80,
       "title": "DOCX-QP-SUPREME: Build human-beating CBSE QP skill",
       "agent": "ironman",
-      "status": "in_progress",
+      "status": "failed",
       "score": null,
       "created_at": "2026-03-23T20:40:11.730481",
       "updated_at": "2026-03-23T20:40:23.813233"
@@ -319,7 +319,7 @@
   "scoreboard": {
     "research": 3,
     "code_optimization": 2,
-    "data_analysis": 0,
+    "data_analysis": 2,
     "prompt_quality": 0,
     "code": 10
   },
