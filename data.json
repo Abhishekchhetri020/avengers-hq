@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-24T09:40:22.953918Z",
+  "updated": "2026-03-24T09:50:17.727172Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-24T09:40:22.953166Z"
+      "last_seen": "2026-03-24T09:50:17.726193Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-24T09:40:22.953329Z"
+      "last_seen": "2026-03-24T09:50:17.726390Z"
     },
     {
       "name": "shuri",
@@ -33,9 +33,9 @@
       "emoji": "\ud83d\udd2c",
       "color": "#a855f7",
       "status": "idle",
-      "current_task": "hi",
-      "confidence": "working",
-      "last_seen": "2026-03-24T09:40:22.953333Z"
+      "current_task": "Awaiting orders",
+      "confidence": "ready",
+      "last_seen": "2026-03-24T09:50:17.726395Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-24T09:40:22.953336Z"
+      "last_seen": "2026-03-24T09:50:17.726398Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-24T09:40:22.953338Z"
+      "last_seen": "2026-03-24T09:50:17.726400Z"
     }
   ],
   "missions": [
