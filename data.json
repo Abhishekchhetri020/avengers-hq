@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-25T20:01:40.292164Z",
+  "updated": "2026-03-25T20:02:42.492750Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-25T20:01:40.291352Z"
+      "last_seen": "2026-03-25T20:02:42.491912Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-25T20:01:40.291522Z"
+      "last_seen": "2026-03-25T20:02:42.492086Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-25T20:01:40.291527Z"
+      "last_seen": "2026-03-25T20:02:42.492090Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-25T20:01:40.291529Z"
+      "last_seen": "2026-03-25T20:02:42.492093Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-25T20:01:40.291531Z"
+      "last_seen": "2026-03-25T20:02:42.492095Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-25T20:01:46.259758+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "@perpendicuar_bot Can u reply here and proof that nick is wrong"
+    },
+    {
       "ts": "2026-03-25T20:00:42.052553+00:00",
       "agent": "abhishekchhetri07",
       "event": "This is what ironman has to say\" How the group now works:                                        \n  "
@@ -368,11 +373,6 @@
       "ts": "2026-03-21T20:02:50.436786",
       "agent": "abhishekchhetri07",
       "event": "@perpendicuar_bot I have allowed more than 100 times and I am tired now, so u please make it allowed"
-    },
-    {
-      "ts": "2026-03-21T20:00:46.958532",
-      "agent": "abhishekchhetri07",
-      "event": "But my question is why is it coming again and again?"
     }
   ]
 }
