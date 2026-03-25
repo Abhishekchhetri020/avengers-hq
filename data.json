@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-25T20:09:08.835404Z",
+  "updated": "2026-03-25T20:10:10.997946Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-25T20:09:08.834592Z"
+      "last_seen": "2026-03-25T20:10:10.997172Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-25T20:09:08.834766Z"
+      "last_seen": "2026-03-25T20:10:10.997328Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-25T20:09:08.834770Z"
+      "last_seen": "2026-03-25T20:10:10.997332Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-25T20:09:08.834773Z"
+      "last_seen": "2026-03-25T20:10:10.997335Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-25T20:09:08.834775Z"
+      "last_seen": "2026-03-25T20:10:10.997337Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-25T20:09:14.395464+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "I want both of u to work together not keep each other in loop, I am tired of oauth verification and "
+    },
+    {
       "ts": "2026-03-25T20:04:02.670092+00:00",
       "agent": "abhishekchhetri07",
       "event": "/collab I want u to build a multi agent system where we have 6 agents including u two and four gemin"
@@ -368,11 +373,6 @@
       "ts": "2026-03-25T19:35:35.888627+00:00",
       "agent": "abhishekchhetri07",
       "event": "@khanchi_bot send any message to the \"JARVIS AND ME\" group (chat_id      \n  -1003896272829)"
-    },
-    {
-      "ts": "2026-03-21T20:04:54.256086",
-      "agent": "abhishekchhetri07",
-      "event": "@perpendicuar_bot I have allowed more than 100 times and I am tired now, so u please make it allowed"
     }
   ]
 }
