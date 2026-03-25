@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-25T20:14:23.085841Z",
+  "updated": "2026-03-25T20:15:25.053611Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-25T20:14:23.085058Z"
+      "last_seen": "2026-03-25T20:15:25.051858Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-25T20:14:23.085223Z"
+      "last_seen": "2026-03-25T20:15:25.052015Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-25T20:14:23.085227Z"
+      "last_seen": "2026-03-25T20:15:25.052020Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-25T20:14:23.085230Z"
+      "last_seen": "2026-03-25T20:15:25.052022Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-25T20:14:23.085232Z"
+      "last_seen": "2026-03-25T20:15:25.052024Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-25T20:14:24.620451+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "start Phase 0 and Phase 1 next but both of u should have clear roles in all the phases like who is d"
+    },
+    {
       "ts": "2026-03-25T20:09:14.395464+00:00",
       "agent": "abhishekchhetri07",
       "event": "I want both of u to work together not keep each other in loop, I am tired of oauth verification and "
@@ -368,11 +373,6 @@
       "ts": "2026-03-25T19:39:18.543892+00:00",
       "agent": "abhishekchhetri07",
       "event": "Nick I want u to discuss with ironman on karpathy autoresearch and get back to me with his insights"
-    },
-    {
-      "ts": "2026-03-25T19:35:35.888627+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "@khanchi_bot send any message to the \"JARVIS AND ME\" group (chat_id      \n  -1003896272829)"
     }
   ]
 }
