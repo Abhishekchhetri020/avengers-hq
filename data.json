@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-26T00:05:33.856808Z",
+  "updated": "2026-03-26T00:06:36.683981Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-26T00:05:33.856035Z"
+      "last_seen": "2026-03-26T00:06:36.683184Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-26T00:05:33.856191Z"
+      "last_seen": "2026-03-26T00:06:36.683348Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-26T00:05:33.856196Z"
+      "last_seen": "2026-03-26T00:06:36.683352Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-26T00:05:33.856198Z"
+      "last_seen": "2026-03-26T00:06:36.683355Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-26T00:05:33.856201Z"
+      "last_seen": "2026-03-26T00:06:36.683357Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-26T00:05:51.616555+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "@perpendicuar_bot Discuss with nick how can we make him use less tokens and why he is buring so much"
+    },
+    {
       "ts": "2026-03-26T00:02:38.343639+00:00",
       "agent": "abhishekchhetri07",
       "event": "@khanchi_bot /status"
@@ -368,11 +373,6 @@
       "ts": "2026-03-25T20:29:38.745952+00:00",
       "agent": "abhishekchhetri07",
       "event": "ok"
-    },
-    {
-      "ts": "2026-03-25T20:21:53.672253+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "There is one rule to be set, u both need to discuss the problem and find the solution, which is impo"
     }
   ]
 }
