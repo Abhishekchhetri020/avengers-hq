@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-27T18:55:46.507831Z",
+  "updated": "2026-03-27T18:56:50.571321Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-27T18:55:46.507014Z"
+      "last_seen": "2026-03-27T18:56:50.570245Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-27T18:55:46.507172Z"
+      "last_seen": "2026-03-27T18:56:50.570657Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-27T18:55:46.507176Z"
+      "last_seen": "2026-03-27T18:56:50.570661Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-27T18:55:46.507179Z"
+      "last_seen": "2026-03-27T18:56:50.570664Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-27T18:55:46.507181Z"
+      "last_seen": "2026-03-27T18:56:50.570666Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-27T18:56:47.655195+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "One local AI model was installed so is it still there?"
+    },
+    {
       "ts": "2026-03-27T18:54:21.129403+00:00",
       "agent": "abhishekchhetri07",
       "event": "Work on this to clean LTX 'Estimated space recovered:\n\n\u2022 about 26.9 GB total\""
@@ -368,11 +373,6 @@
       "ts": "2026-03-27T15:51:08.307406+00:00",
       "agent": "abhishekchhetri07",
       "event": "Apart from LTX is there any other option for u?"
-    },
-    {
-      "ts": "2026-03-27T15:49:19.044755+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "If I give u 5 pics then will be able to make video out of it, if yes then how, if no then why?"
     }
   ]
 }
