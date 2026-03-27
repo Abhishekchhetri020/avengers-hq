@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-27T11:57:41.995530Z",
+  "updated": "2026-03-27T11:58:44.060909Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-27T11:57:41.993203Z"
+      "last_seen": "2026-03-27T11:58:44.056488Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-27T11:57:41.993387Z"
+      "last_seen": "2026-03-27T11:58:44.056699Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-27T11:57:41.993392Z"
+      "last_seen": "2026-03-27T11:58:44.056704Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-27T11:57:41.993395Z"
+      "last_seen": "2026-03-27T11:58:44.056707Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-27T11:57:41.993397Z"
+      "last_seen": "2026-03-27T11:58:44.056709Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-27T11:57:42.112169+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "Do a urgent meeting with the whole team as I need an open source video generating model which will b"
+    },
+    {
       "ts": "2026-03-26T07:49:40.132445+00:00",
       "agent": "abhishekchhetri07",
       "event": "Test the cross topic binding and share the report to me."
@@ -368,11 +373,6 @@
       "ts": "2026-03-26T00:09:38.530081+00:00",
       "agent": "abhishekchhetri07",
       "event": "U were able to use notebookLM?"
-    },
-    {
-      "ts": "2026-03-26T00:05:51.616555+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "@perpendicuar_bot Discuss with nick how can we make him use less tokens and why he is buring so much"
     }
   ]
 }
