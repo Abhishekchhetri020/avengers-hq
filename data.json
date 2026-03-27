@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-27T19:23:47.778588Z",
+  "updated": "2026-03-27T19:24:49.888073Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-27T19:23:47.777736Z"
+      "last_seen": "2026-03-27T19:24:49.887200Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-27T19:23:47.777899Z"
+      "last_seen": "2026-03-27T19:24:49.887369Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-27T19:23:47.777904Z"
+      "last_seen": "2026-03-27T19:24:49.887373Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-27T19:23:47.777907Z"
+      "last_seen": "2026-03-27T19:24:49.887375Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-27T19:23:47.777909Z"
+      "last_seen": "2026-03-27T19:24:49.887378Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-27T19:24:16.952694+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "1. check the exact best Qwen3 variant/quantization for your Mac\n2. install it cleanly in LM Studio /"
+    },
+    {
       "ts": "2026-03-27T19:15:54.880324+00:00",
       "agent": "abhishekchhetri07",
       "event": "I want u to do a team meeting and get back to me.\nTrain the Llama-3.2-3B-Instruct-4bit and make it s"
@@ -368,11 +373,6 @@
       "ts": "2026-03-27T15:55:49.771293+00:00",
       "agent": "abhishekchhetri07",
       "event": "What is this \"~/.cache/uv\"?"
-    },
-    {
-      "ts": "2026-03-27T15:54:00.456700+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "Delete that whisper thing"
     }
   ]
 }
