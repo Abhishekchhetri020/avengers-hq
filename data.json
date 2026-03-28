@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T14:08:45.429794Z",
+  "updated": "2026-03-28T14:09:49.697114Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T14:08:45.421987Z"
+      "last_seen": "2026-03-28T14:09:49.691289Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T14:08:45.422791Z"
+      "last_seen": "2026-03-28T14:09:49.691961Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T14:08:45.422800Z"
+      "last_seen": "2026-03-28T14:09:49.691969Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T14:08:45.422805Z"
+      "last_seen": "2026-03-28T14:09:49.691974Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T14:08:45.422809Z"
+      "last_seen": "2026-03-28T14:09:49.691979Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-28T14:09:33.244029+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "@perpendicuar_bot tell Nick to try other options\n\u26a0\ufe0f Agent failed before reply: OAuth token refresh f"
+    },
+    {
       "ts": "2026-03-28T14:08:42.196623+00:00",
       "agent": "abhishekchhetri07",
       "event": "Try other options to make the website live"
@@ -368,11 +373,6 @@
       "ts": "2026-03-28T13:16:05.665097+00:00",
       "agent": "abhishekchhetri07",
       "event": "The link should be alive for 24 hrs"
-    },
-    {
-      "ts": "2026-03-28T13:09:02.327701+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "U need to know that if a child is in more than one event then the incharge may tick in one event but"
     }
   ]
 }
