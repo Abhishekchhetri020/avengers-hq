@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T02:49:22.203786Z",
+  "updated": "2026-03-28T02:50:24.120837Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T02:49:22.202844Z"
+      "last_seen": "2026-03-28T02:50:24.119871Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T02:49:22.203019Z"
+      "last_seen": "2026-03-28T02:50:24.120053Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T02:49:22.203024Z"
+      "last_seen": "2026-03-28T02:50:24.120058Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T02:49:22.203026Z"
+      "last_seen": "2026-03-28T02:50:24.120060Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T02:49:22.203029Z"
+      "last_seen": "2026-03-28T02:50:24.120063Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-28T02:49:29.758462+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "Do u know our target?"
+    },
+    {
       "ts": "2026-03-28T02:24:25.278620+00:00",
       "agent": "abhishekchhetri07",
       "event": "U can continue with the work."
@@ -368,11 +373,6 @@
       "ts": "2026-03-28T02:06:43.000756+00:00",
       "agent": "abhishekchhetri07",
       "event": "I am making a new topic with name as Qwen where all the discussion for qwen will continue"
-    },
-    {
-      "ts": "2026-03-28T02:02:55.470417+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "@perpendicuar_bot  ironman to do research on this and see what is this, is it useful for us in any w"
     }
   ]
 }
