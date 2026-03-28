@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T13:50:31.297237Z",
+  "updated": "2026-03-28T13:51:33.192221Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T13:50:31.296036Z"
+      "last_seen": "2026-03-28T13:51:33.191190Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T13:50:31.296493Z"
+      "last_seen": "2026-03-28T13:51:33.191555Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T13:50:31.296497Z"
+      "last_seen": "2026-03-28T13:51:33.191560Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T13:50:31.296500Z"
+      "last_seen": "2026-03-28T13:51:33.191562Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T13:50:31.296503Z"
+      "last_seen": "2026-03-28T13:51:33.191564Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-28T13:50:40.065277+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "@perpendicuar_bot help Nick to fix the issue"
+    },
+    {
       "ts": "2026-03-28T13:44:19.486955+00:00",
       "agent": "abhishekchhetri07",
       "event": "@perpendicuar_bot try other website option as google option is failing"
@@ -368,11 +373,6 @@
       "ts": "2026-03-28T12:59:11.377878+00:00",
       "agent": "abhishekchhetri07",
       "event": "I didn't like the dashboard it should be very nice, appealing and interactive"
-    },
-    {
-      "ts": "2026-03-28T12:57:18.785278+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "Ur website is not opening"
     }
   ]
 }
