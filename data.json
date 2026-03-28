@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T12:33:57.370795Z",
+  "updated": "2026-03-28T12:34:59.324007Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:33:57.369872Z"
+      "last_seen": "2026-03-28T12:34:59.323198Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:33:57.370057Z"
+      "last_seen": "2026-03-28T12:34:59.323360Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:33:57.370061Z"
+      "last_seen": "2026-03-28T12:34:59.323365Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:33:57.370063Z"
+      "last_seen": "2026-03-28T12:34:59.323367Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:33:57.370066Z"
+      "last_seen": "2026-03-28T12:34:59.323369Z"
     }
   ],
   "missions": [
@@ -325,6 +325,16 @@
   },
   "activity": [
     {
+      "ts": "2026-03-28T12:34:33.853123+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "http://127.0.0.1:49892/oauth2/callback?state=mXK_dPSdd4ioikDyJlhd95ZpsKXTwiUEYh01RkZA2VE&iss=https:/"
+    },
+    {
+      "ts": "2026-03-28T12:34:11.936139+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "http://127.0.0.1:49892/oauth2/callback?state=mXK_dPSdd4ioikDyJlhd95ZpsKXTwiUEYh01RkZA2VE&iss=https:/"
+    },
+    {
       "ts": "2026-03-28T12:31:45.220781+00:00",
       "agent": "abhishekchhetri07",
       "event": "Let's revoke it now"
@@ -363,16 +373,6 @@
       "ts": "2026-03-28T05:47:02.270267+00:00",
       "agent": "abhishekchhetri07",
       "event": "In the qwen topic recently created, I told the agent to delete everything related to qwen. Now I wan"
-    },
-    {
-      "ts": "2026-03-28T05:44:46.459189+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "\u2022 empty Trash too\n\u2022 clean leftover git/deletion noise related to the removed Qwen files"
-    },
-    {
-      "ts": "2026-03-28T05:42:22.634158+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "proceed with:\n\n1. inventory + size check\n2. trash the Qwen paths\n3. leave non-Qwen models alone unle"
     }
   ]
 }
