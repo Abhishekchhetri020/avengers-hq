@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T12:58:56.396255Z",
+  "updated": "2026-03-28T12:59:58.355593Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:58:56.395339Z"
+      "last_seen": "2026-03-28T12:59:58.352557Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:58:56.395542Z"
+      "last_seen": "2026-03-28T12:59:58.352742Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:58:56.395546Z"
+      "last_seen": "2026-03-28T12:59:58.352747Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:58:56.395549Z"
+      "last_seen": "2026-03-28T12:59:58.352749Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:58:56.395551Z"
+      "last_seen": "2026-03-28T12:59:58.352752Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-28T12:59:11.377878+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "I didn't like the dashboard it should be very nice, appealing and interactive"
+    },
+    {
       "ts": "2026-03-28T12:57:18.785278+00:00",
       "agent": "abhishekchhetri07",
       "event": "Ur website is not opening"
@@ -368,11 +373,6 @@
       "ts": "2026-03-28T12:31:45.220781+00:00",
       "agent": "abhishekchhetri07",
       "event": "Let's revoke it now"
-    },
-    {
-      "ts": "2026-03-28T12:29:49.190883+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "So there is one teacher who will update the google sheet and the u need to update the data in web ap"
     }
   ]
 }
