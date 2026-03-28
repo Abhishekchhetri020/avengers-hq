@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T05:49:37.552655Z",
+  "updated": "2026-03-28T05:50:39.408571Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T05:49:37.550421Z"
+      "last_seen": "2026-03-28T05:50:39.407408Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T05:49:37.550805Z"
+      "last_seen": "2026-03-28T05:50:39.407843Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T05:49:37.550809Z"
+      "last_seen": "2026-03-28T05:50:39.407847Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T05:49:37.550812Z"
+      "last_seen": "2026-03-28T05:50:39.407849Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T05:49:37.550815Z"
+      "last_seen": "2026-03-28T05:50:39.407852Z"
     }
   ],
   "missions": [
@@ -325,6 +325,21 @@
   },
   "activity": [
     {
+      "ts": "2026-03-28T05:50:35.034557+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "/status@khanchi_bot"
+    },
+    {
+      "ts": "2026-03-28T05:50:17.022695+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "/status@perpendicuar_bot"
+    },
+    {
+      "ts": "2026-03-28T05:49:37.841948+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "delete that last Qwen plan file too."
+    },
+    {
       "ts": "2026-03-28T05:47:02.270267+00:00",
       "agent": "abhishekchhetri07",
       "event": "In the qwen topic recently created, I told the agent to delete everything related to qwen. Now I wan"
@@ -358,21 +373,6 @@
       "ts": "2026-03-28T03:07:12.766729+00:00",
       "agent": "abhishekchhetri07",
       "event": "Move to next step and I want it to be full scale karpathy style but before that tell me will it chan"
-    },
-    {
-      "ts": "2026-03-28T02:52:34.587141+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "U have full authorization and u know the mission so proceed withany questions and approval until we "
-    },
-    {
-      "ts": "2026-03-28T02:51:08.810038+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "Are we ready to operate like karpathy autoresearch?"
-    },
-    {
-      "ts": "2026-03-28T02:49:29.758462+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "Do u know our target?"
     }
   ]
 }
