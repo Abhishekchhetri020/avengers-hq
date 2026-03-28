@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T12:30:51.770231Z",
+  "updated": "2026-03-28T12:31:53.571329Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:30:51.769177Z"
+      "last_seen": "2026-03-28T12:31:53.570503Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:30:51.769561Z"
+      "last_seen": "2026-03-28T12:31:53.570665Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:30:51.769565Z"
+      "last_seen": "2026-03-28T12:31:53.570670Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:30:51.769568Z"
+      "last_seen": "2026-03-28T12:31:53.570673Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:30:51.769570Z"
+      "last_seen": "2026-03-28T12:31:53.570675Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-28T12:31:45.220781+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "Let's revoke it now"
+    },
+    {
       "ts": "2026-03-28T12:29:49.190883+00:00",
       "agent": "abhishekchhetri07",
       "event": "So there is one teacher who will update the google sheet and the u need to update the data in web ap"
@@ -368,11 +373,6 @@
       "ts": "2026-03-28T05:42:22.634158+00:00",
       "agent": "abhishekchhetri07",
       "event": "proceed with:\n\n1. inventory + size check\n2. trash the Qwen paths\n3. leave non-Qwen models alone unle"
-    },
-    {
-      "ts": "2026-03-28T05:41:44.972392+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "I want you to delete everything related to Qwen and files related to it and all the local models as "
     }
   ]
 }
