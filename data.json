@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T05:46:30.812664Z",
+  "updated": "2026-03-28T05:47:33.249395Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T05:46:30.811240Z"
+      "last_seen": "2026-03-28T05:47:33.248223Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T05:46:30.811655Z"
+      "last_seen": "2026-03-28T05:47:33.248601Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T05:46:30.811661Z"
+      "last_seen": "2026-03-28T05:47:33.248605Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T05:46:30.811663Z"
+      "last_seen": "2026-03-28T05:47:33.248607Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T05:46:30.811666Z"
+      "last_seen": "2026-03-28T05:47:33.248610Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-28T05:47:02.270267+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "In the qwen topic recently created, I told the agent to delete everything related to qwen. Now I wan"
+    },
+    {
       "ts": "2026-03-28T05:44:46.459189+00:00",
       "agent": "abhishekchhetri07",
       "event": "\u2022 empty Trash too\n\u2022 clean leftover git/deletion noise related to the removed Qwen files"
@@ -368,11 +373,6 @@
       "ts": "2026-03-28T02:49:29.758462+00:00",
       "agent": "abhishekchhetri07",
       "event": "Do u know our target?"
-    },
-    {
-      "ts": "2026-03-28T02:24:25.278620+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "U can continue with the work."
     }
   ]
 }
