@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T01:24:02.475127Z",
+  "updated": "2026-03-28T01:25:05.193040Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T01:24:02.474295Z"
+      "last_seen": "2026-03-28T01:25:05.192251Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T01:24:02.474477Z"
+      "last_seen": "2026-03-28T01:25:05.192416Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T01:24:02.474481Z"
+      "last_seen": "2026-03-28T01:25:05.192420Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T01:24:02.474484Z"
+      "last_seen": "2026-03-28T01:25:05.192423Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T01:24:02.474486Z"
+      "last_seen": "2026-03-28T01:25:05.192425Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-28T01:24:42.299082+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "Setup runner"
+    },
+    {
       "ts": "2026-03-28T01:12:43.130907+00:00",
       "agent": "abhishekchhetri07",
       "event": "Install Qwen3-8B-4bit"
@@ -368,11 +373,6 @@
       "ts": "2026-03-27T16:11:48.062798+00:00",
       "agent": "abhishekchhetri07",
       "event": "Delete everything related to ltx so we can free the space from mac, but first tell me what are u goi"
-    },
-    {
-      "ts": "2026-03-27T16:06:46.038230+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "update"
     }
   ]
 }
