@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T12:47:22.239514Z",
+  "updated": "2026-03-28T12:48:24.045287Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:47:22.238359Z"
+      "last_seen": "2026-03-28T12:48:24.044313Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:47:22.238737Z"
+      "last_seen": "2026-03-28T12:48:24.044641Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:47:22.238742Z"
+      "last_seen": "2026-03-28T12:48:24.044646Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:47:22.238745Z"
+      "last_seen": "2026-03-28T12:48:24.044648Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:47:22.238747Z"
+      "last_seen": "2026-03-28T12:48:24.044651Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-28T12:47:24.966067+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "Simplify the google sheet"
+    },
+    {
       "ts": "2026-03-28T12:44:51.007008+00:00",
       "agent": "abhishekchhetri07",
       "event": "Let there be no time, marked by and remarks\nU will use departed status to update website"
@@ -368,11 +373,6 @@
       "ts": "2026-03-28T05:50:35.034557+00:00",
       "agent": "abhishekchhetri07",
       "event": "/status@khanchi_bot"
-    },
-    {
-      "ts": "2026-03-28T05:50:17.022695+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "/status@perpendicuar_bot"
     }
   ]
 }
