@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T01:55:25.508723Z",
+  "updated": "2026-03-28T01:56:27.298994Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T01:55:25.506393Z"
+      "last_seen": "2026-03-28T01:56:27.297781Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T01:55:25.506923Z"
+      "last_seen": "2026-03-28T01:56:27.298346Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T01:55:25.506928Z"
+      "last_seen": "2026-03-28T01:56:27.298351Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T01:55:25.506931Z"
+      "last_seen": "2026-03-28T01:56:27.298353Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T01:55:25.506933Z"
+      "last_seen": "2026-03-28T01:56:27.298356Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-28T01:56:11.329155+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "Continue"
+    },
+    {
       "ts": "2026-03-28T01:51:35.329759+00:00",
       "agent": "abhishekchhetri07",
       "event": "Go ahead"
@@ -368,11 +373,6 @@
       "ts": "2026-03-27T18:57:28.983346+00:00",
       "agent": "abhishekchhetri07",
       "event": "I am talking about qwen type llm...check it"
-    },
-    {
-      "ts": "2026-03-27T18:56:47.655195+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "One local AI model was installed so is it still there?"
     }
   ]
 }
