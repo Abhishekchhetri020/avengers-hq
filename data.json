@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T13:21:37.906373Z",
+  "updated": "2026-03-28T13:22:39.894244Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T13:21:37.905541Z"
+      "last_seen": "2026-03-28T13:22:39.893386Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T13:21:37.905721Z"
+      "last_seen": "2026-03-28T13:22:39.893550Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T13:21:37.905725Z"
+      "last_seen": "2026-03-28T13:22:39.893554Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T13:21:37.905727Z"
+      "last_seen": "2026-03-28T13:22:39.893557Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T13:21:37.905730Z"
+      "last_seen": "2026-03-28T13:22:39.893559Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-28T13:22:07.407763+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "http://127.0.0.1:52024/oauth2/callback?state=ew8GoR7aAmmGBQ70u35NSYemsJ2CWDLJ7zTz1QVHFcs&iss=https:/"
+    },
+    {
       "ts": "2026-03-28T13:17:37.276480+00:00",
       "agent": "abhishekchhetri07",
       "event": "Do it"
@@ -368,11 +373,6 @@
       "ts": "2026-03-28T12:44:51.007008+00:00",
       "agent": "abhishekchhetri07",
       "event": "Let there be no time, marked by and remarks\nU will use departed status to update website"
-    },
-    {
-      "ts": "2026-03-28T12:41:37.299315+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "Let there be master sheet and individual sheet for each event and there should be tick option for in"
     }
   ]
 }
