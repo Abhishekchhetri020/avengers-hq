@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T14:07:39.314706Z",
+  "updated": "2026-03-28T14:08:45.429794Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T14:07:39.303759Z"
+      "last_seen": "2026-03-28T14:08:45.421987Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T14:07:39.304871Z"
+      "last_seen": "2026-03-28T14:08:45.422791Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T14:07:39.304891Z"
+      "last_seen": "2026-03-28T14:08:45.422800Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T14:07:39.304900Z"
+      "last_seen": "2026-03-28T14:08:45.422805Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T14:07:39.304909Z"
+      "last_seen": "2026-03-28T14:08:45.422809Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-28T14:08:42.196623+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "Try other options to make the website live"
+    },
+    {
       "ts": "2026-03-28T13:50:40.065277+00:00",
       "agent": "abhishekchhetri07",
       "event": "@perpendicuar_bot help Nick to fix the issue"
@@ -368,11 +373,6 @@
       "ts": "2026-03-28T13:09:02.327701+00:00",
       "agent": "abhishekchhetri07",
       "event": "U need to know that if a child is in more than one event then the incharge may tick in one event but"
-    },
-    {
-      "ts": "2026-03-28T12:59:11.377878+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "I didn't like the dashboard it should be very nice, appealing and interactive"
     }
   ]
 }
