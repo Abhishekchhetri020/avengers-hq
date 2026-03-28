@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T12:48:24.045287Z",
+  "updated": "2026-03-28T12:49:25.906644Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:48:24.044313Z"
+      "last_seen": "2026-03-28T12:49:25.904529Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:48:24.044641Z"
+      "last_seen": "2026-03-28T12:49:25.905908Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:48:24.044646Z"
+      "last_seen": "2026-03-28T12:49:25.905913Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:48:24.044648Z"
+      "last_seen": "2026-03-28T12:49:25.905915Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:48:24.044651Z"
+      "last_seen": "2026-03-28T12:49:25.905918Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-28T12:48:58.819499+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "??"
+    },
+    {
       "ts": "2026-03-28T12:47:24.966067+00:00",
       "agent": "abhishekchhetri07",
       "event": "Simplify the google sheet"
@@ -368,11 +373,6 @@
       "ts": "2026-03-28T11:57:22.082587+00:00",
       "agent": "abhishekchhetri07",
       "event": "We have annual program in our school today, so there is a folder named as annual program where all t"
-    },
-    {
-      "ts": "2026-03-28T05:50:35.034557+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "/status@khanchi_bot"
     }
   ]
 }
