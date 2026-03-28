@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T12:56:40.157056Z",
+  "updated": "2026-03-28T12:57:42.045777Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:56:40.156153Z"
+      "last_seen": "2026-03-28T12:57:42.044823Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:56:40.156309Z"
+      "last_seen": "2026-03-28T12:57:42.045052Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:56:40.156313Z"
+      "last_seen": "2026-03-28T12:57:42.045057Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:56:40.156316Z"
+      "last_seen": "2026-03-28T12:57:42.045059Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T12:56:40.156318Z"
+      "last_seen": "2026-03-28T12:57:42.045061Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-28T12:57:18.785278+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "Ur website is not opening"
+    },
+    {
       "ts": "2026-03-28T12:52:10.762327+00:00",
       "agent": "abhishekchhetri07",
       "event": "Lock everything apart from departed column, which will have the option to tick and untick"
@@ -368,11 +373,6 @@
       "ts": "2026-03-28T12:29:49.190883+00:00",
       "agent": "abhishekchhetri07",
       "event": "So there is one teacher who will update the google sheet and the u need to update the data in web ap"
-    },
-    {
-      "ts": "2026-03-28T12:02:48.659677+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "1. convert the green room file into Google Sheet format\n2. build the mobile dashboard/web app\n3. giv"
     }
   ]
 }
