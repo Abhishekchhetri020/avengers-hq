@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T13:08:13.506340Z",
+  "updated": "2026-03-28T13:09:15.309882Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T13:08:13.505249Z"
+      "last_seen": "2026-03-28T13:09:15.308794Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T13:08:13.505661Z"
+      "last_seen": "2026-03-28T13:09:15.309172Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T13:08:13.505665Z"
+      "last_seen": "2026-03-28T13:09:15.309177Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T13:08:13.505668Z"
+      "last_seen": "2026-03-28T13:09:15.309180Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-28T13:08:13.505670Z"
+      "last_seen": "2026-03-28T13:09:15.309183Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-28T13:09:02.327701+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "U need to know that if a child is in more than one event then the incharge may tick in one event but"
+    },
+    {
       "ts": "2026-03-28T12:59:11.377878+00:00",
       "agent": "abhishekchhetri07",
       "event": "I didn't like the dashboard it should be very nice, appealing and interactive"
@@ -368,11 +373,6 @@
       "ts": "2026-03-28T12:34:11.936139+00:00",
       "agent": "abhishekchhetri07",
       "event": "http://127.0.0.1:49892/oauth2/callback?state=mXK_dPSdd4ioikDyJlhd95ZpsKXTwiUEYh01RkZA2VE&iss=https:/"
-    },
-    {
-      "ts": "2026-03-28T12:31:45.220781+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "Let's revoke it now"
     }
   ]
 }
