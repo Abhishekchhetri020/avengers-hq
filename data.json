@@ -1,10 +1,10 @@
 {
-  "updated": "2026-03-29T12:20:38.324873Z",
+  "updated": "2026-03-29T12:27:26.501323Z",
   "stats": {
-    "missions_done": 18,
-    "missions_active": 1,
+    "missions_done": 17,
+    "missions_active": 2,
     "missions_pending": 0,
-    "avg_score": 4.1
+    "avg_score": 4.2
   },
   "agents": [
     {
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T12:20:36.982912Z"
+      "last_seen": "2026-03-29T12:27:26.440333Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T12:20:37.148434Z"
+      "last_seen": "2026-03-29T12:27:26.448837Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T12:20:37.148447Z"
+      "last_seen": "2026-03-29T12:27:26.448863Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T12:20:37.148454Z"
+      "last_seen": "2026-03-29T12:27:26.448873Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,19 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T12:20:37.148460Z"
+      "last_seen": "2026-03-29T12:27:26.448882Z"
     }
   ],
   "missions": [
+    {
+      "id": 86,
+      "title": "Restart beast bridge \u2014 process not running",
+      "agent": "captain",
+      "status": "in_progress",
+      "score": null,
+      "created_at": "2026-03-29T12:24:12.832388",
+      "updated_at": "2026-03-29T12:25:03.416838"
+    },
     {
       "id": 85,
       "title": "Restart vision bridge \u2014 process not running",
@@ -229,15 +238,6 @@
       "score": 3.0,
       "created_at": "2026-03-22T21:25:04.766234",
       "updated_at": "2026-03-22T21:52:00.058974"
-    },
-    {
-      "id": 66,
-      "title": "Fix OAuth token failure for agents: 'vision', 'captain', 'shuri', 'beast'",
-      "agent": "captain",
-      "status": "done",
-      "score": 3.0,
-      "created_at": "2026-03-22T20:25:02.877675",
-      "updated_at": "2026-03-22T20:25:51.819879"
     }
   ],
   "okr": {
