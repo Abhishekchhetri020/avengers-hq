@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-29T07:34:57.924171Z",
+  "updated": "2026-03-29T07:36:00.011748Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T07:34:57.923298Z"
+      "last_seen": "2026-03-29T07:36:00.010797Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T07:34:57.923461Z"
+      "last_seen": "2026-03-29T07:36:00.010971Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T07:34:57.923465Z"
+      "last_seen": "2026-03-29T07:36:00.010976Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T07:34:57.923468Z"
+      "last_seen": "2026-03-29T07:36:00.010979Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T07:34:57.923470Z"
+      "last_seen": "2026-03-29T07:36:00.010981Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-29T07:35:57.674916+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "Better you start fresh in a new Word file , no need to overwrite"
+    },
+    {
       "ts": "2026-03-29T06:53:46.314554+00:00",
       "agent": "abhishekchhetri07",
       "event": "You need to check other remarks also like the Goenka ethos, my child at a glance, special achievemen"
@@ -368,11 +373,6 @@
       "ts": "2026-03-28T14:13:34.085387+00:00",
       "agent": "abhishekchhetri07",
       "event": "/new@perpendicuar_bot"
-    },
-    {
-      "ts": "2026-03-28T14:09:33.244029+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "@perpendicuar_bot tell Nick to try other options\n\u26a0\ufe0f Agent failed before reply: OAuth token refresh f"
     }
   ]
 }
