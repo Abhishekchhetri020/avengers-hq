@@ -1,8 +1,8 @@
 {
-  "updated": "2026-03-29T12:05:58.933746Z",
+  "updated": "2026-03-29T12:13:59.059746Z",
   "stats": {
-    "missions_done": 19,
-    "missions_active": 0,
+    "missions_done": 18,
+    "missions_active": 1,
     "missions_pending": 0,
     "avg_score": 4.1
   },
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T12:05:57.714786Z"
+      "last_seen": "2026-03-29T12:13:56.946211Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T12:05:58.148582Z"
+      "last_seen": "2026-03-29T12:13:57.609690Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T12:05:58.148596Z"
+      "last_seen": "2026-03-29T12:13:57.609713Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T12:05:58.148603Z"
+      "last_seen": "2026-03-29T12:13:57.609727Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,19 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T12:05:58.148610Z"
+      "last_seen": "2026-03-29T12:13:57.609740Z"
     }
   ],
   "missions": [
+    {
+      "id": 85,
+      "title": "Restart vision bridge \u2014 process not running",
+      "agent": "captain",
+      "status": "in_progress",
+      "score": null,
+      "created_at": "2026-03-29T12:10:21.701111",
+      "updated_at": "2026-03-29T12:11:34.780550"
+    },
     {
       "id": 84,
       "title": "DOCX-QP M4: Design layout engine v3 for avengers_docx_toolkit_v3.py \u2014 smart page breaks (no question splits), 2-column MCQ layout, answer key auto-generation, CBSE/ICSE/state header templates (3 variants), dynamic marks alignment, watermark support, bilingual Hindi+English section headers. Output: complete Python code for layout functions.",
@@ -229,15 +238,6 @@
       "score": 3.0,
       "created_at": "2026-03-22T20:25:02.877675",
       "updated_at": "2026-03-22T20:25:51.819879"
-    },
-    {
-      "id": 65,
-      "title": "Fix OAuth token failure for agents: 'beast', 'vision', 'shuri', 'captain'",
-      "agent": "captain",
-      "status": "done",
-      "score": 3.0,
-      "created_at": "2026-03-22T19:25:01.091404",
-      "updated_at": "2026-03-22T19:26:18.084095"
     }
   ],
   "okr": {
