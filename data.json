@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-29T09:40:12.649826Z",
+  "updated": "2026-03-29T09:41:14.680019Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T09:40:12.647071Z"
+      "last_seen": "2026-03-29T09:41:14.679107Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T09:40:12.647272Z"
+      "last_seen": "2026-03-29T09:41:14.679286Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T09:40:12.647277Z"
+      "last_seen": "2026-03-29T09:41:14.679290Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T09:40:12.647280Z"
+      "last_seen": "2026-03-29T09:41:14.679293Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T09:40:12.647283Z"
+      "last_seen": "2026-03-29T09:41:14.679296Z"
     }
   ],
   "missions": [
@@ -325,6 +325,16 @@
   },
   "activity": [
     {
+      "ts": "2026-03-29T09:41:04.456675+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "/status@khanchi_bot"
+    },
+    {
+      "ts": "2026-03-29T09:40:37.597643+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "/status@perpendicuar_bot"
+    },
+    {
       "ts": "2026-03-29T08:39:16.415325+00:00",
       "agent": "abhishekchhetri07",
       "event": "continue the work"
@@ -363,16 +373,6 @@
       "ts": "2026-03-29T08:18:41.938582+00:00",
       "agent": "abhishekchhetri07",
       "event": "let the work be divided between u and ironman so that it will complete faster as gemini agents are n"
-    },
-    {
-      "ts": "2026-03-29T08:02:25.924265+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "ok"
-    },
-    {
-      "ts": "2026-03-29T08:01:29.851021+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "continue"
     }
   ]
 }
