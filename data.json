@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-29T11:03:01.783013Z",
+  "updated": "2026-03-29T11:04:05.368173Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T11:03:01.780487Z"
+      "last_seen": "2026-03-29T11:04:05.366142Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T11:03:01.780685Z"
+      "last_seen": "2026-03-29T11:04:05.366335Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T11:03:01.780690Z"
+      "last_seen": "2026-03-29T11:04:05.366339Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T11:03:01.780693Z"
+      "last_seen": "2026-03-29T11:04:05.366342Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T11:03:01.780695Z"
+      "last_seen": "2026-03-29T11:04:05.366345Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-03-29T11:03:41.745789+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "Whats the issue"
+    },
+    {
       "ts": "2026-03-29T11:00:52.989723+00:00",
       "agent": "abhishekchhetri07",
       "event": "Proceed"
@@ -368,11 +373,6 @@
       "ts": "2026-03-29T10:44:49.155324+00:00",
       "agent": "abhishekchhetri07",
       "event": "?"
-    },
-    {
-      "ts": "2026-03-29T10:39:56.588891+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "check his her issue,like for female there is his and he"
     }
   ]
 }
