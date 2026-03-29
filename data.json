@@ -1,8 +1,8 @@
 {
-  "updated": "2026-03-29T12:41:10.869073Z",
+  "updated": "2026-03-29T12:42:17.463220Z",
   "stats": {
     "missions_done": 17,
-    "missions_active": 2,
+    "missions_active": 1,
     "missions_pending": 0,
     "avg_score": 4.2
   },
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T12:41:10.834607Z"
+      "last_seen": "2026-03-29T12:42:17.455097Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T12:41:10.835398Z"
+      "last_seen": "2026-03-29T12:42:17.455902Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T12:41:10.835407Z"
+      "last_seen": "2026-03-29T12:42:17.455910Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T12:41:10.835413Z"
+      "last_seen": "2026-03-29T12:42:17.455915Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T12:41:10.835418Z"
+      "last_seen": "2026-03-29T12:42:17.455920Z"
     }
   ],
   "missions": [
@@ -72,7 +72,7 @@
       "id": 85,
       "title": "Restart vision bridge \u2014 process not running",
       "agent": "captain",
-      "status": "in_progress",
+      "status": "failed",
       "score": null,
       "created_at": "2026-03-29T12:10:21.701111",
       "updated_at": "2026-03-29T12:11:34.780550"
