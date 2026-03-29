@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-29T08:32:01.083345Z",
+  "updated": "2026-03-29T08:33:03.421954Z",
   "stats": {
     "missions_done": 19,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T08:32:01.080961Z"
+      "last_seen": "2026-03-29T08:33:03.419735Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T08:32:01.081130Z"
+      "last_seen": "2026-03-29T08:33:03.419941Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T08:32:01.081134Z"
+      "last_seen": "2026-03-29T08:33:03.419946Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T08:32:01.081137Z"
+      "last_seen": "2026-03-29T08:33:03.419948Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-03-29T08:32:01.081139Z"
+      "last_seen": "2026-03-29T08:33:03.419951Z"
     }
   ],
   "missions": [
@@ -325,6 +325,16 @@
   },
   "activity": [
     {
+      "ts": "2026-03-29T08:32:44.256910+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "You need to complete the work as soon as possible"
+    },
+    {
+      "ts": "2026-03-29T08:32:11.949118+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "Class teacher's remarks should be of 5-6 lines , my child at a glance should be of at least 7-8 line"
+    },
+    {
       "ts": "2026-03-29T08:25:14.383438+00:00",
       "agent": "abhishekchhetri07",
       "event": "ok do it"
@@ -363,16 +373,6 @@
       "ts": "2026-03-29T08:00:08.491889+00:00",
       "agent": "abhishekchhetri07",
       "event": "Once the agents start to hit the limit quota, you need to remove them from the task and whoever is l"
-    },
-    {
-      "ts": "2026-03-29T07:56:12.818137+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "continue from student 11 onward with a slower/restarted pass and finish the class."
-    },
-    {
-      "ts": "2026-03-29T07:55:00.808748+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "Are u doing the work?"
     }
   ]
 }
