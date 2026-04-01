@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-01T19:53:59.038860Z",
+  "updated": "2026-04-01T19:55:00.997854Z",
   "stats": {
     "missions_done": 17,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-04-01T19:53:59.038046Z"
+      "last_seen": "2026-04-01T19:55:00.997055Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-04-01T19:53:59.038208Z"
+      "last_seen": "2026-04-01T19:55:00.997207Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-04-01T19:53:59.038212Z"
+      "last_seen": "2026-04-01T19:55:00.997211Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-04-01T19:53:59.038215Z"
+      "last_seen": "2026-04-01T19:55:00.997214Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-04-01T19:53:59.038217Z"
+      "last_seen": "2026-04-01T19:55:00.997216Z"
     }
   ],
   "missions": [
