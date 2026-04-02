@@ -1,8 +1,8 @@
 {
-  "updated": "2026-04-02T03:13:27.878924Z",
+  "updated": "2026-04-02T03:14:30.092000Z",
   "stats": {
-    "missions_done": 17,
-    "missions_active": 0,
+    "missions_done": 16,
+    "missions_active": 1,
     "missions_pending": 0,
     "avg_score": 4.2
   },
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-04-02T03:13:27.878020Z"
+      "last_seen": "2026-04-02T03:14:30.089556Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-04-02T03:13:27.878233Z"
+      "last_seen": "2026-04-02T03:14:30.089742Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-04-02T03:13:27.878238Z"
+      "last_seen": "2026-04-02T03:14:30.089747Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-04-02T03:13:27.878240Z"
+      "last_seen": "2026-04-02T03:14:30.089750Z"
     },
     {
       "name": "vision",
@@ -55,10 +55,19 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-04-02T03:13:27.878243Z"
+      "last_seen": "2026-04-02T03:14:30.089752Z"
     }
   ],
   "missions": [
+    {
+      "id": 87,
+      "title": "Investigate beast bridge error spike: read log at /tmp/gemini-agent3-bridge.log, find root cause, fix it. (30 errors in 10min, samples: 2026-04-02 08:39:50,828 [ERROR] getUpdates error: 409 Client Error: Conflict for | 2026-04-02 08:39:50,833 [ERROR] Traceback (most recent call last):)",
+      "agent": "beast",
+      "status": "in_progress",
+      "score": null,
+      "created_at": "2026-04-02T03:13:33.374432",
+      "updated_at": "2026-04-02T03:13:59.114844"
+    },
     {
       "id": 86,
       "title": "Restart beast bridge \u2014 process not running",
@@ -229,15 +238,6 @@
       "score": 3.0,
       "created_at": "2026-03-22T22:29:49.001023",
       "updated_at": "2026-03-22T22:30:39.279833"
-    },
-    {
-      "id": 67,
-      "title": "Fix OAuth token failure for agents: 'beast', 'vision', 'shuri', 'captain'",
-      "agent": "captain",
-      "status": "done",
-      "score": 3.0,
-      "created_at": "2026-03-22T21:25:04.766234",
-      "updated_at": "2026-03-22T21:52:00.058974"
     }
   ],
   "okr": {
