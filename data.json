@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-02T11:46:45.341727Z",
+  "updated": "2026-04-02T11:47:47.230270Z",
   "stats": {
     "missions_done": 17,
     "missions_active": 0,
@@ -15,7 +15,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-04-02T11:46:45.340788Z"
+      "last_seen": "2026-04-02T11:47:47.229450Z"
     },
     {
       "name": "captain",
@@ -25,7 +25,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-04-02T11:46:45.340957Z"
+      "last_seen": "2026-04-02T11:47:47.229616Z"
     },
     {
       "name": "shuri",
@@ -35,7 +35,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-04-02T11:46:45.340963Z"
+      "last_seen": "2026-04-02T11:47:47.229620Z"
     },
     {
       "name": "beast",
@@ -45,7 +45,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-04-02T11:46:45.340965Z"
+      "last_seen": "2026-04-02T11:47:47.229622Z"
     },
     {
       "name": "vision",
@@ -55,7 +55,7 @@
       "status": "idle",
       "current_task": "Awaiting orders",
       "confidence": "ready",
-      "last_seen": "2026-04-02T11:46:45.340968Z"
+      "last_seen": "2026-04-02T11:47:47.229625Z"
     }
   ],
   "missions": [
@@ -325,6 +325,11 @@
   },
   "activity": [
     {
+      "ts": "2026-04-02T11:46:53.122401+00:00",
+      "agent": "abhishekchhetri07",
+      "event": "hi"
+    },
+    {
       "ts": "2026-04-02T11:42:24.296842+00:00",
       "agent": "abhishekchhetri07",
       "event": "Who are u?"
@@ -368,11 +373,6 @@
       "ts": "2026-03-31T20:10:44.288635+00:00",
       "agent": "abhishekchhetri07",
       "event": "Yes open"
-    },
-    {
-      "ts": "2026-03-31T19:37:28.501863+00:00",
-      "agent": "abhishekchhetri07",
-      "event": "/model"
     }
   ]
 }
